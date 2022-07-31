@@ -1,0 +1,1234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <? include(PLATFORM_URL.'/combine_menu/head?lang='.$lang['lang'].'&ret='.urlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']).'&service_code='.$service_code.'&service_type=landing'); ?>
+    <title>Icarus M: Riders of Icarus Pre-Registration</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="<?=$lang['lang']?>">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=no">
+
+    <link rel="shortcut icon" href="https://file.valofe.com/Valofe_file/web/favicon/icam_favicon.ico"
+        type="image/x-icon">
+    <link rel="canonical" href="https://vfun.valofe.com/event/icarusm" />
+    <meta name="application-name" content="ICARUS M Global">
+    <meta name="author" content="VFUN">
+    <meta name="title" content="Icarus M: Riders of Icarus">
+
+    <meta name="description" content="Pre-Register, NOW!">
+    <meta name="keywords"
+        content="Icarus, Icarus M, Icarus M: Riders of Icarus, mobile, mobile mmorpg, mmorpg, mobile game, mobile, game, dragons, familiar, fellow, VALOFE, VFUN, preregistration, pre-registration, CBT, achieved 5th rewards">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vfun.valofe.com/event/icarusm">
+    <meta property="og:title" content="Icarus M: Riders of Icarus">
+    <meta property="og:description" content="Pre-Register, NOW!">
+    <meta property="og:image"
+        content="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/icam-pre-regist-fb.jpg">
+    <meta property="description" content="Icarus M: Riders of Icarus">
+    <meta property="keywords"
+        content="Icarus, Icarus M, Icarus M: Riders of Icarus, mobile, mobile mmorpg, mmorpg, mobile game, mobile, game, dragons, familiar, fellow, VALOFE, VFUN, preregistration, pre-registration, CBT, achieved 5th rewards">
+    <meta name="twitter:title" content="Pre-Register, NOW!">
+    <meta name="twitter:type" content="website">
+    <meta name="twitter:url" content="https://vfun.valofe.com/event/icarusm">
+    <meta name="twitter:description" content="Pre-Register, NOW!">
+    <meta name="twitter:image"
+        content="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/icam-pre-regist-tw.jpg">
+    <meta itemprop="image"
+        content="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/icam-pre-regist-fb.jpg">
+
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif&display=swap" rel="stylesheet" media="none"
+        onload="if(media!='all')media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://file.valofe.com/Valofe_file/web/vfun/css/common/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet"
+        href="https://file.valofe.com/Valofe_file/web/vfun/css/event/icarusm_gl/pre-register/style_cbt_10.css?200902">
+    <link rel="stylesheet" href="css/animsition__.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1-10-3.js"></script>
+    <script type="text/javascript" src="js/easing-1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript"
+        src="https://file.valofe.com/Valofe_file/web/vfun/js/event/icarusm_gl/pre-register/custom2_cbt_10.js?200902"></script>
+
+
+    <!--[if lt IE 9]>
+    <script src="https://file.valofe.com/Valofe_file/web/vfun/js/html5shiv.min.js"></script>
+    <script src="https://file.valofe.com/Valofe_file/web/vfun/js/selectivizr-min.js"></script>
+    <script src="https://file.valofe.com/Valofe_file/web/vfun/js/respond-1.4.2.min.js"></script>
+    <script src="https://file.valofe.com/Valofe_file/web/vfun/js/remPolyfill.js"></script>
+    <![endif]-->
+</head>
+
+<body id="influencer">
+    <div class="wrap-loading display-none">
+        <div class="loading-container">
+            <!--<img src="https://file.valofe.com/Valofe_file/web/vfun/images/loading.gif" />-->
+            <div class="spinner__container spinner__effect--8">
+                <ul class="spinner">
+                    <li class="spinner__square"></li>
+                    <li class="spinner__square"></li>
+                    <li class="spinner__square"></li>
+                    <li class="spinner__square"></li>
+                    <li class="spinner__square"></li>
+                    <li class="spinner__square"></li>
+                    <li class="spinner__square"></li>
+                    <li class="spinner__square"></li>
+                    <li class="spinner__square"></li>
+                </ul>
+            </div>
+            <span class="loading-txt">Loading</span>
+        </div>
+    </div>
+    <div id="wrapper">
+        <?php
+    $game_title = $detail_info['game_title_'.$lang['lang']];
+    if (is_null($game_title)) {
+        $game_title = $detail_info['game_title_'.$detail_info['default_language']];
+    }
+    $web_url = $detail_info['web_url'];
+    ?>
+
+        <? include(PLATFORM_URL.'/combine_menu/header?lang='.$lang['lang'].'&ret='.urlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']).'&sso_info='.urlencode($sso_info).'&user_id='.$user_id.'&user_birth='.$user_birth.'&service_code='.$service_code.'&service_type=landing'); ?>
+        <!--<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas></div>-->
+        <header id="desktopHeader" style="top:0px;">
+            <h1 class="logo">
+                <a href="https://vfun.valofe.com/game/icarusm_global?idx=19" target="_blank">
+                    <!--onclick="fnNav('sec1Top');-->
+                    <img class="logo-blink"
+                        src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/main/logo_menu.png"
+                        alt="icarus Mobile global Logo">
+                </a>
+            </h1>
+            <div class="row-w">
+                <ul id="ltGnb" class="iphone">
+                    <li><a href="javascript:void(0);">CBT OPEN</a></li>
+                    <li><a href="javascript:void(0);">Pre-Registration</a></li>
+                    <li><a href="javascript:void(0);">Milestone</a></li>
+                    <li><a href="javascript:void(0);">Class</a></li>
+                    <li><a href="javascript:void(0);">World View</a></li>
+                    <li style="display: none;"><a href="javascript:void(0);">World View</a></li>
+                </ul>
+            </div>
+            <div id="social">
+                <div>
+                    <div class="sns-wrap">
+                        <a href="https://www.facebook.com/icarusmglobal/" target="_blank" class="btn-sns fb"></a>
+                        <span></span>
+                        <a href="https://www.instagram.com/icarusmglobal/" target="_blank"
+                            class="btn-sns instagram"></a>
+                        <span></span>
+                        <a href="https://discord.gg/Sq65wqC" target="_blank" class="btn-sns discord"></a>
+                    </div>
+                    <a href="https://vfun.valofe.com/game/icarusm_global?idx=19" target="_blank"
+                        class="go-home">HOME</a>
+                </div>
+            </div>
+        </header>
+        <header id="mobileHeader">
+            <div class="row-w">
+                <h1 class="logo">
+                    <a href="https://vfun.valofe.com/game/icarusm_global?idx=19" target="_blank">
+                        <img class="logo-blink"
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/main/logo_menu.png"
+                            alt="icarus Mobile global Logo">
+                    </a>
+                </h1>
+                <a class="btn-mb-slide" href="javascript:void(0)" onclick="fnShowMbSlide();">
+                    <span class="fa fa-bars"></span>
+                </a>
+            </div>
+        </header>
+        <div class="bg-black" onclick="fnCloseMobileSlide();"></div>
+        <nav id="mobileSlide">
+            <ul id="ltMobileGnb">
+                <li><a href="javascript:void(0);">CBT OPEN</a></li>
+                <li><a href="javascript:void(0);">Pre-Registration</a></li>
+                <li><a href="javascript:void(0);">Milestone</a></li>
+                <li><a href="javascript:void(0);">Class</a></li>
+                <li style="display: none"><a href="javascript:void(0);">World View</a></li>
+                <li><a href="javascript:void(0);">World View</a></li>
+            </ul>
+            <ul id="mobileSns">
+                <li><a href="https://www.facebook.com/icarusmglobal/" target="_blank"><img
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/common/icon_fb_mb.png"
+                            alt="icarus mobile facebook"></a></li>
+                <li><a href="https://www.instagram.com/icarusmglobal/" target="_blank"><img
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/common/icon_ig_mb.png"
+                            alt="icarus mobile instagram"></a></li>
+                <li><a href="https://discord.gg/Sq65wqC" target="_blank"><img
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/common/icon_dc_mb.png"
+                            alt="icarus mobile facebook"></a></li>
+                <li><a href="https://vfun.valofe.com/game/icarusm_global?idx=19" target="_blank"><img
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/common/icon_h_mb.png"
+                            alt="icarus mobile homepage"></a></li>
+            </ul>
+            <a class="btn-close-mbSlide" href="javascript:void(0);" onclick="fnCloseMobileSlide();"><span
+                    class="fa fa-times-circle"></span></a>
+        </nav>
+
+        <div id="wrap">
+
+            <div id="dont_show">
+                <label class="label-dont-show" for="dontShow">
+                    <input type="checkbox" id="dontShow">
+                </label>
+                <span onclick="setIcarusMPreResitClose()">Don't See Today</span>
+            </div>
+
+            <!-- section1 -->
+            <section id="sec1">
+                <div class="bg-video"></div>
+                <video id="main_video" playsinline="" loop="true" muted="muted" autoplay="autoplay" preload="auto"
+                    poster="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/cbt/bg_main_cbt_pc.jpg">
+                    <!--<source src="" type="video/mp4">
+                <source src="" type="video/webm">-->
+                </video>
+                <div class="row-w target-section section0">
+                    <div class="title">
+                        <img class="logo"
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/main/logo_main.png"
+                            alt="ICARUS M: riders of icarus - logo">
+                        <div class="sub-tit desc">
+                            <h3>2nd. Sep - 5th. Sep. 2020
+                                <span>Play CBT on <span>|</span> 18:00 ~ 24:00 (PST)</span>
+                            </h3>
+
+                        </div>
+                        <div class="main-tit">
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/cbt/title_main_cbt_open.png"
+                                alt="CBT IS NOW OPEN!" class="pc-title">
+                            <!--<img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/main/m_title_main.png" alt="pre-registration" class="mb-title">-->
+                        </div>
+                    </div>
+                    <div class="cbt-box">
+                        <div class="cbt-wrap">
+                            <div class="cbt-row">
+                                <h4>GRAB A CHANCE TO PARTICIPATE IN CBT</h4>
+                                <h4>AFTER PRE-REGISTRATION</h4>
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/cbt/cbt_tit.png"
+                                    alt="A New Adventure Awaits You" class="cbt-tit">
+                                <ul>
+                                    <li>Users that pre-register will have a chance to participate in the Closed Beta
+                                        Testing.
+                                        <br> <span> (Details will be provided via email before CBT)</span>
+                                    </li>
+                                    <li>The selected users will receive an e-mail with the download link and other
+                                        information on how to access the game during the CBT. <span> (Gmail and email is
+                                            required for Android CBT participation)</span></li>
+                                    <li>In-game goods will be provided for your better adventure on CBT.</li>
+                                    <li>After the CBT period has ended, our team will reset all data in the game.</li>
+                                    <li>Please note during the CBT period, you might experience some connectivity issues
+                                        and bugs.</li>
+                                    <li>For bug report, please make an inquiry through VFUN Customer Support page.</li>
+                                </ul>
+
+                                <!-- CBT 링크 -->
+                                <div class="cbt-links">
+                                    <h3>Just Click Below Button <br class="cbt-br">To Start CBT NOW </h3>
+                                    <div class="btn-cbt-link aos-cbt-link">
+                                        <a href="https://play.google.com/apps/testing/com.valofe.icarusm.na"
+                                            target="_blank">
+                                            <img src="https://file.valofe.com/Valofe_file/web/email/images/icam/gl/cbt/btn_aos.jpg?200902"
+                                                alt="download for AOS">
+                                        </a>
+                                    </div>
+                                    <div class="btn-cbt-link ios-cbt-link">
+                                        <a href="https://testflight.apple.com/join/WJxaFm6c" target="_blank">
+                                            <img src="https://file.valofe.com/Valofe_file/web/email/images/icam/gl/cbt/btn_ios.jpg?200902"
+                                                alt="download for IOS">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- ./ CBT 링크 -->
+
+                                <!-- 비로그인 문의 버튼 추가 -->
+                                <div class="non-login-inquiry">
+                                    <p class="cbt-inquiry"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                        If you have trouble participating in CBT. Please contact us.</p>
+                                    <div class="btn-wrap" id="">
+
+                                        <button type="button" class="btn btn-cbt-inquiry">
+                                            <a href="https://vfun.valofe.com/customer/support?service_code=icarusm_global&faq_category=205&lang=en"
+                                                target="_blank">
+                                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/cbt/btn_cbt_inquiry.jpg"
+                                                    alt="CBT-INQUIRY">
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap btn1" id="btn1_wrap">
+                        <button type="button" class="btn pre-register" onclick="goSection(2);"><span>PRE-REGISTER
+                                NOW</span></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section2 : PRE-Registration -->
+            <section id="sec2">
+                <div class="row-w section2  wd1000">
+                    <div class="sec-title">
+                        <img class="deco-tit aniDown"
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/deco_title_top.png"
+                            alt="ICARUS M: Riders of Icarus Pre-registration Campaign">
+                        <img class="tit aniDown"
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/tit_campaign.png"
+                            alt="ICARUS M: Riders of Icarus Pre-registration Campaign">
+                    </div>
+                    <div class="sub-title">
+                        <div class="desc">
+                            <h4>Sign up for the Pre-registration campaign to receive</h4>
+                            <h4>the Exclusive Rewards Below and a chance to participate in the CBT!</h4>
+                        </div>
+                        <p class="period">Pre-REGISTRATION PERIOD <span>|</span> August 4, 2020 - Game Launch</p>
+                    </div>
+
+                    <div class="btn-status">
+                        <!-- 경우에 따라 로드해 주세요 -->
+                        <? if ($is_login) {?>
+                        <!-- 2. vfun 로그인 되었을 때 -->
+                        <div class="input-wrap vfun-logged" id="btn1_wrap">
+                            <button type="button" class="btn log-out" onclick="vfunLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_VFUN.png"
+                                    alt="vfun logo"> Log Out <strong>VFUN</strong></button>
+                            <button type="button" class="btn log-in" onclick="vfunLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_google.png"
+                                    alt="google logo"> Login with <strong>Google</strong></button>
+                            <button type="button" class="btn log-in" onclick="vfunLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_fb.png"
+                                    alt="facebook logo"> Login with <strong>Facebook</strong></button>
+                        </div>
+                        <? } elseif (!$facebookLoginUrl) {?>
+                        <!-- 4. fabcebook 로그인 되었을 때 -->
+                        <div class="input-wrap fb-logged" id="btn1_wrap">
+                            <button type="button" class="btn log-in" onclick="facebookLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_VFUN.png"
+                                    alt="vfun logo"> Login with <strong>VFUN</strong></button>
+                            <button type="button" class="btn log-in" onclick="facebookLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_google.png"
+                                    alt="google logo"> Login with <strong>Google</strong></button>
+                            <button type="button" class="btn log-out" onclick="facebookLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_fb.png"
+                                    alt="facebook logo"> Log Out <strong>Facebook</strong></button>
+                        </div>
+                        <? } elseif (!$googleLoginUrl) {?>
+                        <!-- 3. google 로그인 되었을 때 -->
+                        <div class="input-wrap gg-logged" id="btn1_wrap">
+                            <button type="button" class="btn log-in" onclick="googleLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_VFUN.png"
+                                    alt="vfun logo"> Login with <strong>VFUN</strong></button>
+                            <button type="button" class="btn log-out" onclick="googleLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_google.png"
+                                    alt="google logo"> Log Out <strong>Google</strong></button>
+                            <button type="button" class="btn log-in" onclick="googleLogout();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_fb.png"
+                                    alt="facebook logo"> Login with <strong>Facebook</strong></button>
+                        </div>
+                        <? } else { ?>
+                        <!-- 1. 로그인 하지 않았을 때 -->
+                        <div class="input-wrap none-logged" id="btn1_wrap">
+                            <button type="button" class="btn log-in" onclick="vfunLogin();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_VFUN.png"
+                                    alt="vfun logo"> Login with <strong>VFUN</strong></button>
+                            <button type="button" class="btn log-in" onclick="googleLogin();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_google.png"
+                                    alt="google logo"> Login with <strong>Google</strong></button>
+                            <button type="button" class="btn log-in" onclick="facebookLogin();"><img
+                                    src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_fb.png"
+                                    alt="facebook logo"> Login with <strong>Facebook</strong></button>
+                        </div>
+                        <? } ?>
+                        <p>
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_login_info.png"
+                                alt="top arrow">
+                            Log in with VFUN or Social Media to Pre-Register
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/icon_login_info.png"
+                                alt="top arrow">
+                        </p>
+                    </div>
+                    <?php if (!$alreadyRegisterInfo) { ?>
+                    <!-- 1. 예약 전 -->
+                    <form method="POST" action="/event/icarusmPreRegister" id="targetForm">
+                        <div class="before-register">
+                            <div class="os">
+                                <!-- OS -->
+                                <form action="">
+                                    <div class="checkbox-os">
+                                        <label for="check_Android" class="label-chk">
+                                            <input type="radio" class="chk" onclick="" value="AOS" name="radio-os"
+                                                id="check_Android">Android<span class="checkbox-custom"></span>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-os">
+                                        <label for="check_IOS" class="label-chk">
+                                            <input type="radio" class="chk" onclick="" value="IOS" name="radio-os"
+                                                id="check_IOS">IOS<span class="checkbox-custom"></span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="terms">
+                                <!-- Terms -->
+                                <div class="checkbox-agree">
+                                    <label for="check_agree1" class="label-chk">
+                                        <input type="checkbox" class="chk" onclick="" value="check_agree1"
+                                            name="check_agree1" id="check_agree1">I agree to the
+                                        <a href="https://vfun.valofe.com/customer/g_mobile_terms" target="_blank">Terms
+                                            of Agreement</a> and
+                                        <a href="https://vfun.valofe.com/customer/g_mobile_privacy"
+                                            target="_blank">Privacy Policy</a> to process the information related to the
+                                        event.
+                                        <span class="checkbox-custom"></span>
+                                        <a href="javascript:void(0);" class="requ">(Required)</a>
+                                    </label>
+                                </div>
+                                <div class="checkbox-agree">
+                                    <label for="check_agree2" class="label-chk">
+                                        <input type="checkbox" class="chk" onclick="" value="check_agree2"
+                                            name="check_agree2" id="check_agree2">I agree to receive emails regarding
+                                        the event and game updates.
+                                        <span class="checkbox-custom"></span>
+                                        <a href="javascript:void(0);" class="requ">(Required)</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn-wrap btn2" id="btn2_wrap">
+                                <button type="button" class="btn pre-register" onclick="formSubmit()"></button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- // 1. 예약 전 -->
+                    <?php } else { ?>
+                    <?php if ($alreadyRegisterInfo[0]['marketing_code'] == 'exmox1' || $alreadyRegisterInfo[0]['marketing_code'] == 'exmox2') { ?>
+                    <iframe
+                        src="https://trk.exmox.net/pixel?adid=5f16cc3aeee1a307e0409c56&txn_id=<?=$alreadyRegisterInfo[0]['idx']?>"
+                        scrolling="no" frameborder="0" width="1" height="1"></iframe>
+                    <?php } ?>
+                    <!-- 2. 예약 후 -->
+                    <div class="after-register">
+                        <p class="success-txt">
+                            <span>You have successfully pre-registered with your email on your account.</span>​<br>
+                            Find out more information through the pre-registration details below.​
+                        </p>
+                        <div class="btn-wrap btn3" id="btn3_wrap">
+                            <button type="button" class="btn pre-register-details" onclick="goDetails();"></button>
+                        </div>
+                    </div>
+                    <!-- // 2. 예약 후 -->
+                    <?php } ?>
+                </div>
+                <div class="row-w section2">
+                    <div class="inner-box wd1000">
+                        <!-- 보상 아이템 -->
+                        <div class="reward-item-wrap">
+                            <h2 class="title">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/light_event_reward.png"
+                                    alt="deco-light">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/tit_event_reward.png"
+                                    alt="EVENT REWARD">
+                            </h2>
+
+                            <div class="reward-item-box">
+                                <div class="deco clearfix">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/deco_reward_l.png"
+                                        alt="">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/deco_reward_c.png"
+                                        alt="">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/deco_reward_r.png"
+                                        alt="">
+                                </div>
+                                <ul class="reward-item-list clearfix">
+                                    <li>
+                                        <dl>
+                                            <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/reward_gold.png"
+                                                    alt="gold"></dt>
+                                            <dd><span>50,000 GOLD</span></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/reward_ellune.png"
+                                                    alt="RED ELLUN"></dt>
+                                            <dd><span>Red Ellun 100EA</span></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/reward_resurrection.png"
+                                                    alt="Resurrection scroll 5ea"></dt>
+                                            <dd><span>RESURRECTION <br>SCROLL 5EA</span></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/reward_poyo2.png"
+                                                    alt="fellow poyo"></dt>
+                                            <dd><span>LIMITED EDITION <br>FELLOW LOVELY POYO</span></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ./보상 아이템 -->
+
+                        <!-- 보너스 아이템 -->
+                        <div class="bonus-wrap">
+                            <h2 class="title">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/tit_bonus.png"
+                                    alt="BONUS RE-REGISTRATION">
+                            </h2>
+                            <div class="bonus-content">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/reward_bonus.png"
+                                    alt="BONUSE REWARD ITEM - 50,000 GOLD ">
+                                <p>
+                                    Pre-register via the App Store<br>
+                                    and Google Play <br> <!-- !! 구글만 진행 할 경우 : Pre-register via Google Play -->
+                                    <span>to receive an additional
+                                        <br>
+                                        50,000 Gold bonus reward!
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="btn-download">
+                                <a href="https://play.google.com/store/apps/details?id=com.valofe.icarusm.na"
+                                    target="_blank">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/down_google.png"
+                                        alt="GET IT ON Google Play">
+                                </a>
+                                <a href="https://apps.apple.com/us/app/id1507999406" target="_blank">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/down_apps.png"
+                                        alt="Pre-order on the APP Store">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ./ 보너스 아이템 -->
+                    </div>
+                </div>
+                <div class="bg1 aniBounce">
+                    <img id="man"
+                        src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/chr2.png"
+                        alt="Icarus event1 character1 Image">
+                </div>
+                <div class="bg2 aniBounce">
+                    <img id="woman"
+                        src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/chr3.png"
+                        alt="Icarus event1 character2 Image">
+                </div>
+                <div class="bg3">
+                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section2/bg_sub1_cloud.png"
+                        alt="cloud background">
+                </div>
+            </section>
+
+
+            <!-- section3 : Milestone & Bonus -->
+            <section id="sec3">
+                <!-- FIREWORK APP MARKUP -->
+                <div class="fireworks-container">
+                    <div class="loading-init"></div>
+                    <div class="stage-container remove">
+                        <div class="canvas-container">
+                            <canvas id="trails-canvas"></canvas>
+                            <canvas id="main-canvas"></canvas>
+                        </div>
+                        <div class="controls"></div>
+                        <div class="menu hide">
+                            <div class="menu__inner-wrap">
+                                <form style="visibility: hidden">
+                                    <div class="form-option form-option--select">
+                                        <label class="shell-type-label">Shell Type</label>
+                                        <select class="shell-type"></select>
+                                    </div>
+                                    <div class="form-option form-option--select">
+                                        <label class="shell-size-label">Shell Size</label>
+                                        <select class="shell-size"></select>
+                                    </div>
+                                    <div class="form-option form-option--select">
+                                        <label class="quality-ui-label">Quality</label>
+                                        <select class="quality-ui"></select>
+                                    </div>
+                                    <div class="form-option form-option--select">
+                                        <label class="sky-lighting-label">Sky Lighting</label>
+                                        <select class="sky-lighting"></select>
+                                    </div>
+                                    <div class="form-option form-option--select">
+                                        <label class="scaleFactor-label">Scale</label>
+                                        <select class="scaleFactor"></select>
+                                    </div>
+                                    <div class="form-option form-option--checkbox">
+                                        <label class="auto-launch-label">Auto Fire</label>
+                                        <input class="auto-launch" type="checkbox" />
+                                    </div>
+                                    <div class="form-option form-option--checkbox form-option--finale-mode">
+                                        <label class="finale-mode-label">Finale Mode</label>
+                                        <input class="finale-mode" type="checkbox" />
+                                    </div>
+                                    <div class="form-option form-option--checkbox">
+                                        <label class="hide-controls-label">Hide Controls</label>
+                                        <input class="hide-controls" type="checkbox" />
+                                    </div>
+                                    <div class="form-option form-option--checkbox form-option--fullscreen">
+                                        <label class="fullscreen-label">Fullscreen</label>
+                                        <input class="fullscreen" type="checkbox" />
+                                    </div>
+                                    <div class="form-option form-option--checkbox">
+                                        <label class="long-exposure-label">Open Shutter</label>
+                                        <input class="long-exposure" type="checkbox" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fireworks -->
+
+                <div class="row-w section1">
+                    <div class="sec-title">
+                        <img class="tit aniDown"
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/achievement_milestone.png"
+                            alt="achievement milestone - Congratulations Riders! 100,000 Registered!">
+                    </div>
+                    <div class="sub-title">
+                        <div class="desc">
+                            <h4>After the game launch, all pre-registered users</h4>
+                            <h4> can receive the milestone rewards. Receive Limited Edition Familiar</h4>
+                            <h4>and all prizes below at 100,000 pre-registered users!</h4>
+                        </div>
+                    </div>
+
+                    <div class="bar-wrap items clearfix">
+                        <!-- 여기 value값에 숫자 들어가게 해주세요. -->
+                        <input type="text" value="<?=$aleadyRegisterCount?>" id="numSuccess" readonly="">
+                        <!-- 여기 value값에 숫자 들어가게 해주세요. -->
+                        <!-- 여기 value값에 숫자 들어가게 해주세요. -->
+                        <div class="wd95">
+                            <ul class="count-mark clearfix">
+                                <li>
+                                    <dl>
+                                        <dt>1ST</dt>
+                                        <dd>10,000</dd>
+                                        <dd><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/icon_arrow_down.png"
+                                                alt="∨"></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>2ND</dt>
+                                        <dd>25,000</dd>
+                                        <dd><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/icon_arrow_down.png"
+                                                alt="∨"></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>3RD</dt>
+                                        <dd>50,000</dd>
+                                        <dd><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/icon_arrow_down.png"
+                                                alt="∨"></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>4TH</dt>
+                                        <dd>75,000</dd>
+                                        <dd><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/icon_arrow_down.png"
+                                                alt="∨"></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>5TH</dt>
+                                        <dd>100,000</dd>
+                                        <dd><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/icon_arrow_down.png"
+                                                alt="∨"></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <div class="bar">
+                                <div class="accum_percent clearfix">
+                                    <div class="accumWrap accumWrap_01">
+                                        <div class="accum ac_01" id="accum_01"></div>
+                                    </div>
+                                    <div class="accumWrap accumWrap_02">
+                                        <div class="accum ac_02 " id="accum_02"></div>
+                                    </div>
+                                    <div class="accumWrap accumWrap_03">
+                                        <div class="accum ac_03" id="accum_03"></div>
+                                    </div>
+                                    <div class="accumWrap accumWrap_04">
+                                        <div class="accum ac_04" id="accum_04"></div>
+                                    </div>
+                                    <div class="accumWrap accumWrap_05">
+                                        <div class="accum ac_05" id="accum_05"></div>
+                                    </div>
+                                    <div class="accumWrap accumWrap_06">
+                                        <div class="accum ac_06" id="accum_06"></div>
+                                    </div>
+                                    <div class="accumWrap accumWrap_hole">
+                                        <div class="accum ac_hole" id="accum_hole" title="<?=$aleadyRegisterCount?>">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="start-over">
+                                <li>START!</li>
+                                <li><span>OVER 100,000</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="milestone-item items">
+                        <ul class="clearfix">
+                            <li>
+                                <dl class="item">
+                                    <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/1st_milestone_gold.png"
+                                            alt="gold"></dt>
+                                    <dd class="milestone-item-name"><span>100,000 GOLD</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>1ST MILEAGE</dt>
+                                    <dd>10,000</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="item">
+                                    <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/2nd_milestone_ellun.png"
+                                            alt="RED ELLUN"></dt>
+                                    <dd class="milestone-item-name"><span>RED ELLUN<br>200EA</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>2ND MILEAGE</dt>
+                                    <dd>25,000</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="item">
+                                    <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/3rd_milestone_stone.png"
+                                            alt="ENHANCEMENT STONE PACKAGE"></dt>
+                                    <dd class="milestone-item-name"><span>ENHANCEMENT<br>STONE PACKAGE<br>10EA</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>3RD MILEAGE</dt>
+                                    <dd>50,000</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="item">
+                                    <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/4th_milestone_package.png"
+                                            alt="RARE GRADE EQUIPMENT BOX"></dt>
+                                    <dd class="milestone-item-name"><span>RARE GRADE<br>EQUIPMENT BOX</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>4TH MILEAGE</dt>
+                                    <dd>75,000</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="item">
+                                    <dt><img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/5th_milestone_devy.png"
+                                            alt="LOLLIPOP DEVY"></dt>
+                                    <dd class="milestone-item-name"><span>LIMITED EDITION<br>FAMILIAR<br>LOLLIPOP
+                                            DEVY</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>5TH MILEAGE</dt>
+                                    <dd>100,000</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="deco-light"></div>
+                </div>
+                <div class="row-w section2">
+                    <div class="inner-box wd1000">
+                        <div class="notice">
+                            <h2 class="title">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/icon_notice_l.png"
+                                    alt="icon arrow">
+                                Pre-Registration Details
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/icon_notice_r.png"
+                                    alt="icon arrow">
+                            </h2>
+                            <ul>
+                                <li>Only one entry is allowed per e-mail address.​</li>
+                                <li>After agreeing to the Terms of use, a notice will be sent to the e-mail address.
+                                </li>
+                                <li>Once the game is officially launched we will notify you via the e-mail address that
+                                    you provided.​</li>
+                                <li>Corresponding reward to the following campaign will be given to the participants
+                                    after the game has been officially launched.​
+                                    <ol>
+                                        <li>Pre-registration Rewards – Once you have pre-registered, you will receive a
+                                            reward code via e-mail.​</li>
+                                        <li>Bonus Pre-registration – If you pre-registered via Google Play or App Store
+                                            you will receive a bonus reward.​</li>
+                                        <!-- !! 구글만 진행 할 경우
+                                    <li>Bonus Pre-registration – If you pre-registered via Google Play, you will receive a bonus reward.​</li>
+                                    -->
+                                        <li>Pre-registration Milestone Event – Milestone rewards will be given along
+                                            with the Pre-registration reward.​</li>
+                                    </ol>
+                                </li>
+                                <li>Participating in this event through any unauthorized method may disqualify you from
+                                    the pre-registration reward.​</li>
+                                <li>For Customer support, please make an inquiry through our <a
+                                        href="https://vfun.valofe.com/customer/support?service_code=icarusm_global"
+                                        target="_blank">VFUN Customer Support</a> page.</li>
+                                <li>Users that pre-register will have a chance to participate in the Closed Beta Testing
+                                    (Details will be provided via email before CBT).</li>
+                                <li>The selected users will receive an e-mail with the download link and other
+                                    information on how to access the game during the CBT. (Gmail email is required for
+                                    Android CBT participation)</li>
+                                <li>After the CBT period has ended, our team will reset all data within the game.</li>
+                                <li>Please note during the CBT period, you might experience some connectivity issues and
+                                    bugs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg1 aniBounce">
+                    <img id=""
+                        src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/chr4.png"
+                        alt="Icarus event1 character1 Image">
+                </div>
+                <div class="bg2">
+                    <img id=""
+                        src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section3/bg_sub2_cloud.png"
+                        alt="Icarus event1 character2 Image">
+                </div>
+            </section>
+
+            <!-- section4 : Class -->
+            <section id="sec4">
+                <div class="row-w">
+                    <div class="dividing-line"></div>
+                    <div class="sec-title-class">
+                        <img class="tit aniDown"
+                            src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/tit_class.png"
+                            alt="CLASS">
+                    </div>
+                    <ul class="class-wrap clearfix">
+                        <li class="class-gladiator">
+                            <div class="small">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/txt_gladiator.png"
+                                    alt="cont">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_gladiator.png"
+                                    alt="chr">
+                            </div>
+                            <div class="big">
+                                <div class="videoArea">
+                                    <video id="ch1Video"
+                                        poster="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/cbt/bg_main_cbt_pc.jpg"
+                                        playsinline="" preload="" loop="" muted="" autoplay="">
+                                        <source
+                                            src="https://file.valofe.com/Valofe_file/web/vfun/video/event/icarusm_gl/pre-register/ch1.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="infoArea">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_gladiator.png"
+                                        alt="info-artist">
+                                    <div class="btn-video">
+                                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/gladiator_desc.png"
+                                            alt="info-artist">
+                                        <a href="javascript:void(0);"
+                                            onclick="window.event.cancelBubble = true;  fnYtPlay('https://www.youtube.com/embed/YZBFsNUyTg4');"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="class-artist">
+                            <div class="small">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/txt_artist.png"
+                                    alt="cont">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_artist.png"
+                                    alt="chr">
+                            </div>
+                            <div class="big">
+                                <div class="videoArea">
+                                    <video id="ch2Video" playsinline="" preload="" loop="" muted="" autoplay="">
+                                        <source
+                                            src="https://file.valofe.com/Valofe_file/web/vfun/video/event/icarusm_gl/pre-register/ch2.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="infoArea">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_artist.png"
+                                        alt="info-artist">
+                                    <div class="btn-video">
+                                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/artist_desc.png"
+                                            alt="info-artist">
+                                        <a href="javascript:void(0);"
+                                            onclick="window.event.cancelBubble = true;  fnYtPlay('https://www.youtube.com/embed/28iO8w49O1g');"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="class-wizard">
+                            <div class="small">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/txt_wizard.png"
+                                    alt="cont">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_wizard.png"
+                                    alt="chr">
+                            </div>
+                            <div class="big">
+                                <div class="videoArea">
+                                    <video id="ch3Video" playsinline="" preload="" loop="" muted="" autoplay="">
+                                        <source
+                                            src="https://file.valofe.com/Valofe_file/web/vfun/video/event/icarusm_gl/pre-register/ch3.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="infoArea">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_wizard.png"
+                                        alt="info-artist">
+                                    <div class="btn-video">
+                                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/wizard_desc.png"
+                                            alt="info-artist">
+                                        <a href="javascript:void(0);"
+                                            onclick="window.event.cancelBubble = true; fnYtPlay('https://www.youtube.com/embed/1Oj_BJvPBqs');"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="class-ranger">
+                            <div class="small">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/txt_ranger.png"
+                                    alt="cont">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_ranger.png"
+                                    alt="chr">
+                            </div>
+                            <div class="big">
+                                <div class="videoArea">
+                                    <video id="ch4Video" playsinline="" preload="" loop="" muted="" autoplay="">
+                                        <source
+                                            src="https://file.valofe.com/Valofe_file/web/vfun/video/event/icarusm_gl/pre-register/ch4.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="infoArea">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_ranger.png"
+                                        alt="info-artist">
+                                    <div class="btn-video">
+                                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/ranger_desc.png"
+                                            alt="info-artist">
+                                        <a href="javascript:void(0);"
+                                            onclick="window.event.cancelBubble = true; fnYtPlay('https://www.youtube.com/embed/oPw_qemE510');"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="class-assassin">
+                            <div class="small">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/txt_assassin.png"
+                                    alt="cont">
+                                <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_assassin.png"
+                                    alt="chr">
+                            </div>
+                            <div class="big">
+                                <div class="videoArea">
+                                    <video id="ch5Video" playsinline="" preload="" loop="" muted="" autoplay="">
+                                        <source
+                                            src="https://file.valofe.com/Valofe_file/web/vfun/video/event/icarusm_gl/pre-register/ch5.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="infoArea">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_assassin.png"
+                                        alt="info-artist">
+                                    <div class="btn-video">
+                                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/assassin_desc.png"
+                                            alt="info-artist">
+                                        <a href="javascript:void(0);"
+                                            onclick="window.event.cancelBubble = true; fnYtPlay('https://www.youtube.com/embed/3aHRNIMLdVo');"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="mb-class-wrap">
+                        <li class="class-gladiator">
+                            <div class="infoArea">
+                                <div class="img-wrap">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/gladiator_desc2.png"
+                                        alt="info">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_gladiator.png"
+                                        alt="chr">
+                                </div>
+                                <div class="btn-video">
+                                    <a href="javascript:void(0);"
+                                        onclick="fnYtPlay('https://www.youtube.com/embed/YZBFsNUyTg4');"
+                                        data-video="1"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="class-artist">
+                            <div class="infoArea">
+                                <div class="img-wrap">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/artist_desc2.png"
+                                        alt="info">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_artist.png"
+                                        alt="chr">
+                                </div>
+                                <div class="btn-video">
+                                    <a href="javascript:void(0);"
+                                        onclick="fnYtPlay('https://www.youtube.com/embed/28iO8w49O1g');"
+                                        data-video="2"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="class-wizard">
+                            <div class="infoArea">
+                                <div class="img-wrap">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/wizard_desc2.png"
+                                        alt="info">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_wizard.png"
+                                        alt="chr">
+                                </div>
+                                <div class="btn-video">
+                                    <a href="javascript:void(0);"
+                                        onclick="fnYtPlay('https://www.youtube.com/embed/1Oj_BJvPBqs');"
+                                        data-video="3"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="class-ranger">
+                            <div class="infoArea">
+                                <div class="img-wrap">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/ranger_desc2.png"
+                                        alt="info">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_ranger.png"
+                                        alt="chr">
+                                </div>
+                                <div class="btn-video">
+                                    <a href="javascript:void(0);"
+                                        onclick="fnYtPlay('https://www.youtube.com/embed/oPw_qemE510');"
+                                        data-video="4"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="class-assassin">
+                            <div class="infoArea">
+                                <div class="img-wrap">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/assassin_desc2.png"
+                                        alt="info">
+                                    <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section4/class_assassin.png"
+                                        alt="chr">
+                                </div>
+                                <div class="btn-video">
+                                    <a href="javascript:void(0);"
+                                        onclick="fnYtPlay('https://www.youtube.com/embed/3aHRNIMLdVo');"
+                                        data-video="5"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- section5 : World View -->
+            <section id="sec5" class="pcWV">
+                <div class="row-w">
+                    <div class="world-view">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(1);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(2);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(3);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(4);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(5);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(6);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(7);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(8);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(9);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="fnSlideWV(10);">
+                                    <span class="bg"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sec6" class="mobileWV">
+                <div class="row-w">
+                    <div class="pop-and-slide">
+                        <div class="layer-wrap" id="worldView">
+                            <div class="shadow worldview" onclick="fnClosePop();"></div>
+                            <div class="pop-layer">
+                                <div class="pop-container">
+                                    <div class="cont">
+                                        <a href="javascript:void(0);" class="close" onclick="fnClosePop();"></a>
+                                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/deco_title_top2.png"
+                                            alt="">
+                                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/tit_world_view.png"
+                                            alt="World View">
+
+                                        <div class="world-view-name clearfix">
+                                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/deco_subtit_l.png"
+                                                alt="deco">
+                                            <ul>
+                                                <li data-name="1">Gilded Hills</li>
+                                                <li data-name="2">Elloran Temple</li>
+                                                <li data-name="3">Forgotten Ruins</li>
+                                                <li data-name="4">Cavern of the Veil</li>
+                                                <li data-name="5">Kellwoods Plaguelands</li>
+                                                <li data-name="6">Braghin War Camp</li>
+                                                <li data-name="7">Scarlet Moon Raid</li>
+                                                <li data-name="8">Crokhoon</li>
+                                                <li data-name="9">Sorma Plain</li>
+                                                <li data-name="10">Divinity Shore</li>
+                                            </ul>
+                                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/deco_subtit_r.png"
+                                                alt="deco">
+                                        </div>
+
+                                    </div>
+                                    <div class="world-view-slide" id="worldView">
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/05_Gilded_Hills.png"
+                                                alt="Gilded_Hills"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/01_elloran_Temple.png"
+                                                alt="elloran_Temple"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/04_Forgotten_Ruins.png"
+                                                alt="Forgotten_Ruins"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/09_Cavern_of_the_Veil.png"
+                                                alt="Cavern_of_the_Veil"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/06_Kellwoods_Plaguelands.png"
+                                                alt="Kellwoods_Plaguelands"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/03_Braghin_War_Camp.png"
+                                                alt="Braghin_War_Camp"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/010_Scarlet_Moon_Raid.png"
+                                                alt="Scarlet_Moon_Raid"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/02_crokhoon.png"
+                                                alt="crokhoon"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/08_Sorma_Plain.png"
+                                                alt="Sorma_Plain"></div>
+                                        <div><img
+                                                src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/section5/07_Divinity_Shore.png"
+                                                alt="Divinity_Shore"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div><!-- ./ #wrap -->
+
+        <div class="layer-wrap-yt pop-class-video" id="yt">
+            <div class="shadow yt" onclick="fnYtClose();"></div>
+            <div class="pop-layer-yt">
+                <div class="pop-container">
+                    <a href="javascript:void(0);" class="close" id="closeyt" onclick="fnYtClose();">close</a>
+                    <h2 class="skip">Combatarms:the Classic trailer</h2>
+                    <div class="frame">
+                        <iframe width="1152" height="650" class="yt_meida_popup" id="ytURL"
+                            src="https://www.youtube.com/embed/qlnzNFlRgTM" frameborder="0" gesture="media"
+                            allow="encrypted-media" allowfullscreen="true" allowscriptaccess="always"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<ul id="floatingMenu" class="aniFloatingShow">-->
+        <ul id="floatingMenu" class="">
+            <li><a href="javascript:void(0);" onclick="shareSns();" alt="Top">SHARE <img
+                        src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/common/icon_share.png"
+                        alt="Λ"></a>
+                <ul>
+                    <!-- 추가) sns share -->
+                    <li><a href="javascript:void(0);" title="Sharing - Facebook"
+                            onclick="toSNS('facebook', 'Icarus M: Riders of Icarus', 'https://vfun.valofe.com/event/icarusm');">FACEBOOK</a>
+                    </li>
+                    <li><a href="javascript:void(0);" title="Sharing - Twitter"
+                            onclick="toSNS('twitter', 'Icarus M: Riders of Icarus', 'https://vfun.valofe.com/event/icarusm');">TWITTER</a>
+                    </li>
+                    <!--<li><a href="javascript:void(0);" title="Sharing - Instagram" onclick="toSNS('instagram', '<?/*=$game_title*/?>', '<?/*=$current_full_url*/?>');">INSTAGRAM</a></li>-->
+                </ul>
+            </li>
+            <li><a href="javascript:void(0);" onclick="goSection(2)" alt="Pre-Registation"></a></li>
+            <li><a href="javascript:void(0);" onclick="goSection(1)" alt="Top">Top&nbsp;&nbsp;&nbsp; <img
+                        src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/common/icon_indic_top.png"
+                        alt="Λ"></a></li>
+            <li><a href="javascript:void(0);" onclick="goSection(5)" alt="Bottom">Bottom <img
+                        src="https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/common/icon_indic_bottom.png"
+                        alt="V"></a></li>
+        </ul>
+
+
+    </div><!-- ./ wrapper -->
+    <? include(PLATFORM_URL.'/combine_menu/footer?lang='.$lang['lang'].'&service_code='.$service_code.'&service_type=landing'); ?>
+    <!-- firework -->
+    <script type="text/javascript"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/fscreen%401.0.1.js"></script>
+    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/Stage%400.1.4.js"></script>
+    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/MyMath.js"></script>
+    <script type="text/javascript"
+        src="https://file.valofe.com/valofe_file/web/vfun/js/event/icarusm_gl/pre-register/firework.js"></script>
+</body>
+
+</html>

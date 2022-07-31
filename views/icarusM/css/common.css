@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+*{font-family: "Raleway", sans-serif;}
+/* CSS RESET 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+h1{font-style:normal;font-weight:700;}
+/* COMMON.CSS */
+html{font-size:16px;}
+body{background-color:#000000;font-size:16px;font-size:1rem;font-family: "Noto Sans";
+    line-height:normal;
+    font-style:normal;
+    font-weight: 300;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+
+nav ul, li{
+    list-style:none;
+}
+
+a{
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration:none;
+}
+
+img{
+    object-fit: cover;
+    vertical-align:top;
+}
+
+hr{
+    display:block;
+    height:2px;
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+input, select, textarea,
+input[type="submit" i],
+input[type="reset" i], input[type="file" i]::-webkit-file-upload-button
+                                           {
+                                               display: inline-block;
+                                               box-sizing: border-box;
+                                               width:calc(100% - 2px);
+                                               margin:0 auto;
+                                               padding: 10px 20px;
+                                               border:0;
+                                               vertical-align:top;
+                                               font-size:16px;
+                                               font-family: "Noto Sans TC";
+                                               font-style:normal;
+                                               font-weight: 300;
+                                               text-align: center;
+                                               color:#fff;
+                                               background-color:#323338;
+                                               align-items: flex-start;
+                                               cursor: default;
+                                               /* appearance:none; */ /* w3c validator에 없음*/
+                                               -webkit-appearance: none; /* 네이티브 외형 감추기 */
+                                               -moz-appearance: none;
+                                               appearance: none;
+                                           }
+
+/*ie 크로스브라우징*/
+input[type="button"], input[type="button" i], button{
+                                                  display: inline-block;
+                                                  box-sizing: border-box;
+                                                  width:auto;
+                                                  margin:0;
+                                                  padding: 9.5px 20px;
+                                                  align-items: flex-start;
+                                                  border:0;
+                                                  vertical-align:top;
+                                                  font-size:16px;
+                                                  font-family: "Noto Sans TC";
+                                                  font-style:normal;
+                                                  font-weight: 300;
+                                                  font-weight: normal;
+                                                  text-align: center;
+                                                  color: #fff;
+                                                  background-color:#323338;
+                                                  cursor: default;
+                                                  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+                                                  -moz-appearance: none;
+                                                  appearance: none;
+                                              }
+option{width:180px;height:43px;padding:1em;border-color:transparent;background:#323338;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {display: none;}
+select{
+    width:180px;
+    height:43px;
+    padding:1em;
+    border:none;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    background: #323338 url('/static/images/landing/latam/select-arrow.png') no-repeat right 50%; /* 화살표 아이콘 추가 */
+}
+select:focus{
+    width:180px;
+    height:43px;
+    border:none;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    background: #323338 url('/static/images/landing/latam/select-arrow-on.png') no-repeat right 50%; /* 화살표 아이콘 추가 */
+}
+/* check, hover 스타일 설정 IE, Chrome */
+select option:checked,
+select option:hover {
+    background: #323338;
+    color: #fff;
+}
+/* check, hover 스타일 설정 FireFox */
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px #ff00ff inset;
+    color: #fff;
+}
+::placeholder{color:#fff !important;text-align:left;font-size:16px;font-size:1rem;}
+:-ms-input-placeholder{color:#fff !important;text-align:left;font-size:16px;font-size:1rem;}
+::-ms-input-placeholder{color:#fff !important;text-align:left;font-size:16px;font-size:1rem;}
+::-moz-input-placeholder, ::-moz-textarea-placeholder{color:#fff;text-align:left;font-size:16px;font-size:1rem;}
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder{color:#fff;text-align:left;font-size:16px;font-size:1rem;}
+
+input[type="button"].btn, input[type="button" i].btn, button.btn, .input-prepend input.btn, .btn{background-image:none;text-shadow:none;box-shadow:none;box-sizing:border-box;width:251px;height:52px;padding-top:2rem;padding-bottom:2rem;border:3px solid #ff9922;display:inline-block;padding:0;text-align:center;font-size:24px;font-size:1.5rem;font-weight:700;text-align:center;color:#ff9922;background-color:#282828;cursor:pointer;}
+input[type="button"].btn:hover, input[type="button" i].btn:hover, button.btn:hover, .input-prepend input.btn:hover, .btn:hover{box-sizing:border-box;border:3px solid #ff9922;transition:none;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;background-color:#ff9922;color:#282828;}
+input[type="text"], input[type="password"], input[type="email"]{z-index:10;min-width:280px;margin-bottom:12px;padding:8px 16px;height:52px;border:1px solid rgba(255, 255, 255, 0.3);font-family: "Noto Sans TC";background:rgba(255,255,255,0.1);color:#fff;}
+input[type="checkbox"]{-webkit-appearance: none;-moz-appearance: none;appearance: none;
+    position:relative;width:20px;height:20px;padding:0;margin:0px 4px 0px 0px;border:1px solid #6F6F6F;border-radius:4px;background:#313131;}
+input[type="checkbox"]:checked{background:#ff9922;}
+input[type="checkbox"]:checked:after{position:absolute;content:'∨';display:inline-block;margin:0 0 0 -2px;top:0;left:0;width:20px;hegiht:20px;line-height:20px;text-align:center;font-size:14px;font-size:0.875rem;font-weight:700;color:#fff;}
+.fa{text-rendering: optimizeLegibility;}
+
+#wrapper{width:100%;overflow:hidden;position:relative;margin:0;padding:0;}
+.skip-navi{width:1px;height:1px;position:absolute;top:-1px;left:-1px;}
+.hidden{position:absolute;width:1px;height:1px;top:-1px;left:-1px;text-indent:-9999px;}
+.skip-navi{text-indent:-9999px;}
+.clearfix{clear:both;}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* 명조체 폰트 */
+.serif{font-family:'PT-Serif',serif;}
+/*공통요소*/
+.pull-right{float:right;}
+.pull-left{float:left;}
+.ellipsis {overflow: hidden;display: inline-block;white-space: nowrap;text-overflow: ellipsis;}
+.row-w{margin:0 auto;box-sizing:border-box;width:100%;max-width:1000px !important;}
+a{-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;}
+.btn-wrap{margin-top:20px;text-align:center;}
+.color-ry{color:#ff9922;}
+.color-wh{color:#fff;}
+.color-r{color:#bf0303;}
+
+
+#footer{z-index:20;position:relative;overflow:hidden;width:100%;margin-top:0px;padding-top:24px;padding-bottom:24px;padding-top:1.5rem;padding-bottom:1.5rem;background-color:#070d16;color:#696868;text-aling:center;}
+#footer .row-w{text-align:center;}
+#footer .copyright{display:inline-block;}
+#footer .copyright .footer-logo{float:left;display:inline-block;vertical-align:middle;width:78px;height:25px;}
+#footer .copyright .footer-logo a{display:inline-block;width:98px;height:25px;text-indent:-9999px;}
+#footer .copyright .logo{display:inline-block;vertical-align:middle;width:98px;height:25px;background:url(/static/images/landing/latam/logo-footer.png) 0 0 no-repeat;}
+#footer .copyright p{display:inline-block;float:left;vertical-align:middle;font-size:13px;font-family:dotum;font-size:11px;height:25px;line-height:25px;}
+
+
+section{z-index:10;}
+
+/* 레이어 팝업 */
+.layer-pop{box-sizing:border-box;z-index:9999;
+    /* 레이어 팝업 가로세로 가운데 정렬 600,340 기준 */overflow: auto;position: fixed;width: 600px;height:340px;left: 50%;margin-left: -300px;top: 50%;margin-top: -170px;
+    padding: 1rem;background-size:100%;background:url(/static/images/landing/latam/branding/bg-layer-pop-ls.jpg) center no-repeat;text-align:center;
+}
+.layer-pop.auth-fail,.layer-pop.time-over{display:none;}
+.layer-pop .btn-wrap .btn-pop-close{position:absolute;display:inline-block;right:1rem;top:1.5rem;width:40px;height:40px;background:url(/static/images/landing/latam/branding/btn-pop-close.png) 0 0 no-repeat;}
+.layer-pop .btn-wrap .btn-pop-close:hover{-ms-tranform:rotate(360deg);-webkit-tranform:rotate(360deg);tranform:rotate(360deg);}
+.layer-pop .pop-icon-alert{box-sizing:border-box;display:inline-block;margin:6px auto 0;width:40px;height:40px;border-radius:20px;border:3px solid #153e29;padding:7.5px;font-size:22px;font-size:1.375rem;text-align:center;background:#225631;color:#fff;}
+.layer-pop .line-white{width:100%;height:1px;background:#fff;margin:40px auto 30px;}
+.layer-pop .pop-text{margin-top:40px;text-align:center;font-size:24px;font-size:1.5rem;text-shadow:0px 2px 2px rgba(0,0,0,1);color:#fff;}
+.layer-pop .pop-text .pop-text-small{display:block;width:100%;margin-top:14px;font-size:14px;font-size:0.875rem;}
+.layer-pop .btn-wrap{amrgin-bottom:30px;}
+.layer-pop .btn-wrap .btn-green{width:auto;margin-left:27px;border:none;background:rgba(11,12,13,0.8);color:#fff;font-weight:100;padding:18px 25px;font-size:18px;font-size:1.125rem;}
+.layer-pop .btn-wrap .btn-green:hover{border:none;background:#225631;color:#fff;}
+.layer-pop .btn-wrap .btn-green:first-child{margin-left:0;}
+.bg-layer-pop{z-index:9990;display:none;width:100%;height:100%;position:absolute;left:0;top:0;background: rgba(0,0,0,0.9);background-size:100%;}
+/* ./ 레이어 팝업 */
+
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:1024px){
+    #footer {padding-top: 0.5rem;padding-bottom: 0.5rem;}
+    #footer .copyright.pull-left{float:none;width:100%;}
+    #footer .copyright{text-align:center;margin-top:20px;margin-bottom:20px;}
+    #footer .copyright p{display:inline-block;margin-top:0px;margin-left:12px;vertical-align: top;}
+    #footer .copyright .footer-logo{height:30px;}
+    /* ./ COMMON.CSS */
+}
+/* 960 */
+@media screen and (max-width:960px){
+}
+
+/*800 */
+@media screen and (max-width:800px){
+}
+/* 768 736*/
+@media screen and (max-width:768px) {
+
+}
+
+/*  667 640 */
+@media screen and (max-width:667px){
+
+    #footer .copyright .footer-logo{display:block;width:100%;text-align:center;}
+    #footer .copyright .footer-logo .logo{position:absolute;left:50%;margin-left:-34.5px;width:69px;}
+    #footer .copyright p{width:100%;margin-left:0;clear:left;}
+}
+/* 568 533 */
+@media screen and (max-width:568px){
+
+
+}
+/* 533 */
+@media screen and (max-width:533px){
+
+
+}
+/* 480 */
+@media screen and (max-width:480px){
+
+}
+@media screen and (max-width:460px){
+
+}
+@media screen and (max-width:414px){
+
+}
+@media screen and (max-width:360px){
+
+}
+@media screen and (max-width:320px) {
+    html {
+        min-width: 320px;
+    }
+}

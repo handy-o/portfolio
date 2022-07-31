@@ -186,3 +186,10 @@ const $$ = (str) => document.querySelectorAll(str);
 	};
 	app.carousel.init();
 })();
+
+const goSection = (name) => {
+	let setTop = document.querySelector(name).offsetTop - 60;
+	//window.scrollTo(0, setTop);
+	window.scrollTo({ top: setTop, left: 0, behavior: 'smooth' });
+	console.log(setTop);
+};

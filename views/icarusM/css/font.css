@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* web-font */
+/*
+@font-face {
+    font-family: "Raleway Webfont";
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.eot');
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.eot?#iefix') format('embedded-opentype'), 
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.woff') format('woff'), 
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.ttf') format('truetype'), 
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.svg#ralewaylight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Raleway Webfont";
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.eot');
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.eot?#iefix') format('embedded-opentype'), 
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.woff') format('woff'), 
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.ttf') format('truetype'), 
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.svg#ralewayregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway Webfont";
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.eot');
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.eot?#iefix') format('embedded-opentype'), url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.woff') format('woff'), url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.ttf') format('truetype'), url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/.svg#ralewaybold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*/
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Regular.eot');
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Regular.woff') format('woff'),
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Medium.eot');
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Medium.woff') format('woff'),
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Bold.eot');
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Bold.eot?#iefix') format('embedded-opentype'),
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Bold.woff') format('woff'),
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Black.eot');
+    src: url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Black.eot?#iefix') format('embedded-opentype'),
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Black.woff') format('woff'),
+    url('https://file.valofe.com/Valofe_file/web/icarus_branding/fonts/NotoSansCJKtc-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

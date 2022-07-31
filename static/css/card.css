@@ -1,91 +1,376 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body,
 main {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section,
+article,
+aside,
+header,
+footer {
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+/*************************************************/
+/********************* common ********************/
+/*************************************************/
+.inner-row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background: #fafafa;
+}
+
+section {
+  padding: 3rem 0 4rem;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+section .title {
+  margin: 2rem 0;
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  color: #464646;
+}
+
+/*************************************************/
+/********************* Header ********************/
+/*************************************************/
+header #gnbPc {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #d6d6d6;
+  z-index: 2;
+}
+header #gnbPc nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+header #gnbPc nav .menu {
+  display: flex;
+  align-items: center;
+}
+header #gnbPc nav .menu li {
+  margin-right: 3rem;
+}
+header #gnbPc nav .menu li:last-child {
+  margin-right: 0;
+}
+header #gnbPc nav .menu li.out a {
+  display: inline-block;
+  padding: 5px 1rem;
+  border-radius: 1rem;
+}
+header #gnbPc nav .menu li.out.m {
+  margin-right: 1rem;
+}
+header #gnbPc nav .menu li.out.m a {
+  background: #ffd43e;
+}
+header #gnbPc nav .menu li.out.g a {
+  background: #384264;
+  color: #fff;
+}
+
+/*************************************************/
+/********************* Intro *********************/
+/*************************************************/
+#intro {
+  position: relative;
+  min-height: auto;
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+#intro img {
+  margin-top: 2rem;
+  width: 400px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  border: 4px solid #000;
+}
+#intro .greeting {
+  text-align: center;
+}
+#intro .greeting p {
+  font-size: 46px;
+  font-weight: bold;
+}
+#intro .go-down {
+  display: block;
+  font-size: 30px;
+  margin: 1rem;
+}
+
+/*************************************************/
+/********************* Intro *********************/
+/*************************************************/
+#skills {
+  background: #ffd43e;
+}
+#skills .wrap-skill {
+  padding: 2rem 1rem;
+}
+#skills .box {
+  float: left;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1.5rem;
+  background: #fff;
+  margin: 2rem 3rem 0 0;
+  max-width: 240px;
+}
+#skills .box p {
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ffd43e;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+#skills .box img {
+  width: 100%;
+}
+#skills .box span {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*************************************************/
+/**************** Project intro ******************/
+/*************************************************/
 #carousel {
-	position: relative;
-	height: 400px;
-	top: 50%;
-	transform: translateY(-50%);
-	overflow: hidden;
+  position: relative;
+  height: 400px;
+  margin: 4rem 0;
+  overflow: hidden;
 }
-#carousel div {
-	position: absolute;
-	transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
-	opacity: 1;
+#carousel > div {
+  position: absolute;
+  transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+  opacity: 1;
 }
-#carousel div img {
-	width: 400px;
-	transition: width 400ms;
-	-webkit-user-drag: none;
+#carousel > div article {
+  transition: width 400ms;
 }
-#carousel div.hideLeft {
-	left: 0%;
-	opacity: 0;
-	transform: translateY(50%) translateX(-50%);
+#carousel > div img {
+  width: 100%;
+  transition: all 400ms;
+  -webkit-user-drag: none;
 }
-#carousel div.hideLeft img {
-	width: 200px;
+#carousel > div img:hover {
+  cursor: pointer;
 }
-#carousel div.hideRight {
-	left: 100%;
-	opacity: 0;
-	transform: translateY(50%) translateX(-50%);
+#carousel + .buttons {
+  position: relative;
+  text-align: center;
 }
-#carousel div.hideRight img {
-	width: 200px;
+#carousel + .buttons button {
+  margin: 0 0.5rem;
+  font-size: 30px;
+  transition: all 0.4s;
 }
-#carousel div.prev {
-	z-index: 5;
-	left: 30%;
-	transform: translateY(50px) translateX(-50%);
+#carousel + .buttons #prev:hover {
+  transform: translateX(-10px);
 }
-#carousel img:hover {
-	cursor: pointer;
-}
-#carousel div.prev img {
-	width: 300px;
-}
-#carousel div.prevLeftSecond {
-	z-index: 4;
-	left: 15%;
-	transform: translateY(50%) translateX(-50%);
-	opacity: 0.7;
-}
-#carousel div.prevLeftSecond img {
-	width: 200px;
-}
-#carousel div.selected {
-	z-index: 10;
-	left: 50%;
-	transform: translateY(0px) translateX(-50%);
-}
-#carousel div.next {
-	z-index: 5;
-	left: 70%;
-	transform: translateY(50px) translateX(-50%);
-}
-#carousel div.next img {
-	width: 300px;
-}
-#carousel div.nextRightSecond {
-	z-index: 4;
-	left: 85%;
-	transform: translateY(50%) translateX(-50%);
-	opacity: 0.7;
-}
-#carousel div.nextRightSecond img {
-	width: 200px;
+#carousel + .buttons #next:hover {
+  transform: translateX(10px);
 }
 
-.buttons {
-	position: fixed;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 10px;
+/* 동작 설정 */
+#carousel > div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel > div.hideLeft article {
+  width: 412px;
+}
+
+#carousel > div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel > div.hideRight article {
+  width: 312px;
+}
+
+#carousel > div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel > div.prev article {
+  width: 412px;
+}
+
+#carousel > div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel > div.prevLeftSecond article {
+  width: 312px;
+}
+
+#carousel > div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel > div.selected:hover img {
+  transform: scale(1.2);
+}
+
+#carousel > div.selected article .card-bottom .course-lang {
+  height: 60px;
+}
+
+#carousel > div.selected article .card-bottom .course-name {
+  font-size: 20px;
+}
+
+#carousel > div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel > div.next article {
+  width: 412px;
+}
+
+#carousel > div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel > div.nextRightSecond article {
+  width: 312px;
+}
+
+#carousel > div article {
+  position: relative;
+  display: inline-block;
+  width: 512px;
+}
+#carousel > div article .card-top {
+  border-radius: 10px;
+  overflow: hidden;
+}
+#carousel > div article .card-top img {
+  width: 100%;
+  vertical-align: middle;
+}
+#carousel > div article .card-top .category {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+#carousel > div article .card-top .category span {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  text-align: center;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid #777;
+  font-size: 13px;
+}
+#carousel > div article .card-top .category span.color1 {
+  background: rgb(254, 249, 195);
+  color: rgb(202, 138, 4);
+}
+#carousel > div article .card-top .category span.color2 {
+  background: rgb(220, 252, 231);
+  color: rgb(34, 197, 94);
+}
+#carousel > div article .card-top .category span.color3 {
+  background: rgb(243, 232, 255);
+  color: rgb(168, 85, 247);
+}
+#carousel > div article .card-bottom {
+  position: relative;
+  width: 88%;
+  margin-left: 5%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  top: -3.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+#carousel > div article .card-bottom .course-name {
+  margin: 1rem;
+  font-size: 16px;
+}
+#carousel > div article .card-bottom .course-lang {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.4s 0.2s;
+  margin: 0.5rem;
+  text-align: left;
+}
+#carousel > div article .card-bottom .course-lang li {
+  list-style: inside;
+  line-height: 1.4;
+  color: #777;
+  font-size: 14px;
 }

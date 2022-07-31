@@ -6,66 +6,245 @@
   <meta heet-equiv="X-UA-Compatible" contents="IE=edge">
   <meta name="viewport" contents="width=device-width, initial-scale=1.0">
   <title>한도윤의 포트폴리오</title>
-  <link rel="stylesheet" href="../static/card.css">
+  <link rel="stylesheet" href="../static/css/card.css">
 </head>
 
 <body>
-
-  <main>
-
-    <div id="carousel" class="carousel">
-
-      <div id='iten_1' class="hideLeft">
-        1
-        <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+  <header>
+    <div id="gnbPc">
+      <div class="inner-row">
+        <nav>
+          <h1 class="logoo">🤝</h1>
+          <ul class="menu">
+            <li><a href="javascript:void(0);" onClick="goSection('#intro');">Intro</a></li>
+            <li><a href="javascript:void(0);" onClick="goSection('#skills');">Skills</a></li>
+            <li><a href="javascript:void(0);" onClick="goSection('#project');">Project</a></li>
+            <li class="out m"><a
+                href="https://www.notion.so/ccc2f03e0b994e9096b543853270585f?v=59cceed1ab6943c1b22ed396cdb77507"
+                target="_blank">More</a></li>
+            <li class="out g"><a href="https://github.com/handy-o" target="_blank">Git</a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
+  </header>
 
-      <div id='item_2' class="prevLeftSecond">
-        2
-        <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-      </div>
+  <section id="intro">
 
-      <div id='item_3' class="prev">
-        3
-        <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-      </div>
+    <div class="greeting">
+      <p> 🤝 HANDY 🤝</p>
+      <h1>웹퍼블리셔 포트폴리오</h1>
+      <h3>반갑습니다. 웹개발자로 성장중인 한도윤 입니다.</h3>
+    </div>
+    <img src="/static/images/itsme.jpg" alt="캐릭터화">
+    <a class="go-down" href="javascript:void(0);" onClick="goSection('#skills');">👇</a>
 
-      <div id='item_4' class="selected">
-        <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-      </div>
+  </section>
 
-      <div id='item_5' class="next">
-        <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-      </div>
+  <section id="skills">
+    <div class="inner-row">
+      <h2 class="title">SKILLS</h2>
+      <div class="wrap-skill clearfix">
+        <div class="hard box">
+          <p>Hard Skills</p>
+          <img src="/static/images/skills/html.jpg" alt="html css JS">
+          <img src="/static/images/skills/jquery.jpg" alt="Jquery">
+          <img src="/static/images/skills/sass.jpg" alt="sass">
+          <img src="/static/images/skills/react.jpg" alt="React JS">
+          <img src="/static/images/skills/next.jpg" alt="Next js">
+          <img src="/static/images/skills/redux.jpg" alt="redux saga">
 
-      <div id='item_6' class="nextRightSecond">
-        <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-      </div>
 
-      <div id='item_7' class="hideRight">
-        <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-      </div>
-
-      <div id='item_8' class="hideRight">8
-        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/1f89759fa92b4c8f86cd7efac06f2d90.png">
-      </div>
-
-      <div id='item_9' class="hideRight">
-        9
-        <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+        </div>
+        <div class="tool box">
+          <p>Tools</p>
+          <img src="/static/images/skills/github.png" alt="git github">
+          <img src="" alt="IntelliJ">
+          <img src="" alt="VScode">
+          <img src="" alt="Adboe PhotoShop illust AfterEffect">
+        </div>
+        <div class="soft box">
+          <p>Soft Skills</p>
+          <span>커뮤니케이션</span>
+          <span>꼼꼼함</span>
+          <span>리더십</span>
+          <span>끈기</span>
+          <span>문제해결/검색 능력</span>
+        </div>
+        <div class="edu box">
+          <p>Education</p>
+          <span>리액트 프론트엔드 교육 수료</span>
+          <span>노드JS(Node.js) 프로그래밍 과정 수료 </span>
+          <span>뷰제이에스(Vue.js) 프로그래밍 향상과정 수료 </span>
+          <span>웹퍼블리싱&UI개발 포트폴리오 실무 프로젝트 </span>
+          <span>웹 스마트 컨텐츠 제작 전문가 양성과정
+          </span>
+        </div>
+        <div class="carrer box">
+          <p>Carrer</p>
+          <span>VALOFE 재직 중</span>
+        </div>
       </div>
 
     </div>
+  </section>
 
-    <div class="buttons">
-      <button id="prev">Prev</button>
-      <button id="next">Next</button>
+
+  <section id="project">
+    <div class="inner-row">
+      <h2 class="title">PROJECT</h2>
     </div>
-  </main>
+
+    <main>
+      <div id="carousel" class="carousel">
+
+        <!-- <div id='iten_1' class="hideLeft">
+        
+        </div> -->
+
+        <div id='item_1' class="prevLeftSecond">
+          <article class="wrap-card">
+            <a href="//qijisoft.com" target="_blank">
+              <div class="card-top">
+                <img src="../static/images/qiji-meta-fb-min.jpg" alt="썸네일 이미지 - qijisoft" />
+                <p class="category">
+                  <span class='color1'>
+                    ReactJS
+                  </span>
+                </p>
+              </div>
+              <div class="card-bottom">
+                <h5 class="course-name">Qijisoft 홈페이지 리뉴얼</h5>
+                <ul class="course-lang">
+                  <li>각 페이지 공통 요소 컴포넌트화</li>
+                  <li></li>
+                </ul>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div id='item_2' class="prev">
+          <a href="/views/lostsaga/e.html" target="_blank">
+            <article class="wrap-card">
+              <div class="card-top">
+                <img src="../static/images/losa-meta-fb-min.jpg" alt="썸네일 이미지 - 로스트사가" />
+                <p class="category">
+                  <span class='color1'>
+                    Juqery
+                  </span>
+                  <span class='color2'>
+                    tweenMax
+                  </span>
+                </p>
+              </div>
+              <div class="card-bottom">
+                <h5 class="course-name">Lostsaga 11주년 이벤트 랜딩</h5>
+                <ul class="course-lang">
+                  <li>TweenMax 애니메이션 제어</li>
+                  <li>마블 게임 스크립트 작성</li>
+                </ul>
+              </div>
+          </a>
+          </article>
+        </div>
+
+        <div id='item_3' class="selected">
+          <article class="wrap-card">
+            <a href="/views/icarusM/cbt.html" target="_blank">
+              <div class="card-top">
+                <img src="../static/images/icam-meta-fb-min.jpg" alt="썸네일 이미지 - 이카루스M" />
+                <p class="category">
+                  <span class='color2'>
+                    Video
+                  </span>
+                  <span class='color3'>
+                    Canvas
+                  </span>
+                </p>
+              </div>
+              <div class="card-bottom">
+                <h5 class="course-name">IcaursM CBT</h5>
+                <ul class="course-lang">
+                  <li>사전 예약자 수(db)에 따른 게이지바 스크립트 작성</li>
+                  <li>각 class별 Video tag 제어</li>
+                  <li>Canvas 폭죽 효과 추가</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div id='item_4' class="next">
+          <article class="wrap-card">
+            <a href="//r2beat-ko.valofe.com/landing/new_music" target="_blank">
+              <div class="card-top">
+                <img src="../static/images/r2beat-meta-fb-min.jpg" alt="썸네일 이미지 - 알투비트" />
+                <p class="category">
+                  <span class='color2'>
+                    Audio
+                  </span>
+                  <span class='color1'>
+                    SASS
+                  </span>
+                </p>
+              </div>
+              <div class="card-bottom">
+                <h5 class="course-name">R2beat 신곡 신곡소개 랜딩</h5>
+                <ul class="course-lang">
+                  <li>Audio data 관리</li>
+                  <li>sass 이용한 animation</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div id='item_5' class="nextRightSecond">
+          <article class="wrap-card">
+            <a href="/views/blacksquad/reserve.html" target="_blank">
+              <div class="card-top">
+                <img src="../static/images/bs-meta-fb-min.jpg" alt="썸네일 이미지 - 블랙스쿼드" />
+                <p class="category">
+                  <span class='color2'>
+                    Video
+                  </span>
+                  <span class='color1'>
+                    Slide
+                  </span>
+                </p>
+              </div>
+              <div class="card-bottom">
+                <h5 class="course-name">BlackSquad 사전예약/친구초대</h5>
+                <ul class="course-lang">
+                  <li>스크립트로 Video태그 제어하여 모바일 시 호출 방지</li>
+                  <li>Video/image 일반&팝업 Slick 연동 커스텀</li>
+                  <li>추가 UI 디자인</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <!-- <div id='item_7' class="hideRight">
+         
+        </div> -->
+
+      </div>
+
+
+
+      <div class="buttons">
+        <button id="prev">👈</button>
+        <button id="next">👉</button>
+      </div>
+    </main>
+
+  </section>
 
 
 </body>
 
-<script src="../static/card.js"></script>
+<script src="../static/js/card.js"></script>
 
 </html>

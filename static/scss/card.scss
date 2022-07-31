@@ -1,0 +1,413 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body,
+main {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+section,
+article,
+aside,
+header,
+footer {
+	display: block;
+}
+.clearfix {
+	clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+	content: ' ';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+button {
+	background: inherit;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 0;
+	overflow: visible;
+	cursor: pointer;
+}
+
+/*************************************************/
+/********************* common ********************/
+/*************************************************/
+.inner-row {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body {
+	background: #fafafa;
+}
+section {
+	//min-height: 100vh;
+	padding: 3rem 0 4rem;
+	background: #fff;
+	margin-bottom: 2rem;
+}
+
+section .title {
+	margin: 2rem 0;
+	position: relative;
+	display: inline-block;
+	font-size: 50px;
+	color: #464646;
+}
+
+/*************************************************/
+/********************* Header ********************/
+/*************************************************/
+header {
+	#gnbPc {
+		position: fixed;
+		width: 100%;
+		height: 60px;
+		background: #fff;
+		border-bottom: 1px solid #d6d6d6;
+		z-index: 2;
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 60px;
+
+			.menu {
+				display: flex;
+				align-items: center;
+
+				li {
+					margin-right: 3rem;
+					&:last-child {
+						margin-right: 0;
+					}
+
+					&.out {
+						a {
+							display: inline-block;
+							padding: 5px 1rem;
+							border-radius: 1rem;
+						}
+						&.m {
+							margin-right: 1rem;
+							a {
+								background: #ffd43e;
+							}
+						}
+						&.g a {
+							background: #384264;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*************************************************/
+/********************* Intro *********************/
+/*************************************************/
+#intro {
+	// background: url(/static/images/itsme.jpg) no-repeat center left 30% / 50% auto;
+	// background: #824c8f;
+	// background: linear-gradient(to bottom, #ffd43e 75%, #fff 75%);
+	position: relative;
+	min-height: auto;
+	padding: 8rem 0 4rem;
+	text-align: center;
+
+	img {
+		//position: absolute;
+		// top: 10%;
+		// left: 10%;
+		margin-top: 2rem;
+		width: 400px;
+		border-radius: 6px;
+		box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
+		border: 4px solid #000;
+	}
+	.greeting {
+		// position: absolute;
+		// top: 10rem;
+		// left: 50%;
+		// transform: translateX(-50%);
+		text-align: center;
+		p {
+			font-size: 46px;
+			font-weight: bold;
+		}
+	}
+	.go-down {
+		display: block;
+		font-size: 30px;
+		margin: 1rem;
+	}
+}
+
+/*************************************************/
+/********************* Intro *********************/
+/*************************************************/
+#skills {
+	background: #ffd43e;
+	.wrap-skill {
+		// display: flex;
+		// flex-flow: row wrap;
+		// align-content: space-around;
+		padding: 2rem 1rem;
+	}
+	.box {
+		float: left;
+		border-radius: 6px;
+		overflow: hidden;
+		box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
+		padding: 2rem 1.5rem;
+		background: #fff;
+		margin: 2rem 3rem 0 0;
+		max-width: 240px;
+		// flex-shrink: 0;
+		// align-self: self-start;
+
+		p {
+			font-size: 18px;
+
+			padding-bottom: 10px;
+			border-bottom: 3px solid #ffd43e;
+			font-weight: bold;
+			margin-bottom: 2rem;
+		}
+		img {
+			width: 100%;
+		}
+		span {
+			color: #777;
+			display: block;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+/*************************************************/
+/**************** Project intro ******************/
+/*************************************************/
+// 구조
+#carousel {
+	position: relative;
+	height: 400px;
+	margin: 4rem 0;
+	//top: 50%;
+	//transform: translateY(-50%);
+	overflow: hidden;
+
+	> div {
+		position: absolute;
+		transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+		opacity: 1;
+
+		article {
+			transition: width 400ms;
+		}
+		img {
+			width: 100%;
+			//transition: width 400ms;
+			transition: all 400ms;
+			-webkit-user-drag: none;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	// 버튼
+	& + .buttons {
+		position: relative;
+		// left: 50%;
+		// transform: translateX(-50%);
+		// bottom: 10px;
+		text-align: center;
+
+		button {
+			margin: 0 0.5rem;
+			font-size: 30px;
+			transition: all 0.4s;
+		}
+		#prev:hover {
+			transform: translateX(-10px);
+		}
+		#next:hover {
+			transform: translateX(10px);
+		}
+	}
+}
+
+/* 동작 설정 */
+// 이전
+#carousel > div.hideLeft {
+	left: 0%;
+	opacity: 0;
+	transform: translateY(50%) translateX(-50%);
+	article {
+		width: 412px;
+	}
+}
+#carousel > div.hideRight {
+	left: 100%;
+	opacity: 0;
+	transform: translateY(50%) translateX(-50%);
+	article {
+		width: 312px;
+	}
+}
+#carousel > div.prev {
+	z-index: 5;
+	left: 30%;
+	transform: translateY(50px) translateX(-50%);
+
+	article {
+		width: 412px;
+	}
+}
+#carousel > div.prevLeftSecond {
+	z-index: 4;
+	left: 15%;
+	transform: translateY(50%) translateX(-50%);
+	opacity: 0.7;
+	// img {
+	// 	width: 200px;
+	// }
+	article {
+		width: 312px;
+	}
+}
+
+// 활성화
+#carousel > div.selected {
+	z-index: 10;
+	left: 50%;
+	transform: translateY(0px) translateX(-50%);
+	&:hover {
+		img {
+			transform: scale(1.2);
+		}
+	}
+}
+#carousel > div.selected article .card-bottom .course-lang {
+	height: 60px;
+}
+#carousel > div.selected article .card-bottom .course-name {
+	font-size: 20px;
+}
+
+// 이후
+#carousel > div.next {
+	z-index: 5;
+	left: 70%;
+	transform: translateY(50px) translateX(-50%);
+	article {
+		width: 412px;
+	}
+}
+#carousel > div.nextRightSecond {
+	z-index: 4;
+	left: 85%;
+	transform: translateY(50%) translateX(-50%);
+	opacity: 0.7;
+	article {
+		width: 312px;
+	}
+}
+
+// 카드
+#carousel > div article {
+	position: relative;
+	display: inline-block;
+	width: 512px;
+	.card-top {
+		border-radius: 10px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			vertical-align: middle;
+		}
+		.category {
+			position: absolute;
+			top: 0.5rem;
+			left: 0.5rem;
+
+			span {
+				display: inline-block;
+				padding: 0.25rem 1rem;
+				text-align: center;
+				border-radius: 30px;
+				overflow: hidden;
+				//box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+				border: 2px solid #777;
+				font-size: 13px;
+				&.color1 {
+					background: rgb(254, 249, 195);
+					color: rgb(202, 138, 4);
+				}
+				&.color2 {
+					background: rgb(220, 252, 231);
+					color: rgb(34, 197, 94);
+				}
+				&.color3 {
+					background: rgb(243, 232, 255);
+					color: rgb(168, 85, 247);
+				}
+			}
+		}
+	}
+
+	.card-bottom {
+		position: relative;
+		width: 88%;
+		margin-left: 5%;
+		margin: 0 auto;
+		padding: 1rem 2rem;
+		border-radius: 6px;
+		top: -3.5rem;
+		background: rgba(255, 255, 255, 0.95);
+		box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
+		text-align: center;
+
+		.course-name {
+			margin: 1rem;
+			font-size: 16px;
+		}
+		.course-lang {
+			height: 0px;
+			overflow: hidden;
+			transition: all 0.4s 0.2s;
+			margin: 0.5rem;
+			text-align: left;
+
+			li {
+				list-style: inside;
+				line-height: 1.4;
+				color: #777;
+				font-size: 14px;
+			}
+		}
+	}
+}
