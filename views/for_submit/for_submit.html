@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta heet-equiv="X-UA-Compatible" contents="IE=edge">
+  <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+  <title>한도윤의 포트폴리오</title>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!-- ./ Waves -->
+
+
+  <!-- profile Container -->
+  <section id="intro">
+    <div class="wrap-profile">
+      <article class="profile">
+        <div class="profile-image">
+          <img src="../../static/images/itsme.jpg" />
+        </div>
+        <h2 class="profile-username">HANDY</h2>
+        <small class="profile-user-handle">@한도윤</small>
+        <div class="profile-actions">
+          <button class="btn btn--primary">
+            <a href="https://handy-o.github.io/portfolio/views/index.html" target="_blank">Portfolio</a>
+          </button>
+          <button class="btn btn--icon">
+            <a href="https://github.com/handy-o" target="_blank">
+              <img src="../../static/images/github.png" alt="github">
+            </a>
+          </button>
+          <button class="btn btn--icon">
+            <a href="https://www.notion.so/ccc2f03e0b994e9096b543853270585f?v=59cceed1ab6943c1b22ed396cdb77507"
+              target="_blank">
+              <img src="../../static/images/notion.jpg" alt="notion">
+            </a>
+          </button>
+        </div>
+        <div class="profile-links">
+          © 2022. Han Do You. All rights reserved.
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- ./ profile  -->
+
+
+  <script type="text/javascript" src="../../static/js/vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".wrap-profile"), {
+      max: 10,
+      speed: 700,
+      glare: true,
+      "max-glare": 0.2,
+    });
+  </script>
+</body>
+
+</html>

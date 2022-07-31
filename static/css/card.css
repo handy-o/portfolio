@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 html,
@@ -80,8 +81,11 @@ section .title {
   margin: 2rem 0;
   position: relative;
   display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 50px;
-  color: #464646;
+  font-family: "Black Han Sans", sans-serif;
+  color: #353535;
 }
 
 /*************************************************/
@@ -162,6 +166,9 @@ header #gnbPc nav .menu li.out.g a {
 #skills {
   background: #ffd43e;
 }
+#skills .title {
+  border-bottom: 2px solid #777;
+}
 #skills .wrap-skill {
   padding: 2rem 1rem;
 }
@@ -194,6 +201,10 @@ header #gnbPc nav .menu li.out.g a {
 /*************************************************/
 /**************** Project intro ******************/
 /*************************************************/
+#project .title {
+  border-bottom: 2px solid #777;
+}
+
 #carousel {
   position: relative;
   height: 400px;
