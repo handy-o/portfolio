@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/* CSS RESET 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+margin:0;
+padding:0;
+border:0;
+outline:0;
+vertical-align:baseline;
+background:transparent;
+/* font-family:'Notokr','Titillium Web',AppleSDGothicNeo,'Dotum',Sans-serif; */
+font-weight:400;
+font-style:normal
+}
+h1{font-style:normal;font-weight:700;}
+html{font-size: 16px;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+display:block;
+}
+
+nav ul, li{
+list-style:none;
+}
+
+a{
+margin:0;
+padding:0;
+vertical-align:baseline;
+background:transparent;
+text-decoration:none;
+}
+
+img{
+ object-fit: cover;
+vertical-align:top;
+}
+
+hr{
+display:block;
+height:2px;
+border:0;
+margin:0;
+padding:0;
+}
+*, :before, :after {box-sizing: border-box;}
+input, select, textarea,
+input[type="submit" i],
+input[type="reset" i], input[type="file" i]::-webkit-file-upload-button
+{
+display: inline-block;
+box-sizing: border-box; 
+width:calc(100% - 2px);
+margin:0 auto;
+padding: 10px 20px;
+border:0;
+vertical-align:top;
+font-size:16px;
+/* font-family:'Notokr','Titillium Web',AppleSDGothicNeo,'Dotum',Sans-serif; */
+font-weight:400;
+font-style:normal;
+text-align: center;
+color:#fff;
+background-color:#323338;
+align-items: flex-start;
+cursor: default;
+/* appearance:none; */ /* w3c validator에 없음*/
+-webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+
+/*ie 크로스브라우징*/
+input[type="button"], input[type="button" i], button{
+display: inline-block;
+box-sizing: border-box;
+width:auto;
+margin:0;
+padding: 9.5px 20px;
+align-items: flex-start;
+border:0;
+vertical-align:top;
+font-size:16px;
+/* font-family:'Notokr','Titillium Web',AppleSDGothicNeo,'Dotum',Sans-serif; */
+font-weight:400;
+font-weight: normal;
+text-align: center;
+color: #fff;
+background-color:#323338;
+cursor: default;
+-webkit-appearance: none; /* 네이티브 외형 감추기 */
+-moz-appearance: none;
+appearance: none;
+-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+option{width:180px;height:43px;padding:1em;border-color:transparent;background:#323338;
+-webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {display: none;}  
+select{
+width:180px;
+height:43px;
+padding:1em;
+border:none;
+-webkit-appearance: none; /* 네이티브 외형 감추기 */
+-moz-appearance: none;
+appearance: none;
+background: #323338 url('/static/images/select-arrow.png') no-repeat right 50%; /* 화살표 아이콘 추가 */       
+}
+select:focus{
+width:180px;
+height:43px;
+border:none;
+-webkit-appearance: none; /* 네이티브 외형 감추기 */
+-moz-appearance: none;
+appearance: none;
+background: #323338 url('/static/images/select-arrow-on.png') no-repeat right 50%; /* 화살표 아이콘 추가 */       
+}
+/* check, hover 스타일 설정 IE, Chrome */
+select option:checked, 
+select option:hover {    
+    background: #323338;
+    color: #fff;
+}
+/* check, hover 스타일 설정 FireFox */
+select option:checked,
+select option:hover { 
+    box-shadow: 0 0 10px 100px #ff00ff inset;  
+    color: #fff;
+}
+::placeholder{color:#fff !important;text-align:left;font-size:16px;font-size:1rem;}
+:-ms-input-placeholder{color:#fff !important;text-align:left;font-size:16px;font-size:1rem;}
+::-ms-input-placeholder{color:#fff !important;text-align:left;font-size:16px;font-size:1rem;}
+::-moz-input-placeholder, ::-moz-textarea-placeholder{color:#fff;text-align:left;font-size:16px;font-size:1rem;}
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder{color:#fff;text-align:left;font-size:16px;font-size:1rem;}    
+
+input[type="button"].btn, input[type="button" i].btn, button.btn, .input-prepend input.btn {background-image:none;text-shadow:none;box-shadow:none;box-sizing:border-box;width:251px;height:52px;padding-top:2rem;padding-bottom:2rem;border:3px solid #ff9922;display:inline-block;padding:0;text-align:center;font-size:24px;font-size:1.5rem;font-weight:700;text-align:center;color:#ff9922;background-color:#282828;cursor:pointer;}
+input[type="button"].btn:hover, input[type="button" i].btn:hover, button.btn:hover, .input-prepend input.btn:hover {box-sizing:border-box;border:3px solid #ff9922;transition:none;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;background-color:#ff9922;color:#282828;}
+input[type="text"], input[type="password"], input[type="email"]{z-index:10;min-width:280px;margin-bottom:12px;padding:8px 16px;height:52px;border:1px solid rgba(255, 255, 255, 0.3);
+/* font-family:'Notokr','Titillium Web',AppleSDGothicNeo,'Dotum',Sans-serif; */
+    font-weight:400;background:rgba(255,255,255,0.1);color:#fff;}
+input[type="checkbox"]{-webkit-appearance: none;-moz-appearance: none;appearance: none;
+position:relative;width:20px;height:20px;padding:0;margin:0px 4px 0px 0px;border:1px solid #6F6F6F;border-radius:4px;background:#313131;}
+input[type="checkbox"]:checked{background:#ff9922;}
+input[type="checkbox"]:checked:after{position:absolute;content:'∨';display:inline-block;margin:0 0 0 -2px;top:0;left:0;width:20px;hegiht:20px;line-height:20px;text-align:center;font-size:14px;font-size:0.875rem;font-weight:700;color:#fff;}
+.fa{text-rendering: optimizeLegibility;}
+

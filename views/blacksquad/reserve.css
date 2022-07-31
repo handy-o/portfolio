@@ -1,0 +1,2933 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*     font-size:14px; */
+	letter-spacing: -0.2px;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+nav ul,
+li {
+	list-style: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+}
+#combineMenu a {
+	text-decoration: none !important;
+}
+#combineMenu a:hover,
+#combineMenu a:visited {
+	text-decoration: none !important;
+}
+img {
+	object-fit: cover;
+	vertical-align: top;
+}
+hr {
+	display: block;
+	height: 2px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* END reset*/
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	top: -1px;
+	left: -1px;
+	text-indent: -9999px;
+}
+
+/* valofe_common_renewal */
+
+html,
+body {
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+/*공통요소*/
+
+.fa,
+.fas,
+.far,
+.fal,
+.fad {
+	text-rendering: optimizeLegibility;
+}
+body {
+	font-weight: 400;
+	font-style: normal;
+}
+a {
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.skip-navi {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+}
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	top: -1px;
+	left: -1px;
+	text-indent: -9999px;
+}
+.skip-navi {
+	text-indent: -9999px;
+}
+.clearfix {
+	clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+	content: ' ';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.row-w {
+	overflow: hidden;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1100px !important;
+}
+section .row-w {
+	padding-bottom: 8%;
+}
+section#sec4 .row-w {
+	padding-bottom: 0;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-bold.eot'),
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-bold.woff')
+			format('woff'),
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-bold.woff2')
+			format('woff2');
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url('https://file.valofe.com/Valofe_file/web/fonts/notokr-medium.eot'),
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-medium.woff')
+			format('woff'),
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-medium.woff2')
+			format('woff2');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: /*url("https://file.valofe.com/Valofe_file/web/fonts/notoKr-regular.otf") format("opentype"),*/
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-regular.eot'),
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-regular.woff')
+			format('woff'),
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-regular.woff2')
+			format('woff2');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-light.eot'),
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-light.woff')
+			format('woff'),
+		url('https://file.valofe.com/Valofe_file/web/fonts/notoKr-light.woff2')
+			format('woff2');
+	font-style: normal;
+	font-weight: 300;
+}
+
+/* reset */
+#wrapper :lang(ko) {
+	font-family: 'Noto Sans Kr', sans-serif;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+}
+#wrapper :lang(ko) .fa {
+	font: normal normal normal 14px/1 FontAwesome;
+}
+.slick-slider img {
+	width: auto;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+	filter: brightness(1.5);
+	transition: none;
+}
+html {
+	font-size: 16px;
+}
+.row-w {
+	position: relative;
+}
+
+/* VFUN 헤더 #combineMenu {position:fixed; top:0; left:0;}*/
+/* 헤더 */
+#header-mb {
+	display: none;
+}
+#btn-nav {
+	display: none;
+}
+.btn-shadow {
+	display: none;
+}
+#header {
+	position: fixed;
+	top: 60px;
+	right: 0;
+	width: 100%;
+	height: 70px;
+	background: #000000;
+	text-align: center;
+	z-index: 8887;
+	box-sizing: border-box;
+}
+#header:before {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	top: -60px;
+	left: 0;
+	background: #131313;
+}
+#header #logo {
+	float: left;
+	display: inline-block;
+	width: 10%;
+	min-width: 125px;
+	height: 100%;
+	margin-top: 8px;
+}
+#header #logo a {
+	display: inline-block;
+}
+#header #logo a img {
+	width: auto;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#header .row-w {
+	display: inline-block;
+	width: 100%;
+	max-width: calc(90% - 40px) !important;
+}
+#header #gnb {
+	position: absolute;
+	top: 0;
+	left: 50%; /*width:900px;margin-left:-450px;*/
+	width: 64%;
+	margin-left: -32%;
+	height: 100%;
+	line-height: 70px;
+}
+#header #gnb li {
+	position: relative;
+	display: inline-block; /*width:148px;*/
+	width: 14.28%;
+	min-width: 109px;
+	height: 70px;
+	border-bottom: 3px solid transparent;
+	box-sizing: border-box;
+}
+#header #gnb a {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 16px;
+}
+
+#header #gnb .deco-l {
+	display: none;
+	margin-right: 10px;
+	width: 17px;
+	height: 70px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/deco-menu-l.png)
+		no-repeat center;
+	vertical-align: middle;
+}
+#header #gnb .deco-r {
+	display: none;
+	margin-left: 10px;
+	width: 17px;
+	height: 70px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/deco-menu-r.png)
+		no-repeat center;
+	vertical-align: middle;
+}
+#header #gnb li:hover {
+	border-bottom-color: #f1613f;
+}
+#header #gnb li.on a {
+	color: #ff7150;
+}
+#header #gnb li.on .deco-l,
+#header #gnb li.on .deco-r {
+	display: inline-block;
+	vertical-align: top;
+}
+#header #gnb li:hover > a {
+	color: #ff7150;
+	transition: none;
+}
+#header #gnb li:hover .deco-l,
+#header #gnb li:hover .deco-r {
+	display: inline-block;
+	vertical-align: bottom;
+}
+#header #gnb li:nth-child(2) {
+	position: relative;
+}
+#header #gnb .nav-2depth {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+}
+#header #gnb li:nth-child(3) .nav-2depth {
+	width: 200%;
+}
+#header #gnb li:nth-child(4) .nav-2depth {
+	width: 300%;
+}
+#header #gnb li.on .nav-2depth {
+	display: block;
+}
+#header #gnb .nav-2depth li:hover {
+	border-bottom-color: transparent;
+}
+#header #gnb .nav-2depth li a {
+	color: #898989;
+}
+#header #gnb .nav-2depth li a:hover {
+	color: #c1c1c1;
+}
+
+#header #social {
+	float: right;
+	display: inline-block; /* width:8%;min-width:123px; */
+	width: auto;
+	height: 100%;
+	line-height: 70px;
+	vertical-align: middle;
+}
+#header #social li {
+	display: inline-block;
+	margin: 0 1rem;
+}
+#header #social a {
+	position: relative;
+	color: #fff;
+	font-size: 20px;
+}
+#header #social .fa {
+	font-size: 20px;
+}
+#header #social a img {
+	width: 20px;
+	vertical-align: baseline;
+}
+#header #social li:nth-child(1) a {
+	color: #8aa5ff;
+	font-size: 16px;
+	font-weight: 500;
+}
+#header #social li:nth-child(1) a:hover {
+	color: #5d7adc;
+}
+/*#header #social li:nth-child(3) a:after {content:''; position:absolute; left:-4px; top:4px; display:inline-block; width:28px; height:28px;!*background:#7289da; *!background:#4a4877; z-index:-1; border-radius:50%;
+animation: aniOpa 1s 0s linear infinite;}*/
+@keyframes aniOpa2 {
+	0% {
+		box-shadow: 0 0 0 0 rgba(114, 137, 218, 1),
+			0 0 0 2px rgba(114, 137, 218, 0.55), 0 0 0 4px rgba(114, 137, 218, 0.85),
+			0 0 0 10px rgb(160, 233, 255);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(147, 176, 255, 1),
+			0 0 0 4px rgba(109, 147, 254, 0.55), 0 0 0 10px rgba(114, 137, 218, 0.85),
+			0 0 0 14px rgba(114, 137, 218, 0);
+	}
+}
+@keyframes aniOpa {
+	0% {
+		box-shadow: 0 0 0 0 rgba(114, 137, 218, 0.53),
+			0 0 0 4px rgba(114, 137, 218, 0.53), 0 0 0 8px rgba(114, 137, 218, 0.53),
+			0 0 0 14px rgba(114, 137, 218, 0.53);
+	}
+	100% {
+		box-shadow: 0 0 0 4px rgba(114, 137, 218, 0.53),
+			0 0 0 8px rgba(114, 137, 218, 0.53), 0 0 0 14px rgba(114, 137, 218, 0.53),
+			0 0 0 20px rgba(114, 137, 218, 0);
+	}
+}
+/* 섹션 */
+section {
+	min-height: 100vh;
+}
+section#sec1 {
+	position: relative;
+	background-image: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec1/bg-main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+section#sec4 {
+	position: relative;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec2/bg-sec2-3.jpg)
+		no-repeat center / cover;
+	overflow: hidden;
+	z-index: 2;
+}
+section#sec5 {
+	position: relative;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/bg-sec3.jpg)
+		no-repeat top center / 100% auto;
+	background-color: #000;
+	overflow: hidden;
+	z-index: 2;
+	padding-bottom: 59px; /*푸터59px*/
+}
+
+/* 공통 타이틀 */
+.title {
+	position: relative;
+	margin-top: 20%;
+	color: #fff;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+}
+.title .sight {
+	/*width: 20.8%;*/
+	width: 17.6%;
+	max-width: 229px;
+	min-width: 160px;
+}
+.title h2 {
+	position: absolute;
+	top: 38%;
+	left: 10%;
+	line-height: 1.4; /*font-size:29px;*/
+	font-size: 16px;
+	font-size: 1rem;
+}
+.title li.s2-2 h2 {
+	font-size: 26px;
+}
+.title h2 dfn {
+	color: #fff;
+	font-size: 33px;
+}
+.title h2 p {
+	margin-bottom: 5vh;
+}
+.title h2 span {
+	color: #f1613f;
+	font-size: 33px;
+}
+.s2-3 .title h2 {
+	top: 50%;
+	transform: translateY(-50%);
+	left: 7%;
+}
+
+.title .sight {
+	position: relative; /*animation:zigzag 3s 0s infinite alternate*/
+}
+.title .sight img {
+	width: 100%;
+}
+.title .sight img:nth-child(1) {
+	position: relative;
+	z-index: -1;
+	transform: rotate(-3deg);
+	animation: rotateL 1.5s 0s infinite alternate linear;
+}
+.title .sight img:nth-child(2) {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	transform: rotate(-3deg);
+	animation: rotateL 1.5s 0s infinite alternate linear;
+}
+.title .sight img:nth-child(3) {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	animation: rotateR 1.5s 0s infinite alternate linear;
+}
+
+/* 공통 버튼 */
+.btn-reserve {
+	position: relative;
+	display: inline-block;
+	max-width: 370px;
+	width: 35.005vh;
+	max-height: 70px;
+	height: 6.623vh;
+	margin: 1vh auto 0;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/main/btn-reserv-min.png)
+		no-repeat center / cover;
+}
+.btn-reserve:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -110px;
+	left: -120px;
+	top: -160%;
+	left: -34%;
+	width: 327px;
+	height: 259px;
+	width: 88.38%;
+	height: 370%;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/rewards/ink-min.png)
+		no-repeat center / cover;
+	opacity: 0.6;
+	z-index: -1;
+}
+.btn-reserve:hover {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/main/btn-reserv-on-min.png)
+		no-repeat center / cover;
+}
+
+.do-reserve > img {
+	margin: 3rem auto;
+	pointer-events: none;
+}
+
+@keyframes rotateL {
+	0% {
+		transform: rotate(-3deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+@keyframes rotateR {
+	0% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+@keyframes zigzag {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(5%, -5%);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+/* sec1 */
+.bg-video {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+	background: url(https://file.valofe.com/Valofe_file/web/vfun/images/event/icarusm_gl/pre-register/cbt/cover-video.png)
+		0 0 repeat;
+	z-index: 1;
+	pointer-events: none;
+}
+/*#main_video {position:fixed; top:0; left:50%; transform: translateX(-50%); min-width: 100%; min-height:100%; z-index: -2;}*/
+#main_video {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+#sec1 .row-w {
+	overflow: initial;
+}
+#sec1 .tit-wrap {
+	position: relative;
+	text-align: center;
+}
+#sec1 .tit-wrap img.tit {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	z-index: 2;
+	height: 50.8vh; /*43.32vh; width: 108vw;*/
+	max-width: 1141px;
+	max-width: 100%;
+}
+#sec1 .tit-wrap img.tit-deco {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50.8vh;
+}
+#sec1 .btn-reserve {
+	transform: scale(10);
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+#sec1 .crackL {
+	position: absolute;
+	bottom: 0;
+	left: 12vw;
+	width: 17.3%;
+}
+#sec1 .crackR {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+}
+
+.bbam {
+	animation: bbam 1.8s 1.4s 1 linear forwards;
+}
+.ggam {
+	animation: ggam 1s 0s infinite alternate;
+}
+@keyframes bbam {
+	0% {
+		transform:/*translateX(-50%)*/ scale(10);
+		opacity: 1;
+	}
+	20% {
+		transform:/*translateX(-50%)*/ scale(1.1);
+	}
+	100% {
+		transform:/*translateX(-50%)*/ scale(1);
+		opacity: 1;
+	}
+}
+@keyframes ggam {
+	0% {
+		opacity: 1;
+	}
+	10% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.4;
+	}
+	55% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#sec1 .mouse {
+	position: relative;
+	width: fit-content;
+	margin: 3vh auto 0;
+}
+#sec1 .mouse:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 4vh;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec1/scroll-down-icon.png)
+		no-repeat center top / contain;
+}
+#sec1 .mouse img {
+	width: 10.5vh;
+	opacity: 0;
+}
+
+/* sec4 */
+#sec4 {
+	position: relative;
+}
+#sec4 #slide-wrap .slick-slide li {
+	min-height: 100vh;
+}
+#sec4 .chr-wrap img {
+	position: absolute;
+	bottom: 0;
+	height: 78.5vh;
+}
+#sec4 .chr-wrap img.bm {
+	right: 17%;
+}
+#sec4 .chr-wrap img.bw {
+	right: 0%;
+}
+#sec4 .chr-wrap img.fm {
+	right: 7%;
+}
+#sec4 .chr-wrap img.fw {
+	right: 33%;
+}
+#sec4 .bg-top {
+	pointer-events: none;
+}
+#sec4 .bg-top img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+#sec4 .bg-top img[alt='flame2'] {
+	animation: flame 1s 0s infinite alternate;
+}
+@keyframes flame {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	50% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0.6;
+	}
+	80% {
+		opacity: 1;
+	}
+	85% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#sec4 .s2-3 .title {
+	margin-top: 10%;
+}
+#sec4 .spec {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-top: -34px;
+	background: rgba(15, 15, 15, 0.9);
+	border-collapse: collapse;
+	text-align: center;
+	color: #f3f3f3;
+	font-size: 15px;
+}
+#sec4 .spec * {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 100;
+	letter-spacing: 0;
+}
+#sec4 .spec caption {
+	visibility: hidden;
+}
+#sec4 .spec th:nth-child(1) {
+	width: 16%;
+}
+#sec4 .spec th:nth-child(2) {
+	width: 42%;
+}
+#sec4 .spec th:nth-child(3) {
+	width: 42%;
+}
+#sec4 .spec th {
+	padding: 20px 0;
+	border-bottom: 2px solid #a7452e;
+	border-right: 1px solid #363636;
+}
+#sec4 .spec th:last-of-type {
+	border-right: none;
+}
+#sec4 .spec td {
+	padding: 20px 0;
+	border-bottom: 1px solid #363636;
+	border-right: 1px solid #363636;
+}
+#sec4 .spec tr:last-of-type td {
+	border-bottom: none;
+}
+#sec4 .spec tr td:last-child {
+	border-right: none;
+}
+/* slick */
+#sec4 .row-w {
+	overflow: visible;
+	max-width: 1300px !important;
+}
+#sec4 .slick-list {
+	overflow: hidden;
+}
+#sec4 .slick-prev {
+	filter: brightness(1.6);
+	left: -120px;
+	height: 65px;
+	width: 65px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/arrow-prev2.png)
+		no-repeat center / auto;
+	z-index: 2;
+}
+#sec4 .slick-prev:before,
+.slick-next:before {
+	content: '';
+}
+#sec4 .slick-next {
+	filter: brightness(1.6);
+	right: -120px;
+	height: 65px;
+	width: 65px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/arrow-next2.png)
+		no-repeat center / auto;
+}
+
+#sec4 .slick-dots {
+	bottom: auto;
+	top: 12%;
+	margin: 0; /*10px;*/
+}
+#sec4 .slick-dots li {
+	width: 10%;
+	margin: 0;
+}
+#sec4 .slick-dots li button {
+	width: 100%;
+	color: transparent;
+	height: auto;
+	text-align: center;
+}
+#sec4 .slick-dots li button:before {
+	position: relative;
+	font-family: 'NanumSquare', 'Noto Sans Kr', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	opacity: 0.45;
+}
+#sec4 .slick-dots li.slick-active button:before {
+	color: #fff;
+	opacity: 0.85;
+}
+#sec4 .slick-dots li:nth-child(1) button:before {
+	content: '게임정보';
+}
+#sec4 .slick-dots li:nth-child(2) button:before {
+	content: '게임특징';
+}
+#sec4 .slick-dots li:nth-child(3) button:before {
+	content: '사양';
+}
+
+/* sec5 */
+#sec5 {
+	text-align: center;
+}
+#sec5 h2 {
+	/*margin-top:17vh;*/
+	color: #fff;
+	text-align: center;
+	font-size: 35px;
+	font-size: 2.1875rem;
+}
+#sec5 > .row-w {
+	/*padding:10% 0 4%;*/
+	padding: 13vh 0;
+}
+#sec5 .tab-name {
+	margin: 3% auto;
+}
+#sec5 .tab-name li {
+	display: inline-block;
+	width: 130px; /*padding:10px 0; */
+	text-align: center;
+	font-size: 25px;
+	font-size: 1.5625rem;
+	color: #fff;
+	border-bottom: 2px solid #ccc;
+}
+#sec5 .tab-name li.on {
+	border-bottom: 2px solid #f1613f;
+}
+#sec5 .tab-name li a {
+	display: block;
+	height: 100%;
+	padding: 10px 0;
+	color: #fff;
+}
+#sec5 .tab-name li.on a {
+	color: #f1613f;
+}
+#sec5 .media-wrap {
+	position: relative;
+	width: 70%;
+	max-width: 746px;
+	margin: 0 auto;
+	padding-bottom: 2vh;
+}
+#sec5 .media-wrap .sight {
+	position: absolute;
+	top: -12%;
+	left: -11%;
+	width: 25.6%;
+	max-width: 191px;
+}
+/* sec5 slider */
+#sec5 .slick-prev {
+	filter: brightness(1.6);
+	left: -8%;
+	height: 65px;
+	height: 4.0625rem;
+	width: 65px;
+	width: 4.0625rem;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/arrow-prev.png)
+		no-repeat center / auto;
+	z-index: 2;
+}
+#sec5 .slick-prev:before,
+.slick-next:before {
+	content: '';
+}
+#sec5 .slick-next {
+	filter: brightness(1.6);
+	right: -8%;
+	height: 65px;
+	height: 4.0625rem;
+	width: 65px;
+	width: 4.0625rem;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/arrow-next.png)
+		no-repeat center / auto;
+}
+#sec5 .slide-big {
+	/*width:746px;height:430px;*/
+	padding: 8px;
+	background-image: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-lt.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-t.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-rt.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-r.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-rb.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-b.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-lb.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-l.png);
+	background-position: top left, top center, top right, right center,
+		right bottom, bottom center, left bottom, left center;
+	background-size: 40px 40px, calc(100% - 80px) 40px, 40px 40px,
+		40px calc(100% - 80px), 40px 40px, calc(100% - 80px) 40px, 40px 40px,
+		40px calc(100% - 80px);
+	background-repeat: no-repeat;
+}
+#sec5 .slide-big img {
+	width: 100%; /*border:1px solid #b2553f;*/
+}
+#sec5 .slide-big img:hover {
+	transition: all 0.4s;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#sec5 .slider-thumb img {
+	width: 100%;
+	background: #ccc;
+}
+#sec5 .slider-thumb img:hover {
+	cursor: pointer;
+}
+/* #sec5 .slider-thumb .slick-current img {border: 1px solid #8f402d;} */
+#sec5 .slider-thumb {
+	margin-top: 1rem;
+}
+#sec5 .slider-thumb.slick-initialized .slick-slide {
+	margin: 0 8px;
+	box-sizing: border-box;
+	border: 1px solid #1f1f1f;
+}
+#sec5 .slider-thumb .slick-current.slick-slide {
+	margin: 0 8px;
+	box-sizing: border-box;
+	border: 1px solid #8f402d;
+}
+#sec5 .media-wrap .image {
+	/*display: none;*/
+}
+/* 캡션 */
+#sec5 .slider-thumb .slick-slide > div {
+	position: relative;
+	overflow: hidden;
+}
+#sec5 .slider-thumb .slick-slide > div:hover .thumb-caption {
+	bottom: 0;
+	transition: all 0.4s;
+}
+#sec5 .slider-thumb .slick-slide.slick-current .thumb-caption {
+	bottom: 0;
+	transition: all 0.4s;
+}
+#sec5 .slider-thumb .thumb-caption {
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	height: 1.875rem;
+	line-height: 40px;
+	line-height: 1.875rem;
+	background: rgba(0, 0, 0, 0.8);
+	color: #f3f3f3;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	pointer-events: none;
+	transition: all 0.4s;
+}
+
+#sec5 .video-slider-view video {
+	display: block;
+	width: 100%;
+	background: #000;
+}
+#media {
+	display: block;
+}
+#media .pop-layer {
+	width: 53vw;
+	height: auto;
+}
+#media_popup {
+	width: 100%;
+	height: 100%;
+}
+
+/* valofe footer */
+#valofe-footer {
+	position: relative;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	background-color: #242526;
+	color: #fff;
+}
+#valofe-footer .row-w {
+	overflow: visible;
+}
+#valofe-footer .sns li {
+	float: left;
+	margin-right: 21px;
+}
+#valofe-footer .sns .tw {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/icon-tw.png)
+		0 0 no-repeat;
+}
+#valofe-footer .sns .fb {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/icon-fb.png)
+		0 0 no-repeat;
+}
+#valofe-footer .sns .yt {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/icon-yt.png)
+		0 0 no-repeat;
+}
+#valofe-footer .sns .discord {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/icon-discord.png)
+		0 0 no-repeat;
+}
+#valofe-footer .sns .ins {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/icon-ins.png)
+		0 0 no-repeat;
+}
+#valofe-footer .sns li:last-child {
+	margin-right: 0;
+}
+#valofe-footer .sel-lang {
+}
+#valofe-footer .line {
+	width: 100%;
+	height: 1px;
+	margin: 32px auto;
+	background-color: #4c4c4d;
+	background-image: none;
+}
+#valofe-footer .footer-logo {
+	float: left;
+	margin-top: -6px;
+}
+#valofe-footer .copyright {
+	line-height: 1.5;
+}
+#valofe-footer .copyright .logo {
+	float: left;
+	cursor: pointer;
+	display: inline-block;
+	width: 100px;
+	height: 38px;
+	font-weight: normal;
+	background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/logo-footer.png)
+		0 center no-repeat;
+	background-size: 100%;
+}
+#valofe-footer .copyright a {
+	display: inline-block;
+	height: 38px;
+	margin-left: 8px;
+}
+#valofe-footer .copyright p {
+	display: inline-block;
+	margin-top: 4px;
+	margin-left: 28px;
+	color: #fff;
+}
+#valofe-footer .nav {
+	width: auto;
+	margin-top: 8px;
+}
+#valofe-footer .nav ul li {
+	float: left;
+	margin-left: 18px;
+	font-size: 12px;
+	font-size: 0.75rem;
+}
+#valofe-footer .nav ul li a {
+	color: #fff;
+}
+#valofe-footer .grade {
+	width: 310px;
+	float: right;
+}
+#valofe-footer .grade img {
+	float: left;
+}
+#valofe-footer .grade p {
+	padding-left: 66px;
+	width: 262px;
+	line-height: 1.7;
+	font-size: 12px;
+	font-size: 0.75rem;
+}
+
+#valofe-footer p.paymentdesc {
+	display: inline-block;
+	margin-top: 21px;
+	float: right;
+	text-align: right;
+	width: 50%;
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.25);
+}
+#valofe-footer .copyright p span.paymentdesc.tel {
+	display: inline-block;
+	margin-top: 10px;
+	text-align: left;
+	width: 50%;
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.25);
+}
+
+/* footer */
+#valofe-footer {
+	padding-top: 12px;
+	padding-bottom: 15px;
+	position: absolute;
+	bottom: 0;
+	height: 59px;
+	vertical-align: middle;
+}
+#valofe-footer .copyright span {
+	height: 29px;
+	line-height: 1.2;
+	vertical-align: middle;
+	display: inline-block;
+	font-family: 'Noto Sans Kr', 'NotoSans KR', sans-serif;
+	letter-spacing: 0px;
+}
+
+#valofe-footer .copyright span.logo {
+	display: inline-block !important;
+	float: none;
+	cursor: pointer;
+	width: 80px !important;
+	height: 29px !important;
+	font-weight: normal;
+	background: url(https://file.valofe.com/Valofe_file/web/vfun/images/logo/logo-valofe-one-white-txt.png)
+		0 center no-repeat;
+	background-size: 100%;
+	margin-top: 4px;
+}
+#valofe-footer .copyright span.logo a {
+	display: inline-block !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+#valofe-footer .copyright span.ns-logo {
+	float: none;
+	cursor: pointer;
+	width: 99px;
+	height: 29px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/ns_logo.png)
+		no-repeat center / 100%;
+	margin-left: 7px;
+}
+#valofe-footer .copyright span.text {
+	margin-top: 3px;
+	margin-left: 12px;
+	height: 100%;
+	font-size: 12px;
+	text-align: center;
+	font-family: 'dotum', sans-serif; /* margin-left:0; width: calc(100% - 234px);*/
+}
+
+#loginHistory .pop-layer {
+	background-image: none;
+}
+/* 미디어 팝업 */
+.shadow-pop {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: -1;
+}
+.local-pop-wrap .layer-wrap {
+	visibility: hidden;
+	display: block;
+	opacity: 1;
+}
+.local-pop-wrap .pop-layer {
+	width: 80%;
+	border: none;
+	padding: 8px;
+	background-image: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-lt.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-t.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-rt.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-r.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-rb.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-b.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-lb.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/medai-border-l.png);
+	background-position: top left, top center, top right, right center,
+		right bottom, bottom center, left bottom, left center;
+	background-size: 40px 40px, calc(100% - 80px) 40px, 40px 40px,
+		40px calc(100% - 80px), 40px 40px, calc(100% - 80px) 40px, 40px 40px,
+		40px calc(100% - 80px);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+.local-pop-wrap .pop-container {
+	padding: 0;
+}
+.local-pop-wrap #btnClosePop {
+	position: absolute; /*right:-9px;*/
+	top: -57px;
+	z-index: 30;
+	width: 42px;
+	height: 50px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/btn-close.png)
+		no-repeat center/ 100% auto;
+	text-indent: -9999px;
+}
+
+.local-pop-wrap .pop-layer .slick-slider img {
+	width: 100%;
+}
+.local-pop-wrap .pop-layer .slick-prev {
+	filter: brightness(1.6);
+	left: 0;
+	height: 65px;
+	height: 4.0625rem;
+	width: 65px;
+	width: 4.0625rem;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/arrow-prev.png)
+		no-repeat center / auto;
+	z-index: 2;
+	transition: none;
+}
+.local-pop-wrap .pop-layer .slick-prev:before,
+.local-pop-wrap .pop-layer .slick-next:before {
+	content: '';
+}
+.local-pop-wrap .pop-layer .slick-next {
+	filter: brightness(1.6);
+	right: 0;
+	height: 65px;
+	height: 4.0625rem;
+	width: 65px;
+	width: 4.0625rem;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/arrow-next.png)
+		no-repeat center / auto;
+	transition: none;
+}
+
+/*******************************************/
+/* ************ 사전예약 추가 ************ */
+/*******************************************/
+#sec2 {
+	position: relative;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/rewards/bg-rewards-min.jpg)
+		no-repeat center / cover;
+	text-align: center;
+	z-index: 2;
+}
+#sec3 {
+	position: relative; /*background:url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-min.jpg)no-repeat center / cover;background-color:#080609;*/
+	text-align: center;
+	z-index: 2;
+}
+#sec6 {
+	display: none;
+	position: relative;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/rewards/bg-rewards-min.jpg)
+		no-repeat center / cover;
+	text-align: center;
+	z-index: 2;
+}
+
+.pre-reservation #title p {
+	text-align: center;
+	font-size: 35px;
+	font-size: 2.1875rem;
+}
+.pre-reservation #title h1 {
+	margin: 2vh 0 4vh;
+	text-align: center;
+	font-size: 19px;
+	font-size: 1.1875rem;
+	line-height: 1.6;
+	word-break: keep-all;
+}
+.invite-period {
+	display: inline-block;
+	width: 290px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-period-min.png?2)
+		no-repeat center / cover;
+	margin-top: 1rem; /*color:#d2aba7;*/
+	color: #e0695d;
+	font-size: 19px !important;
+	font-weight: 300;
+	font-style: italic;
+}
+
+/* 사전 보상 */
+#sec2 #rewardItem li {
+	position: relative;
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+#sec2 #rewardItem li:nth-child(1):after {
+	content: '';
+	position: absolute;
+	bottom: 45%;
+	left: -16%; /*width:209px;*/
+	width: 95%;
+	height: 320px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/rewards/smoke-min.png)
+		no-repeat bottom center / 100% auto;
+	animation: ggam 6s 0s infinite;
+}
+#sec2 #rewardItem dt {
+	position: relative;
+	width: 100%;
+}
+#sec2 #rewardItem .bg-bullet {
+	width: 86.4%;
+}
+#sec2 #rewardItem .reward {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	animation: aniRotate 1s 0s infinite alternate;
+}
+#sec2 #rewardItem li:nth-child(1) .reward {
+	width: 84%;
+}
+#sec2 #rewardItem li:nth-child(2) .reward {
+	width: 135.4%;
+}
+#sec2 #rewardItem li:nth-child(3) .reward {
+	width: 137.2%;
+}
+#sec2 #rewardItem li:nth-child(4) .reward {
+	width: 110.2%;
+}
+#sec2 #rewardItem li:nth-child(5) .reward {
+	width: 96%;
+}
+#sec2 #rewardItem dd {
+	padding-top: 30px;
+	font-size: 25px;
+	font-size: 1.5625rem;
+	font-size: 1.3vw;
+	color: #fff;
+}
+#sec2 #rewardItem dd small {
+	display: block;
+	font-size: 17px;
+	font-size: 1.0625rem;
+	margin-top: 10px;
+	margin-top: 0.625rem;
+	font-weight: 300;
+}
+#sec2 .btn-reserve {
+	margin-top: 8vh;
+}
+
+#sec2 form label {
+	display: inline-block;
+	color: #bfb1ac;
+	margin: 1rem 0 2rem;
+}
+#sec2 form input[type='checkbox'] {
+	border-radius: 0;
+	border: 1px solid #bfb1ac;
+	background: transparent;
+	vertical-align: text-top;
+	cursor: pointer;
+}
+#sec2 form input[type='checkbox']:checked:after {
+	line-height: 16px;
+}
+#sec2 .not-yet-id a {
+	display: inline-block;
+	padding-bottom: 5px;
+	color: #bfb1ac;
+	border-bottom: 1px solid #bfb1ac;
+	letter-spacing: -0.2px;
+	font-weight: 300;
+}
+#sec2 .not-yet-id a:hover {
+	color: #aa664e;
+	border-bottom: 1px solid #aa664e;
+}
+
+/* 아이템 애니메이션 */
+@keyframes aniScale {
+	from {
+		transform: scale(0.4);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes aniRotate {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	0% {
+		transform: translate(-50%, -50%) rotate(3deg);
+	}
+}
+
+/* ***************************** */
+/* 친구추천 */
+/*#inviteWrap > li {display: none;} #inviteWrap > li.on {display: block;}*/
+/*#inviteWrap > li {padding-bottom:6%;} row-w에 줌 */
+#inviteWrap > li:nth-child(1) {
+	min-height: 100vh;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-min.jpg)
+		no-repeat center / cover;
+}
+#inviteWrap > li:nth-child(2) {
+	min-height: 100vh;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recom-min.jpg)
+		no-repeat center / cover;
+}
+#inviteWrap #title {
+	margin-top: 14%;
+}
+#codeWrap {
+	margin: 3rem auto;
+	width: 62%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#codeWrap:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 11%;
+	width: 191px;
+	width: 17.364%;
+	min-width: 127px;
+	height: 163px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/sight-code-min.png)
+		no-repeat center / 100% auto;
+}
+#codeWrap.input-wrap input[type='text'] {
+	position: relative;
+	width: calc(100% - 13.125rem - 10px);
+	height: 60px;
+	height: 3.75rem;
+	margin-bottom: 0;
+	-webkit-appearance: none;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-code-min.png)
+		no-repeat center / 100% 100%;
+	font-size: 22px;
+	font-size: 1.375rem;
+	text-align: center;
+	margin-right: 10px;
+}
+#codeWrap.input-wrap button.button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 0;
+	min-width: 158px;
+	width: 210px;
+	width: 13.125rem;
+	height: 60px;
+	height: 3.75rem;
+	font-size: 22px;
+	font-size: 1.3125rem;
+}
+#codeWrap.input-wrap button.button:after {
+	position: absolute;
+	bottom: 0;
+	right: -82%;
+	content: '';
+	display: inline-block;
+	width: 221px;
+	width: 105.24%;
+	height: 252px;
+	height: 420%;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/btn-bullet-min.png)
+		no-repeat center / 100% auto;
+	pointer-events: none;
+}
+
+#codeWrap.input-wrap button.issue-code {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/btn-code-issue-min.jpg)
+		no-repeat center top / 100% 100%;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.45);
+}
+#codeWrap.input-wrap button.issue-code:hover {
+	cursor: pointer;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/btn-code-issue-on-min.jpg)
+		no-repeat center top / 100% 100%;
+}
+#codeWrap.input-wrap button.copy-code {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/btn-code-copy-min.jpg)
+		no-repeat center top / 100% 100%;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.45);
+	color: transparent;
+}
+#codeWrap.input-wrap button.copy-code:hover {
+	cursor: pointer;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/btn-code-copy-on-min.jpg)
+		no-repeat center top / 100% 100%;
+}
+
+#codeWrap.input-wrap button.btn-input-code {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/button-code-input-min.jpg)
+		no-repeat center top / 100% 100%;
+	box-shadow: 0 3px 3px rgb(0 0 0 / 45%);
+}
+#codeWrap.input-wrap button.btn-input-code:hover {
+	cursor: pointer;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/button-code-input-hover-min.jpg)
+		no-repeat center top / 100% 100%;
+}
+
+#sec3 #title.title2 {
+	margin-top: 6%;
+}
+#sec3 .invite-reward {
+	/*margin-top:3vh;*/
+	min-width: 470px; /*padding-bottom:16vh;*/
+}
+#sec3 .invite-reward li {
+	float: left;
+	width: calc(25% - 14px);
+	margin: 0 7px;
+}
+.invite-reward dl dt {
+	padding: 2rem 0 1.25rem;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/deco-invite-pc-min.png)
+		no-repeat top center / 54% auto;
+	font-size: 19px;
+	color: #fff;
+}
+.invite-reward dl dd {
+	padding: 6px;
+	background-image: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-rwd-lt-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-rwd-t-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-rwd-rt-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-rwd-r-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-rwd-rb-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-rwd-b-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-rwd-lb-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-invite-rwd-l-min.png);
+	background-repeat: no-repeat;
+	background-position: left top, top center, right top, right center,
+		right bottom, bottom center, left bottom, left center;
+	background-size: 6px 6px, calc(100% - 12px) 6px, 6px 6px,
+		6px calc(100% - 12px), 6px 6px, calc(100% - 12px) 6px, 6px 6px,
+		6px calc(100% - 12px);
+	background-color: rgba(0, 0, 0, 0.67);
+}
+.invite-reward dl img {
+	width: 100%;
+}
+.invite-reward dl dd p {
+	padding: 1.3vh 0 2.4vh;
+	line-height: 1.4;
+	color: #e2e2e2;
+	font-size: 17px;
+	word-break: keep-all;
+}
+.invite-reward dl dd p br.set {
+	display: none;
+}
+/* 추천인 보상 */
+#sec3 .recommend-reward {
+	width: 70%;
+	margin: 3vh auto 0;
+	padding: 6px;
+	padding: 3rem;
+	background-image: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recommend-rwd-lt-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recommend-rwd-t-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recommend-rwd-rt-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recommend-rwd-r-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recommend-rwd-rb-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recommend-rwd-b-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recommend-rwd-lb-min.png),
+		url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/bg-recommend-rwd-l-min.png);
+	background-repeat: no-repeat;
+	background-position: left top, top center, right top, right center,
+		right bottom, bottom center, left bottom, left center;
+	background-size: 6px 6px, calc(100% - 12px) 6px, 6px 6px,
+		6px calc(100% - 12px), 6px 6px, calc(100% - 12px) 6px, 6px 6px,
+		6px calc(100% - 12px);
+	background-color: rgba(0, 0, 0, 0.67);
+}
+#sec3 .recommend-reward ul {
+	width: 100%;
+	margin: 0 auto;
+}
+#sec3 .recommend-reward li {
+	float: left;
+	width: 33%;
+}
+/*#sec3 .recommend-reward li:nth-child(1) {width:23.4%;}
+#sec3 .recommend-reward li:nth-child(2) {width:15%;}
+#sec3 .recommend-reward li:nth-child(3) {width:41.8%;}*/
+#sec3 .recommend-reward li dt {
+	height: 16vh;
+}
+#sec3 .recommend-reward li dt img {
+	max-height: 100%;
+	max-width: 120%;
+	margin: 0 auto;
+}
+#sec3 .recommend-reward li:last-child dt img {
+	max-width: 140%;
+}
+#sec3 .recommend-reward li:last-child dt {
+	display: table-cell;
+	vertical-align: middle;
+}
+#sec3 .recommend-reward li:last-child dt img {
+	margin-left: -16%;
+}
+#sec3 .recommend-reward li dd {
+	color: #fff;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 1.4;
+	word-break: keep-all;
+}
+
+#inviteWrap .slick-prev {
+	left: 10%;
+}
+#inviteWrap .slick-next {
+	right: 10%;
+}
+#inviteWrap .slick-prev:before,
+#inviteWrap .slick-next:before {
+	display: inline-block;
+	width: 33px;
+	height: 65px;
+}
+#inviteWrap .slick-prev:before {
+	content: '';
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/invite-prev-min.png)
+		no-repeat center / cover;
+	z-index: 1;
+}
+#inviteWrap .slick-next:before {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/invite-next-min.png)
+		no-repeat center / cover;
+	z-index: 1;
+}
+
+/* 친구 초대 달성 게이지바 */
+.invite-achieve-gage {
+	margin-top: 4rem;
+}
+#numSuccess {
+	display: none;
+}
+.invite-achieve-gage .bar {
+	/*width:76%;*/
+	width: calc(81% - 56px);
+	margin: 10px auto;
+	transform: translateX(-4px);
+}
+.accum_percent {
+	position: relative;
+	width: 100%;
+	height: 20px;
+	margin: 0 auto;
+	background: #150c0c;
+	border: 1px solid #a7321e;
+	border-radius: 6.5px; /*overflow: hidden;*/
+}
+.accum_percent > div {
+	position: relative;
+	height: 20px;
+	float: left;
+	z-index: 1;
+}
+.accum_percent .accumWrap:after {
+	content: '';
+	position: absolute;
+	right: -18px;
+	top: -8px;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/icon-invite-achieve-min.png)
+		no-repeat center / cover;
+	z-index: 3;
+}
+.accum_percent .on.accumWrap:after {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/icon-invite-achieve-on-min.png)
+		no-repeat center / cover;
+}
+.accum_percent .accumWrap_hole:after {
+	content: none;
+}
+.accum_percent .accumWrap > .accum {
+	position: relative;
+	width: 0;
+	height: 100%; /*background:#772315;*/
+}
+.accum_percent .accumWrap.accumWrap_01 {
+	width: 1%;
+	z-index: 4;
+}
+.accum_percent .accumWrap.accumWrap_02 {
+	width: 33%;
+	z-index: 3;
+}
+.accum_percent .accumWrap.accumWrap_03 {
+	width: 33%;
+	z-index: 2;
+}
+.accum_percent .accumWrap.accumWrap_04 {
+	width: 33%;
+	z-index: 2;
+}
+.accum_percent .accumWrap_hole {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.accum_percent .accumWrap > .accum.ac_hole {
+	height: 100%;
+	background: #772315;
+}
+.accum_percent .accumWrap_hole .invite-count-text {
+	position: absolute;
+	top: -32px;
+	right: -33px;
+	right: -2.0625rem;
+	min-width: 4.125rem;
+	color: #ea8371;
+	font-weight: 500;
+	font-size: 1rem;
+}
+/* 플로팅 */
+#floating {
+	position: fixed;
+	bottom: 6rem;
+	right: 2rem;
+	z-index: 2;
+}
+#floating .close-float {
+	display: none;
+	position: absolute;
+	right: 2rem;
+	top: -1rem;
+	width: 36px;
+	width: 2.25rem;
+	height: 36px;
+	height: 2.25rem;
+}
+#floating .floating-reserve {
+	display: inline-block;
+	width: 220px;
+	width: 13.75rem;
+	height: 203px;
+	height: 12.6875rem;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/floating-reserve-min.png)
+		no-repeat center / cover;
+}
+#floating .floating-reserve:hover {
+	background-image: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/floating-reserve-on-min.png);
+}
+#floating .floating-reserve.mb {
+	/*width:127px;*/
+	height: 40px;
+	height: 2.5rem;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/floating-reserve-mb-min.png)
+		no-repeat center / auto 100%;
+}
+#floating p {
+	margin-top: 0.625rem;
+	margin-bottom: 0.2rem;
+	line-height: 1.3;
+	text-align: center;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	color: #fff;
+}
+#floating .btn-download {
+	display: block;
+	text-indent: -9999px; /*width:220px;*/
+	width: 13.75rem;
+	height: 43px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/floating-download.png)
+		no-repeat center / 100%;
+	animation: aniBg 0.8s 1s ease alternate infinite;
+}
+#floating .btn-download:hover {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/floating-download-hover.png)
+		no-repeat center / 100%;
+}
+@keyframes aniBg {
+	30% {
+		background-image: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/floating-download.png);
+	}
+	100% {
+		background-image: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/floating-download-hover.png);
+	}
+}
+
+#goTop {
+	position: fixed;
+	bottom: 2.9rem;
+	right: 6rem;
+	z-index: 2;
+}
+#goTop a {
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/top-min.png)
+		no-repeat center / 100% 100%;
+	background-color: rgba(0, 0, 0, 1);
+	opacity: 0.6;
+}
+#goTop a:hover {
+	opacity: 1;
+}
+
+#share {
+	position: fixed;
+	bottom: 3rem;
+	right: 9rem;
+	z-index: 2;
+}
+#share .do-share {
+	float: right;
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/sns-share-min.png)
+		no-repeat center / 100% 100%;
+	background-color: rgba(0, 0, 0, 1);
+	opacity: 0.6;
+	transition: all 0.4s;
+}
+#share .do-share:hover {
+	opacity: 1;
+}
+#share .do-share.on {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/sns-close-min.png)
+		no-repeat center / 100% 100%;
+	background-color: rgba(0, 0, 0, 1);
+	transform: rotate(45deg);
+	transition: all 0.4s;
+}
+#share .sns-wrap {
+	display: none;
+	float: left;
+	margin-right: -0.75rem;
+}
+#share .sns-wrap.on {
+	margin-right: 0.75rem;
+	transition: all 0.4s;
+}
+#share .sns-wrap li {
+	float: left;
+	margin: 0 0.325rem;
+	opacity: 0.6;
+	transition: all 0.4s;
+}
+#share .sns-wrap li:nth-child(1) {
+	margin-right: -101px;
+}
+#share .sns-wrap li:nth-child(2) {
+	margin-right: -74px;
+}
+#share .sns-wrap li:nth-child(1) {
+	margin-right: -37px;
+}
+#share .sns-wrap.on li {
+	margin-right: 0;
+	transition: all 0.4s;
+}
+#share .sns-wrap li:hover {
+	opacity: 1;
+}
+#share .sns-facebook {
+	display: block;
+	width: 37px;
+	height: 37px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/sns-fb-min.png)
+		no-repeat center / 100% 100%;
+	background-color: rgba(0, 0, 0, 1);
+}
+#share .sns-kakao {
+	display: block;
+	width: 37px;
+	height: 37px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/sns-kakao-min.png)
+		no-repeat center / 100% 100%;
+	background-color: rgba(0, 0, 0, 1);
+}
+#share .sns-link {
+	display: block;
+	width: 37px;
+	height: 37px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/sns-link-min.png)
+		no-repeat center / 100% 100%;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+/* 문구 팝업 레이어 */
+#text .pop-layer {
+	width: 522px;
+	width: 32.625rem;
+	height: 311px;
+	height: 19.4375rem;
+	padding: 5px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/bg-txt-pop-min.jpg)
+		no-repeat center / cover;
+}
+#text .pop-container {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border: 1px solid #d14730;
+}
+#text .pop-container .btn-layer-close {
+	top: 16px;
+	right: 16px;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/btn-pop-close-min.png)
+		no-repeat center / auto;
+}
+#text .msg {
+	padding-top: 90px;
+	padding-top: 5.625rem;
+	line-height: 1.4;
+	font-size: 1.125rem;
+}
+#text .wrap-btn {
+	position: absolute;
+	bottom: 70px;
+	bottom: 4.375rem;
+	left: 50%;
+	margin-left: -130px;
+	margin-left: -8.125rem;
+}
+#text .wrap-btn .btn-confirm {
+	display: inline-block;
+	width: 261px;
+	width: 16.25rem;
+	height: 50px;
+	height: 3.125rem;
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/btn-confirm-min.jpg)
+		no-repeat center / cover;
+}
+#text .wrap-btn .btn-confirm:hover {
+	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/common/btn-confirm-on-min.jpg)
+		no-repeat center / cover;
+}
+
+@media screen and (orientation: portrait) {
+	/* 메인 타이틀 */
+	#sec1 .tit-wrap img.tit {
+		height: auto;
+		width: 160%;
+		margin-left: -30%;
+		max-width: unset;
+	}
+	#sec1 .tit-wrap img.tit-deco {
+		height: auto;
+		width: 160%;
+		margin-left: -30%;
+	}
+
+	/* sec4 타이틀 */
+	.title {
+		margin-top: 26vh;
+	}
+	#title {
+		margin-top: 10vh;
+	}
+	/* sec2 사전 보상 타이틀 */
+	#sec2 .title {
+		margin-top: 12vh;
+	}
+
+	/* sec4 사양*/
+	#sec4 #slide-wrap .slick-slide li.s2-3 {
+		padding-top: 20vh;
+	}
+	#sec4 .spec {
+		margin-top: 0;
+	}
+	#sec4 .s2-3 .title {
+		margin-top: 1%;
+	}
+	#sec4 .slick-dots {
+		top: 10.5%;
+	}
+
+	/* sec5 */
+	#sec5 > .row-w {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0;
+	}
+}
+@media screen and (max-width: 1550px) {
+	#sec4 .row-w {
+		width: 96% !important;
+	}
+	#sec4 > .row-w {
+		overflow: hidden;
+	}
+
+	#sec4 .slick-prev {
+		left: 0;
+	}
+	#sec4 .slick-next {
+		right: 0;
+	}
+	.title h2 {
+		font-size: 25px;
+		font-size: 1.5625rem;
+	}
+	.title h2 span {
+		font-size: 30px;
+		font-size: 1.875rem;
+	}
+	.title h2 dfn {
+		font-size: 30px;
+		font-size: 1.875rem;
+	}
+}
+@media screen and (max-width: 1440px) {
+	html {
+		font-size: 14px;
+	}
+	#header {
+		padding: 0 20px;
+	}
+	#header .row-w {
+		max-width: calc(98% - 40px) !important;
+	}
+	/*#header #gnb{width:65%; margin-left:-33%;}*/
+	#header #gnb {
+		width: 68%;
+		margin-left: -34%;
+	}
+
+	/* 친구초대&추천인*/
+	#inviteWrap .slick-prev,
+	#inviteWrap .slick-next {
+		top: 42%;
+	}
+
+	/* 플로팅 배너 & sns */
+	#floating p {
+		margin-bottom: 1rem;
+	}
+	#goTop {
+		right: 5rem;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#header .row-w {
+		max-width: 100% !important;
+	}
+
+	/* 모바일 헤더 */
+	#header {
+		z-index: 8890;
+	}
+	#header-mb {
+		z-index: 8889;
+	}
+	#header-mb {
+		position: fixed;
+		top: 0;
+		right: 0; /*z-index: 4;*/
+		display: block;
+		width: calc(100% - 112px);
+		height: 60px;
+		background: #131313;
+		text-align: center;
+	}
+	#header-mb > img {
+		width: 78px;
+		margin-top: 10px;
+		margin-left: -95px; /* 112 / 2 + 78 / 2*/
+	}
+	.btn-shadow {
+		z-index: 8890;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.7);
+	}
+	#btn-nav {
+		display: block;
+		position: fixed;
+		top: 16px;
+		right: 20px;
+		color: #fff;
+		font-size: 20px;
+		z-index: 8889;
+	}
+	#header {
+		position: fixed;
+		top: 60px;
+		right: -280px;
+		width: 280px;
+		height: 100%;
+		padding: 60px 40px 20px;
+		background: #131313;
+	}
+	#header #logo {
+		float: none;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	#header .row-w {
+		width: 100% !important;
+	}
+	#header #gnb {
+		position: relative;
+		top: auto;
+		left: auto;
+		margin-left: 0;
+		width: 100%;
+	}
+	#header #gnb li {
+		display: block;
+		width: 100%;
+	}
+	#header #social {
+		float: none;
+		height: auto;
+	}
+
+	/* sec1 */
+	.bg-video {
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+	/*section#sec1 {background:url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec1/bg-main-m.jpg) no-repeat center / cover; overflow: hidden;}*/
+	section#sec1 {
+		background-image: linear-gradient(to top, #000, transparent),
+			url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec1/bg-main-m.jpg);
+		background-position: center bottom, center bottom;
+		background-size: 100% 100%, cover;
+		overflow: hidden;
+	}
+
+	#sec1 .mouse:after {
+		animation: aniDown 1s 0s infinite alternate;
+	}
+	@keyframes aniDown {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(3vh);
+		}
+	}
+
+	/* 친구초대&추천인*/
+	#inviteWrap .slick-prev {
+		left: 4%;
+	}
+	#inviteWrap .slick-next {
+		right: 4%;
+	}
+}
+/* reset */
+@media screen and (max-width: 1200px) {
+	/*rem 비율 조정 13px = rem;*/
+	/*  html{font-size:13px;} */
+	#cbm-aside,
+	#combineMenu {
+		font-size: 13px;
+	}
+	.row-w {
+		width: calc(100% - 32px) !important;
+	}
+}
+/* ./ reset */
+@media screen and (max-width: 1100px) {
+	.invite-achieve-gage .bar {
+		width: calc(81.6% - 56px);
+	}
+}
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 13px;
+	}
+
+	#header-mb > img {
+		width: 66px;
+		margin-top: 12px;
+	}
+	/* 모바일 헤더
+    #header-mb {position:fixed; top:0; left:0; z-index: 4; display: block; width:100%; height:60px; background:#000; text-align: center;}
+    #header-mb > img {width:78px; margin-top:10px;}
+    .btn-shadow {z-index: 3;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: rgba(0, 0, 0, 0.7);}
+    #btn-nav {display:block; position: fixed;top: 16px;right: 20px;color: #fff;font-size: 20px;z-index: 8889;}
+    #header {position:fixed; top:60px; right:-280px; width:280px; height:100%; padding:60px 40px 20px;background:#131313;}
+    #header #logo {float:none;  height: auto;margin-bottom: 20px;}
+    #header .row-w {width:100% !important; }
+    #header #gnb {position: relative;top: auto;left: auto;margin-left: 0;width: 100%;}
+    #header #gnb li {display:block; width:100%;}
+    #header #social {float:none; height:auto;}*/
+
+	/* sec1 */
+	.bg-video {
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+	/*section#sec1 {background:url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec1/bg-main-m.jpg) no-repeat center / cover; overflow: hidden;}*/
+	section#sec1 {
+		background-image: linear-gradient(to top, #000, transparent),
+			url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec1/bg-main-m.jpg);
+		background-position: center bottom, center bottom;
+		background-size: 100% 100%, cover;
+		overflow: hidden;
+	}
+
+	#sec1 .mouse:after {
+		animation: aniDown 1s 0s infinite alternate;
+	}
+	@keyframes aniDown {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(3vh);
+		}
+	}
+
+	/* sec4 slick */
+	#sec4 .slick-dots {
+		margin: 0 auto;
+	}
+	#sec4 .slick-dots li {
+		width: 100px;
+		margin: 0;
+	}
+	#sec4 .slick-dots li button:before {
+		font-size: 1.2rem;
+	}
+
+	/* sec4 캐릭터 위치 */
+	#sec4 .chr-wrap img.bm {
+		right: 13%;
+	}
+	#sec4 .chr-wrap img.bw {
+		right: -7%;
+	}
+	#sec4 .chr-wrap img.fm {
+		right: 3%;
+	}
+	#sec4 .chr-wrap img.fw {
+		right: 34%;
+	}
+
+	/* sec4 사양 표 */
+	.title h2 {
+		line-height: 1.5;
+	}
+	#sec4 .spec th {
+		padding: 20px 10px;
+	}
+	#sec4 .spec td {
+		padding: 20px 10px;
+	}
+
+	/* sec5 미디어 */
+	#sec5 .media-wrap {
+		width: 84%;
+	}
+
+	/*    #valofe-footer{padding-top:23px;overflow:hidden;}*/
+
+	/* 친구초대 달성보상 */
+	.invite-reward dl dt {
+		font-size: 17px;
+	}
+	.invite-reward dl dd p {
+		font-size: 14px;
+	}
+	.invite-achieve-gage .bar {
+		width: 76%;
+	}
+
+	/* 플로팅 배너 */
+	#floating .close-float {
+		display: block;
+	}
+	#floating .btn-download {
+		display: none;
+	}
+}
+@media screen and (max-width: 800px) {
+	#valofe-footer .copyright {
+		display: block;
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	#valofe-footer .footer-logo {
+		display: block;
+		width: 100%;
+		height: 43px;
+		float: none;
+		text-align: center;
+	}
+	#valofe-footer .copyright .logo {
+		float: none;
+		margin: 0 auto;
+	}
+	#valofe-footer .copyright a {
+		margin-left: inherit;
+		vertical-align: top;
+		padding-left: 8px;
+	}
+	#valofe-footer .copyright p {
+		margin-top: 0;
+		margin-left: 0;
+	}
+	#valofe-footer .nav {
+		display: block;
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin-top: 16px;
+	}
+	#valofe-footer .nav ul {
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#valofe-footer .nav ul li:first-child {
+		margin-left: 10px;
+	}
+	#valofe-footer .copyright p span.paymentdesc.tel {
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+		text-align: center;
+		font-size: 10px;
+		color: rgba(255, 255, 255, 0.25);
+	}
+	#valofe-footer p.paymentdesc {
+		float: none;
+		margin-top: 4px;
+		text-align: center;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+
+	/* sec4 캐릭터 위치 */
+	#sec4 .chr-wrap img.bm {
+		right: 9%;
+	}
+	#sec4 .chr-wrap img.bw {
+		right: -30%;
+	}
+	#sec4 .chr-wrap img.fm {
+		right: -14%;
+	}
+	#sec4 .chr-wrap img.fw {
+		right: 48%;
+	}
+
+	/* sec4 사양 표*/
+	#sec4 .spec {
+		font-size: 13px;
+	}
+	#sec4 .slick-dots {
+		background: rgba(12, 12, 12, 0.75);
+		padding-top: 5px;
+		padding-bottom: 13px;
+		display: inline-block;
+		width: 80%;
+		margin: 0 10%;
+	}
+	/* sec4 텍스트 */
+	.title {
+		margin-left: -5%;
+	}
+	.title h2 {
+		font-size: 1.25rem;
+	}
+	.title h2 span {
+		font-size: 1.7rem;
+	}
+	.title h2 p {
+		background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.3),
+			transparent
+		);
+	}
+
+	/* sec5 미디어 */
+	section#sec5 {
+		background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/teaser/sec3/bg-sec3.jpg)
+			no-repeat top right / cover;
+	}
+	#sec5 .slick-prev {
+		width: 30px;
+		height: 30px;
+		background-size: 70% 100%;
+	}
+	#sec5 .slick-next {
+		width: 30px;
+		height: 30px;
+		background-size: 70% 100%;
+	}
+
+	.pop-layer {
+		width: 96%;
+	}
+	.pop-layer .slick-prev {
+		width: 30px;
+		height: 30px;
+		background-size: 70% 100%;
+	}
+	.pop-layer .slick-next {
+		width: 30px;
+		height: 30px;
+		background-size: 70% 100%;
+	}
+
+	#btnClosePop {
+		width: 30px;
+		height: 36px;
+	}
+
+	#valofe-footer {
+		height: 80px;
+	}
+	#valofe-footer .copyright span.text {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	/* 사전 보상 */
+	#sec2 #rewardItem {
+		width: 88%;
+		margin: 0 auto;
+	}
+	#sec2 #rewardItem li {
+		width: 33.333%;
+	}
+	#sec2 #rewardItem li:nth-child(4) {
+		margin-top: 2rem;
+		margin-left: 18%;
+	}
+	#sec2 #rewardItem li:nth-child(5) {
+		margin-top: 2rem;
+	}
+	#sec2 #rewardItem dd {
+		font-size: 16px;
+	}
+
+	/* 쿠폰발급 */
+	#codeWrap:after {
+		left: 9%;
+	}
+
+	/* 친구초대 달성보상 */
+	.invite-reward dl dt {
+		padding: 1rem 0 0.75rem;
+		background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/deco-invite-min.png)
+			no-repeat top center / 54% auto;
+	}
+	#title {
+		margin-left: 0;
+	}
+	#sec3 .invite-reward {
+		width: 64%;
+		margin: 6vh auto 0;
+	}
+	#sec3 .invite-reward li {
+		width: calc(50% - 14px);
+	}
+	#sec3 .invite-reward li:nth-child(n + 3) {
+		margin: 1vh 7px 0;
+	}
+
+	/* 친구초대 추천인 보상 */
+	#sec3 .recommend-reward {
+		width: 88%;
+		padding: 2rem;
+	}
+	#sec3 .recommend-reward ul {
+		margin-left: -4%;
+	}
+	#sec3 .recommend-reward li dd {
+		font-size: 14px;
+	}
+
+	/* 친구초대&추천인*/
+	#inviteWrap .slick-prev:before,
+	#inviteWrap .slick-next:before {
+		width: 20px;
+		height: 40px;
+	}
+	#inviteWrap .slick-prev {
+		top: 14%;
+	}
+	#inviteWrap .slick-next {
+		top: 14%;
+	}
+	.invite-achieve-gage .bar {
+		width: 88%;
+		max-width: 472px;
+	}
+
+	/* 문구 팝업 레이어 */
+	#text .pop-layer {
+		width: 64%;
+		min-width: 300px;
+	}
+}
+@media screen and (max-width: 640px) {
+	#valofe-footer .copyright .logo,
+	#valofe-footer .copyright .ns-logo {
+		float: none;
+	}
+	#valofe-footer .copyright p {
+		width: 100%;
+		margin-top: 1.25rem;
+	}
+	/* 친구초대 쿠폰발급 */
+	#codeWrap:after {
+		left: 2%;
+	}
+}
+@media screen and (max-height: 768px) {
+	#sec4 .slick-dots {
+		width: 90%;
+		margin: 0 5%;
+	}
+	#sec5 > .row-w {
+		/*padding:10% 0 4%;*/
+		padding: 13vh 0 8%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#valofe-footer .row-w {
+		text-align: center;
+	}
+	#valofe-footer .sel-lang.pull-left {
+		float: none;
+		margin-top: 20px;
+		display: inline-block;
+		text-align: center;
+	}
+	#valofe-footer .sns.pull-right {
+		float: none;
+		display: inline-block;
+		margin-top: 30px;
+		width: 100%;
+		text-align: center;
+	}
+	#valofe-footer .sns.pull-right ul {
+		display: inline-block;
+		width: auto;
+	}
+
+	#valofe-footer .grade {
+		float: none;
+		margin: 35px auto 0;
+	}
+	#valofe-footer .grade p {
+		text-align: left;
+	}
+
+	/* 친구초대 쿠폰발급 */
+	#codeWrap {
+		width: 88%;
+	}
+	#codeWrap:after {
+		display: none;
+	}
+	#codeWrap.input-wrap input[type='text'] {
+		width: calc(100% - 120px);
+		min-width: unset;
+	}
+	#codeWrap.input-wrap button.button {
+		width: 110px;
+		min-width: 110px;
+		background-size: auto 100%;
+	}
+	#codeWrap.input-wrap button.button:hover {
+		background-size: auto 100%;
+	}
+	#codeWrap.input-wrap button.button:after {
+		display: none;
+	}
+	#codeWrap.input-wrap button.issue-code {
+		background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/btn-code-issue-mb-min.jpg)
+			no-repeat center top / 100% 100%;
+	}
+	#codeWrap.input-wrap button.issue-code:hover {
+		background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/btn-code-issue-mb-on-min.jpg)
+			no-repeat center top / 100% 100%;
+	}
+	#codeWrap.input-wrap button.btn-input-code {
+		background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/button-code-input-mb-min.jpg)
+			no-repeat center top / 100% 100%;
+	}
+	#codeWrap.input-wrap button.btn-input-code:hover {
+		background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/invitation-event/button-code-input-mb-hover-min.jpg)
+			no-repeat center top / 100% 100%;
+	}
+	/* 친구초대 달성 보상 */
+	#sec3 .invite-reward {
+		min-width: unset;
+		width: 90%;
+	}
+	.invite-reward dl dd p {
+		font-size: 13px;
+	}
+	/* 친구초대 추천인 보상 */
+	#sec3 .recommend-reward li:first-child dt {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.do-reserve {
+		width: 70%;
+		margin: 0 auto;
+	}
+	.do-reserve > img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	/* 480 이하에서는 검색창을 아랫줄로 이동합니다. */
+	#valofe-footer .nav ul li {
+		margin-left: 10px;
+	}
+	#valofe-footer .nav ul li a {
+		font-size: 12px;
+	}
+
+	/* 사전예약 보상 */
+	#sec2 #rewardItem {
+		width: 97%;
+		margin: 0;
+	}
+	#sec2 #rewardItem dd {
+		font-size: 14px;
+	}
+
+	/* 친구초대 추천인보상 */
+	#sec3 .recommend-reward li:nth-child(2) dt {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#sec3 .recommend-reward li:nth-child(2) dt img {
+		width: 80%;
+	}
+	.invite-reward dl dd p br.set {
+		display: block;
+	}
+	/* 친구초대&추천인*/
+	#inviteWrap .slick-prev {
+		top: 35%;
+		left: 2%;
+	}
+	#inviteWrap .slick-next {
+		top: 35%;
+		right: 2%;
+	}
+}
+@media screen and (max-width: 414px) {
+	.row-w {
+		overflow: visible;
+	}
+	#inviteWrap .row-w {
+		overflow: hidden;
+	}
+	#sec4 .slick-dots li {
+		width: 33.3%;
+	}
+
+	/* 친구초대 */
+	.pre-reservation #title h1 p {
+		width: 75%;
+		background-size: 100% 100%;
+	}
+	/* 친구초대 보상 코드 발급 */
+	#codeWrap {
+		width: 96%;
+	}
+	#codeWrap.input-wrap input[type='text'] {
+		margin-right: 0;
+		width: calc(100% - 110px);
+	}
+	/* 친구초대 달성 보상 */
+	#sec3 .invite-reward {
+		width: 96%;
+	}
+	.invite-reward li:nth-child(1) dl dd p {
+		font-size: 12px;
+		min-height: 71.39px;
+	}
+
+	/* 친구초대 추천인보상 */
+	#codeWrap.input-wrap input[type='text'] {
+		font-size: 1rem;
+	}
+	#sec3 .recommend-reward {
+		width: 96%;
+		padding: 2rem 1rem;
+	}
+	#sec3 .recommend-reward ul {
+		margin-left: -2%;
+	}
+	#sec3 .recommend-reward li dd {
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 360px) {
+	#valofe-footer .nav ul {
+	}
+	#valofe-footer .nav ul li {
+		width: 100%;
+		float: none;
+		margin-left: 0px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	/* 친구초대 달성 보상 */
+	#sec3 .invite-reward {
+		width: 100%;
+	}
+	#sec3 .invite-reward li:nth-child(n + 3) {
+		margin: 1vh 4px 0;
+	}
+	#sec3 .invite-reward li {
+		margin: 0 4px;
+		width: calc(50% - 8px);
+	}
+	.invite-reward dl dd p {
+		padding: 1.3vh 5px 2.4vh;
+	}
+	.invite-reward li:nth-child(1) dl dd p {
+		font-size: 13px;
+	}
+}
+
+/*
+@media screen and (device-aspect-ratio:9/16) {
+    #sec5 {height:auto;}
+}*/
+
+/* globa; */
