@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
 	margin: 0;
 	padding: 0;
@@ -47,6 +48,23 @@ button {
 	padding: 0;
 	overflow: visible;
 	cursor: pointer;
+}
+.skip-nav a {
+	position: fixed;
+	top: -9999px;
+	left: -9999px;
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.75);
+	color: #fff;
+	font-size: 14px;
+	z-index: 3;
+}
+.skip-nav a:active,
+.skip-nav a:focus {
+	top: 0;
+	left: 0;
 }
 
 /*************************************************/
@@ -192,10 +210,9 @@ header {
 		box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
 		padding: 2rem 1.5rem;
 		background: #fff;
-		margin: 2rem 3rem 0 0;
-		max-width: 240px;
-		// flex-shrink: 0;
-		// align-self: self-start;
+		/* margin: 2rem 1.5rem 0; */
+		margin-bottom: 2rem;
+		width: calc((100% - 12rem) / 4);
 
 		p {
 			font-size: 18px;
@@ -420,6 +437,9 @@ header {
 				line-height: 1.4;
 				color: #777;
 				font-size: 14px;
+			}
+			a.has-url {
+				text-decoration: underline;
 			}
 		}
 	}
