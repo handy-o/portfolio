@@ -47,7 +47,7 @@ input:focus, select:focus, textarea:focus {
   outline: none;
 }
 
-.survey1.sv {display: block;}
+
 /****************** common ******************/
 html {font-size:16px;}
 .title-wrap {word-break: keep-all;}
@@ -56,6 +56,7 @@ html {font-size:16px;}
 .tit-s {font-size:18px;font-size:1.125rem;color:#797979;}
 .bdr {border-top: 2px solid #f0f0f0;}
 .sv {display: none;}
+.survey1.sv {display: block;}
 #survey-wrap {
   position:relative;
   max-width:640px;
@@ -68,7 +69,7 @@ html {font-size:16px;}
   float: left;
   position: relative;
   width: 100%;
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
   /* height: calc(100vh - 226px); */
   padding: 15.625% 6.25% 0; 
   overflow: auto;
@@ -415,6 +416,33 @@ select {
 
 
 
+/****************** animation ******************/
+@keyframes aniTubeGlass {
+  0% { top: 27%;}
+  50% { top: 22%;}
+  100% { top: 22%;}
+}
+
+.tube-wrap .tube-glass {
+  animation: aniTubeGlass 1s 0s infinite ease-in-out alternate;
+}
+@keyframes aniTubeTwink {
+  0% { opacity: 0; top: 13%;}
+  33% { opacity: 0;}
+  66% { opacity: 1; }
+  100% { opacity: 1; top: 13%}
+}
+.tube-wrap .tube-twinkle {
+  animation: aniTubeTwink 1s 0s infinite ease-in-out alternate;
+}
+@keyframes aniTubeScale {
+  0% { transform: scale(0.8); }
+  100% { transform: scale(1);}
+}
+  
+.survey5.on  .tube-wrap {
+  animation: aniTubeScale 0.6s 0s 1 ease-in-out;
+}
 
 
 @media screen and (max-width:480px) {

@@ -13,6 +13,7 @@ $(document).ready(function() {
       
       case 1 :
         $('.notice').removeClass('on');
+        $('#survey-wrap .sv').css({'height':'calc(100vh - 100px)'});
         $('.survey2.sv').css({display:'block'});
         $('.btn-wrap.btn-next a').text('다음');
         break;
@@ -28,7 +29,9 @@ $(document).ready(function() {
 
       case 4 :
         $('.notice').addClass('on');
-        $('.survey5.sv').css({display:'block'});
+        $('#survey-wrap .sv').css({'height':'auto'});
+        $('.survey5.sv').css({display:'block'}).addClass('on');
+        setNoticePos();
         $('.btn-wrap.btn-next').addClass('on');
         $('.btn-wrap.btn-next a').text('닫기');
       break;
@@ -166,12 +169,17 @@ $(document).ready(function() {
 
 
 
-  // 위치 선정
-  var wH = $(window).height();
-  var sv = $('#survey-wrap .survey1').height();
-  console.log('wH ' + wH);
-  console.log('sv ' + sv);
-  $('.notice').css({'margin-top': wH - sv +'px'})
+  // .notice 위치 선정
+  function setNoticePos() {
+    var wH = $(window).height();
+    var sv = $('#survey-wrap .survey1').outerHeight();
+    var nH = $('.notice').outerHeight();
+    console.log('wH ' + wH);
+    console.log('sv ' + sv);
+    console.log('nH ' + nH);
+    $('.notice').css({'margin-top': wH - sv - nH - 115 +'px'})
+  }
+  setNoticePos();
    
 
 
