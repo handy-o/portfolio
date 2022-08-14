@@ -13,7 +13,6 @@ $(document).ready(function() {
       
       case 1 :
         $('.notice').removeClass('on');
-        $('#survey-wrap').css({'padding-bottom': '100px'});
         $('.survey2.sv').css({display:'block'});
         $('.btn-wrap.btn-next a').text('다음');
         break;
@@ -28,22 +27,21 @@ $(document).ready(function() {
       break;
 
       case 4 :
+        $('.notice').addClass('on');
         $('.survey5.sv').css({display:'block'});
         $('.btn-wrap.btn-next').addClass('on');
         $('.btn-wrap.btn-next a').text('닫기');
       break;
 
-      case 5 :$('.notice').addClass('on');
+      case 5 :
+        location.reload();
         $('.survey1.sv').css({display:'block'});
-        $('#survey-wrap').css({'padding-bottom': '226px'});
         $('.btn-wrap.btn-next').addClass('on');
         $('.btn-wrap.btn-next a').text('시작하기');
         nowStep = 0;
-        location.reload();
       break;
     }
   }
-
 
   // seclect 태그 custom
   $('.survey2 select').each(function(){
@@ -59,6 +57,7 @@ $(document).ready(function() {
     var $list = $('<ul />', {
       'class': 'select-options'
     }).insertAfter($styledSelect);
+
 
     for (var i = 0; i < numberOfOptions; i++) {
       $('<li />', {
@@ -92,8 +91,6 @@ $(document).ready(function() {
   })
 
   // 체크박스 선택 시 버튼 활성화
-  
- 
   $('.checkbox-wrap li').on('click', function() {
     var checkList = document.querySelectorAll('.checkbox-wrap li input:checked');
     var textAreaChk = document.querySelector('.survey3 textarea');
@@ -126,8 +123,6 @@ $(document).ready(function() {
     }
   })
 
-
-
   // 텍스트박스 (의견남기기) 입력 시 버튼 활성화 => (선택사항이라서 기능 제거)
   // var textArea = document.querySelector('.survey4 textarea');
   // textArea.addEventListener('input', () => {
@@ -146,16 +141,7 @@ $(document).ready(function() {
   })
 
 
-
-
-
-
-
-
-
-
   // '기타' 클릭 시 스크롤이동
- 
   $(".checkbox-wrap ul li input[id='etc']").on('click', function() {
     var boxElement = document.querySelector('.survey3');
     var textElement = document.querySelector('.text-area');
@@ -169,7 +155,6 @@ $(document).ready(function() {
   });
 
 
-
   // 팝업 띄우기
    window.fnOpenPop = function(){
     $('.popup-wrap, .popup').fadeIn();
@@ -178,36 +163,16 @@ $(document).ready(function() {
   window.fnClosePop = function(){
     $('.popup-wrap, .popup').fadeOut();
   }
- 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  // 위치 선정
+  var wH = $(window).height();
+  var sv = $('#survey-wrap .survey1').height();
+  console.log('wH ' + wH);
+  console.log('sv ' + sv);
+  $('.notice').css({'margin-top': wH - sv +'px'})
+   
 
 
 })

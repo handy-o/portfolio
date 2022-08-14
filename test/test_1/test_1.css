@@ -49,11 +49,11 @@ input:focus, select:focus, textarea:focus {
 
 .survey1.sv {display: block;}
 /****************** common ******************/
-body {font-size:16px;}
+html {font-size:16px;}
 .title-wrap {word-break: keep-all;}
-.tit-l {font-size:34px;color:#000000;}
-.tit-m {font-size:26px;color:#000000;}
-.tit-s {font-size:18px;color:#797979;}
+.tit-l {font-size:34px;font-size:2.125rem;color:#000000;}
+.tit-m {font-size:26px;font-size:1.625rem;color:#000000;}
+.tit-s {font-size:18px;font-size:1.125rem;color:#797979;}
 .bdr {border-top: 2px solid #f0f0f0;}
 .sv {display: none;}
 #survey-wrap {
@@ -62,14 +62,14 @@ body {font-size:16px;}
   margin:0 auto;
   min-height:100vh;
   padding-bottom:100px;
-  padding-bottom: 226px;
+  /* padding-bottom: 226px; */
 }
 #survey-wrap .sv {
   float: left;
   position: relative;
   width: 100%;
-  /* height: calc(100vh - 100px); */
-  height: calc(100vh - 226px);
+  height: calc(100vh - 100px);
+  /* height: calc(100vh - 226px); */
   padding: 15.625% 6.25% 0; 
   overflow: auto;
 }
@@ -110,8 +110,9 @@ body {font-size:16px;}
 }
 .notice {
   display: none;
-  position:absolute;
-  bottom:100px; 
+  /* position:absolute;
+  bottom:100px;  */
+  position:relative;
   left: 6.25%; 
   width: 87.5%;
   padding: 36px 0%;
@@ -144,6 +145,7 @@ textarea {
   background: none;
   border:none;
   font-size:22px;
+  font-size:1.375rem;
   color:#0d0d0d;
   resize: none;
 }
@@ -162,13 +164,14 @@ textarea::placeholder {
   margin-top:54px;
   width:210px;
   height:44px;
-  line-height: 44px;
+  line-height: 40px;
   text-align: center;
   background:#333b58;
   border:1px solid #1e2747;
   border-radius: 24px;
   color: #fff;
   font-size: 19px;
+  font-size:1.1875rem;
   font-weight: 400;
   text-indent: 30px;
 }
@@ -219,10 +222,10 @@ textarea::placeholder {
 
 /****************** survey2 ******************/
 .survey2 .select-wrap {
-  padding: 188px 0;
-  padding: 29.375% 0;
+  padding-top: 58px;
+  padding-top: 10.357%;
 }
-ㅊ select {
+select {
   width:100%;
   text-align: center;
   border:none;
@@ -268,16 +271,24 @@ textarea::placeholder {
   display: none;
 }
 .select-wrap .select-options li {
+  position:relative;
   margin: 0;
   padding: 41px 0;
+  padding: 2.5625rem 0;
   text-align: center;
-  font-size:35px;    
+  font-size: 35px;  
+  font-size: 2.1875rem;
   max-height: 134px;
   color:#d8d8d8;
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
+}
+.select-wrap .select-options:before {
+  content:''; 
+  display: block;
+  height:23.563%;
 }
 .select-wrap .select-options li:hover, .select-wrap .select-options li.selected {
   background: #fff;
@@ -295,8 +306,10 @@ textarea::placeholder {
 
 .checkbox-wrap ul li {
   padding: 40px 0;
+  padding:2.5rem 0;
   border-bottom: 2px solid #f0f0f0;
   font-size: 22px;
+  font-size:1.375rem;
 }
 .checkbox-wrap ul li label {
   display: inline-block;
@@ -314,6 +327,7 @@ textarea::placeholder {
   -webkit-border-radius: 0;
   width:48px;
   height:48px;
+  width:3rem; height:3rem;
   border:1px solid #f0f0f0;
   background:url("./images/servey03/checkbox-off.svg")no-repeat center / 62%;
   background-color:#f7f7f7;
@@ -360,6 +374,7 @@ textarea::placeholder {
   margin: auto;
   width:516px; 
   height:299px; 
+  max-width: 92%;
   border-radius: 10px;
   background:#fff;
   overflow: hidden;
@@ -374,11 +389,14 @@ textarea::placeholder {
   margin-top:38px;
   margin-bottom: 40px;
   font-size:20px;
+  font-size:1.25rem;
   color: #878787;
   font-weight: 500;
 }
 .survey4 .text-area {
   padding: 36px 30px;
+  padding: 2.25rem 1.875rem;
+  margin-bottom:40px;
 }
 .survey4 textarea {
   width:100%;   
@@ -397,5 +415,25 @@ textarea::placeholder {
 
 
 
+
+
+@media screen and (max-width:480px) {
+  html {font-size:13px;}
+  .popup {
+    height: 280px;
+    font-size:20px;
+    padding: 66px 50px 100px;
+
+    height: 240px;
+    font-size: 18px;
+    padding: 66px 38px 100px;
+    width: 80%;
+  }
+  .popup .btn-wrap {
+    height: 70px;
+    font-size: 20px;
+    line-height: 70px;
+  }
+}
 
 
