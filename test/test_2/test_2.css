@@ -46,6 +46,7 @@ section, article, main, nav, header, footer, aside {display: block;}
 
 
 /****************** common ******************/
+html {font-size:16px;}
 #wrap {
 	max-width: 1920px;
 	/* background: #1ac46e; */
@@ -58,6 +59,7 @@ section, article, main, nav, header, footer, aside {display: block;}
 }
 .btn {
 	height:200px;
+	height: 12.5rem;
 	border-radius: 106px;
 	cursor:pointer;
 	border:none;
@@ -76,6 +78,7 @@ section, article, main, nav, header, footer, aside {display: block;}
 #header span {
 	font-family: 'AppleSDGothicNeo', sans-serif;
 	font-size: 34px;
+	font-size: 2.125rem;
 	font-weight: bold;
 	text-align: center;
 	color: #222;
@@ -126,13 +129,17 @@ section {position:relative;}
 }
 .section1 .logo-wrap .logo img {
 	vertical-align: middle;
+	width:11.25rem;
 }
 .section1 .logo-wrap .period {
 	display: inline-block;
 	width: 202px;
   height: 56px;
+	width:12.625rem;
+	height:3.5rem;
 	border-radius: 28px;
 	background: url("./images/section1/txt-date.png") no-repeat center / auto;
+	background-size: 80.19%;
   background-color: #ffe100;
 	vertical-align: middle;
 }
@@ -301,6 +308,7 @@ section {position:relative;}
 	line-height:1.47; 
 	font-family: 'AppleSDGothicNeo', sans-serif;
 	font-size:34px;
+	font-size:2.125rem;
 	font-weight:normal;
 	color:#003a19;
 }
@@ -316,8 +324,14 @@ section {position:relative;}
 	padding-bottom:21.0937%;
 	padding-left: 7.8125%;
 	padding-right: 7.8125%;
-
-
+}
+.section2 .cheer-wrap h4 {
+	width:53.75%;
+	margin: 0 auto;
+	min-width: 200px;
+}
+.section2 .cheer-wrap h4 img{
+	width:100%;
 }
 .section2 .cheer-wrap .current-count, .section2 .cheer-wrap .goal-wrap {
 	display: -webkit-box;
@@ -339,6 +353,14 @@ section {position:relative;}
 .section2 .cheer-wrap .goal-wrap {
 	margin-top:17px;
 	margin-bottom:46px
+}
+.section2 .cheer-wrap .goal-wrap img:nth-child(1) {
+	width:28.125%;
+	min-width: 110px;
+}
+.section2 .cheer-wrap .goal-wrap img:nth-child(2) {
+	width:14.6875%;
+	min-width: 60px;
 }
 
 /* 연탄기부 수 게이지바 */
@@ -382,6 +404,7 @@ section {position:relative;}
 	width: 114.81%;
 	margin-left: -7.4%;
 	background:url("./images//section2/bt-01.png") no-repeat center / auto;
+	background-size: 57.4193%;
 	background-color: #ffe200;
 	
 }
@@ -392,9 +415,13 @@ section {position:relative;}
 .section2 .btn-wrap button .current-cheerer-mark {
 	font-family: Arial;
   font-size: 54px;
+  font-size: 3.375rem;
   font-weight: 900;
 	color: #fff;
 	vertical-align: super;
+}
+.section2 .btn-wrap button.complete img {
+	max-width:57.4193%;
 }
 
 .section2 .notice {
@@ -402,6 +429,7 @@ section {position:relative;}
 	max-width:545px;
 	font-family: 'AppleSDGothicNeo', sans-serif;
   font-size: 26px;
+	font-size:1.625rem;
 	line-height: 1.46;
 	text-align: center;
   color: #bbb;
@@ -426,6 +454,7 @@ section {position:relative;}
 	line-height:1.5; 
 	font-family: 'AppleSDGothicNeo', sans-serif;
 	font-size:34px;
+	font-size:2.125rem;
 	font-weight:normal;
 	color:#444;
 }
@@ -440,6 +469,7 @@ section {position:relative;}
 .section3 .btn-wrap button {
 	width:100%;
 	background:url(./images/section3/bt-02.png) no-repeat center / auto;
+	background-size: 61.29%;
 	background-color:#25d77d;
 }
 .section3 .btn-wrap button.complete {
@@ -449,12 +479,14 @@ section {position:relative;}
 
 .section3 .inner-row {
 	padding:0 60px;
+	padding: 0 9.375%;
 }
 
 .section3 .notice {
 	margin-top:72px;
 	font-family: 'AppleSDGothicNeo', sans-serif;
   font-size: 26px;
+	font-size:1.625rem;
 	line-height: 1.54;
 	text-align: center;
   color: #666666;
@@ -481,13 +513,14 @@ section {position:relative;}
 .section3 .accordion-wrap .tit {
 	font-family: 'AppleSDGothicNeo', sans-serif;
   font-size: 32px;
+	font-size:2rem;
   font-weight: bold;
   line-height: 1.19;
 	color:#005123;
 }
 .section3 .accordion-wrap .btn-arrow {
 	width:40px; height:40px;
-	background:url("./images/section3/arrow-40-d.png")no-repeat center / auto;
+	background:url("./images/section3/arrow-40-d.png")no-repeat center / cover;
 	cursor: pointer;
 	transition: transform 0.4s;
 }
@@ -569,4 +602,23 @@ section {position:relative;}
 	background:#d6d6d6;
 	padding: 29px 36px 29px 0;
 	text-align: right;
+}
+
+
+@media screen and (max-width:480px) {
+	html {font-size:13px;}
+	.btn {height: 10.5rem;}
+	.section2 .btn-wrap button {background-size:76%}
+	.section3 .btn-wrap button {background-size:76%;}
+
+
+	/* section1 */
+	.section1 .logo-wrap .period {width:10.625rem;}
+}
+
+
+@media screen and (max-width:375px) {
+	html {font-size:12px;}
+
+	
 }
