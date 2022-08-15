@@ -32,7 +32,7 @@ $(document).ready(function() {
         $('.notice').addClass('on');
         $('#survey-wrap .sv').css({'height':'auto'});
         $('.survey5.sv').css({display:'block'}).addClass('on');
-        setNoticePos();
+        setNoticePos(5);
         $('.btn-wrap.btn-next').addClass('on');
         $('.btn-wrap.btn-next a').text('닫기');
       break;
@@ -170,21 +170,20 @@ $(document).ready(function() {
 
 
   // .notice 위치 선정
-  function setNoticePos() {
+  function setNoticePos(n) {
     var wH = $(window).height();
-    var sv = $('#survey-wrap .survey1').outerHeight();
+    var sv = $('#survey-wrap .survey'+n+'').outerHeight(true);
     var nH = $('.notice').outerHeight();
-    //console.log('wH ' + wH);
-    //console.log('sv ' + sv);
-    //console.log('nH ' + nH);
+    // console.log('wH ' + wH);
+    // console.log('sv ' + sv);
+    // console.log('nH ' + nH);
     if( wH > sv + nH ) {
-      $('.notice').css({'margin-top': wH - sv - nH - 115 +'px'})
+      $('.notice').css({'margin-top': wH - sv - nH - 105 +'px'})
     } else {
       $('.notice').css({'margin-top': '40px'})
     }
-   
   }
-  setNoticePos();
+  setNoticePos(1);
    
 
 

@@ -105,6 +105,14 @@ section {position:relative;}
 #content .title img {
 	width:100%;
 }
+.img-wrap .oval {
+	position:absolute;
+	border-radius: 50%;
+	overflow: hidden;
+	background:#fff;
+}
+
+
 
 /* section1 */
 .section1 .section-row {
@@ -186,12 +194,6 @@ section {position:relative;}
 	right: 32%;
 	width: 13.75%;
 }
-.section1 .img-wrap .oval {
-	position:absolute;
-	border-radius: 50%;
-	overflow: hidden;
-	background:#fff;
-}
 .section1 .img-wrap .oval.o1 {
 	bottom: 0;
 	left: 22%;
@@ -209,6 +211,12 @@ section {position:relative;}
 	bottom: 66%;
 	width: 9px;
 	height: 9px;
+}
+.section1 .img-wrap .oval.o7 {
+	bottom: 0%;
+	left: 26.875%;
+	width: 8px;
+	height: 8px;
 }
 
 
@@ -263,7 +271,7 @@ section {position:relative;}
 
 .section1 .img-wrap .tube-wrap {
 	position: absolute;
-	top: -34%;
+	top: -35.2%;
 	left: 33%;
 	width:24.0625%;
 } 
@@ -298,9 +306,37 @@ section {position:relative;}
 
 /* section2 */
 .section2 .section-row {
+	position:relative;
 	background:linear-gradient(to bottom, #1ac46e 70%,#ededed 30%);
 }
+.section2 .img-wrap .oval.o4 {
+	top: 26%;
+	left: 9.375%;
+	width: 20px;
+	height: 20px;
+}
+.section2 .img-wrap .oval.o5 {
+	top: 27.6%;
+	left: 6.875%;
+	width: 8px;
+	height: 8px;
+}
+.section2 .img-wrap .oval.o6 {
+	top: 31%;
+	left: 3.59375%;
+	width: 9px;
+	height: 9px;
+}
+.section2 .img-wrap .oval.o8 {
+	top: 1%;
+	left:  28.4375%;
+	width: 13px;
+	height: 13px;
+}
+
+
 .section2 .title-wrap {
+	position: relative;
 	margin-top:80px;
 }
 .section2 .title-wrap .title.t2 {
@@ -406,6 +442,15 @@ section {position:relative;}
 	width:54px; height:51px;
 	background:url("./images/section2/pinmoney-01.png")no-repeat center / cover;
  }
+ .section2 .cheer-wrap .current-count:after {
+	content:'';
+	position:absolute;
+	top: -14.9%;
+	right: -3.8%;
+	display: inline-block;
+	width:10px; height:11px;
+	background:url("./images/section2/pinmoney-01.png")no-repeat center / cover;
+ }
 
 
 /* 연탄기부 수 게이지바 */
@@ -474,6 +519,9 @@ section {position:relative;}
 }
 .section2 .btn-wrap button.complete img {
 	max-width:57.4193%;
+}
+.section2 .btn-wrap button.complete img:nth-child(1) {
+	width:5.25rem;
 }
 
 .section2 .notice {
@@ -607,11 +655,11 @@ section {position:relative;}
 
 .section3 .accordion-wrap .accordion-content dt {
 	font-size:26px;
-	
-
+	font-size:1.625rem;
 }
 .section3 .accordion-wrap .accordion-content dd {
 	font-size:30px;
+	font-size:1.875rem;
 	font-weight:bold;
 }
 
@@ -633,6 +681,7 @@ section {position:relative;}
 	margin-right:6.299214%;
 	position:relative;
 	border-radius: 50%;
+	cursor: pointer;
 }
 .section3 .share-wrap ul li:after {
 	content:'';
@@ -667,7 +716,41 @@ svg .wing {transform: scale(2);}
 
 
 /****************** animation ******************/
- @keyframes hangingHead {
+@keyframes aniEar {
+	10% {transform: translateY(0);}
+	50% { transform: translateY(30%); }
+	100% { transform: translateY(30%); }
+}
+.section1 .img-wrap .tube-wrap .tube-eb-l, .section1 .img-wrap .tube-wrap .tube-eb-r {
+	animation: aniEar 0.6s 0s infinite alternate ease-in;
+}
+@keyframes aniHand {
+	10% {transform: rotate(0);}
+	80% { transform: rotate(15deg); }
+	100% { transform: rotate(15deg); }
+}
+.section1 .img-wrap .tube-wrap .tube-h-r, .section1 .img-wrap .tube-wrap .tube-h-l {
+	animation: aniHand 0.6s 0s infinite alternate ease-in;
+	transform-origin: top center;
+}
+@keyframes aniKonL {
+	from {transform: translate(-30%, 30%);}
+	to {transform: translate(0, -0%);}
+}
+@keyframes aniKonR {
+	from {transform: translate(30%, 30%);}
+	to {transform: translate(-0%, 0%);}
+}
+.section1 .img-wrap .kon-l {
+	transform: translate(-30%, 30%);
+	animation: aniKonL 0.6s 0s 1 linear forwards;
+}
+.section1 .img-wrap .kon-r {
+	transform: translate(30%, 30%);
+	animation: aniKonR 0.6s 0s 1 linear forwards;
+}
+
+@keyframes hangingHead {
 	from {transform: translateY(0);}
 	to { transform: translateY(-4%); }
 }
@@ -676,41 +759,75 @@ svg .wing {transform: scale(2);}
 }
 
 
+
 .effect-heart {
   position: absolute;
-  top: 72%;
+  /* top: 72%;
+	top:41%;
   left: 0;
-	width:100%;
+	width:100%; */
+	top: 12%;
+	left: -10%;
+	width: 120%;
+	height: 35%;
 }
 
 .tiny-heart {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
 	background:url("./images/section2/pinmoney-01.png") no-repeat center / cover;
-  animation: animated-heart infinite ease-in;
+  animation: animated-heart infinite alternate ease-in;
 }
 
-@keyframes animated-heart {
+/* @keyframes animated-heart {
   0% {
     opacity: 1;
     transform: translate(0, 0) rotate(0);
   }
   50% {
     opacity: 1;
-    transform: translate(0, -40%) rotate(-10deg);
+    transform: rotate(-10deg);
   }
   80% { opacity: 1;}
   100% {
-    opacity: 0;
+    opacity: 1;
     transform: translate(0, -800%) rotate(0);
+  }
+} */
+@keyframes animated-heart {
+  0% {
+    transform:scale(0);
+  }
+  30% {
+    transform:scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-/*section {display: none;} */
 
 
+
+
+
+
+
+@media screen and (max-width:620px) {
+	.hidden-mb {display: none;}
+}
+@media screen and (max-width:560px) {
+	.section3 .inner-row { 
+		padding: 0 5.375%;
+	}
+	.section3 .accordion-wrap .accordion-content dd {
+    width: 100%;
+    margin-bottom: 1rem;
+	}
+}
 @media screen and (max-width:480px) {
 	html {font-size:13px;}
+	
 	.btn {height: 10.5rem;}
 	.section2 .btn-wrap button {background-size:76%}
 	.section3 .btn-wrap button {background-size:76%;}
@@ -718,6 +835,9 @@ svg .wing {transform: scale(2);}
 
 	/* section1 */
 	.section1 .logo-wrap .period {width:10.625rem;}
+
+	/* section3 */
+	
 }
 
 

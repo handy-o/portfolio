@@ -102,59 +102,41 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
   
     var motionImgTop = document.querySelector('.section2 .section-row').getBoundingClientRect().top;
-    //console.log(motionImgTop)
+    console.log(motionImgTop)
   
     if(motionImgTop > 0 ) {
       $('.section2 .motion-imgs .briquette').css({'transform': 'translate('+ motionImgTop +'px,'+ -motionImgTop +'px)'})
       $('.section2 .motion-imgs .hand').css({'transform': 'translate('+ motionImgTop +'px,'+ -motionImgTop +'px)'})
-    } else {
+    } else if (motionImgTop < 0 && motionImgTop > -300 ) { //잠시 머무르기
       $('.section2 .motion-imgs .briquette').css({'transform': 'translate(0,0)'})
-      $('.section2 .motion-imgs .hand').css({'transform': 'translate('+ -motionImgTop +'px,'+ motionImgTop +'px)'})
+      $('.section2 .motion-imgs .hand').css({'transform': 'translate(0,0)'})
+    } else {
+      var mTN = motionImgTop + 300;
+      $('.section2 .motion-imgs .hand').css({'transform': 'translate('+ -mTN +'px,'+ mTN+'px)'})
     }
     //console.log($(document).scrollTop())
   })
+  /* ./ 스크롤모션 */
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  // 하트모션
+  /* 하트모션 */
+  function randomNum(m, n) {
+    m = parseInt(m);
+    n = parseInt(n);
+    return Math.floor(Math.random() * (n - m + 1)) + m;
+  }
   function addHeart() {
-    function randomNum(m, n) {
-      m = parseInt(m);
-      n = parseInt(n);
-      return Math.floor(Math.random() * (n - m + 1)) + m;
-    }
-    
-  
     $this = $('.effect-heart');
     var heartCount = ($this.width()/100)*2;
     for (var i = 0; i< heartCount; i++) {
-      var heartSize = (randomNum(40, 500) / 10);
-      $this.append('<span class="tiny-heart" style="transform:rotate('+ randomNum(-40, 0) +'deg); top: '+ randomNum(40, 800) +'%; left: '+ randomNum(0, 100) +'%; width: '+ heartSize +'px; height: '+ heartSize +'px ; animation-delay: -'+ randomNum(0, 3) +'s; animation-duration: '+ randomNum(2, 5) +'s"></span>')
+      var heartSize = (randomNum(50, 400) / 10);
+      $this.append('<span class="tiny-heart" style="transform: rotate('+randomNum(-30, 30)+'deg); top: '+ randomNum(-10, 60) +'%; left: '+ randomNum(0, 100) +'%; width: '+ heartSize +'px; height: '+ heartSize +'px ; animation-delay: -'+ randomNum(0, 3) +'s; animation-duration: '+ randomNum(2, 5) +'s"></span>')
     }
   }
+  /* ./ 하트모션 */
+  
    
-    
-    
-   
-  
-  
-  
   
   });
   
