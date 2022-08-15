@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(window).resize(function(){
-    if( $('.notice').hasClass('on')) setNoticePos();ㄴ
+    if( $('.notice').hasClass('on')) setNoticePos();
   });
 
   // 위치
