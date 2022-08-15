@@ -174,10 +174,10 @@ $(document).ready(function() {
     var wH = $(window).height();
     var sv = $('#survey-wrap .survey1').outerHeight();
     var nH = $('.notice').outerHeight();
-    console.log('wH ' + wH);
-    console.log('sv ' + sv);
-    console.log('nH ' + nH);
-    if( wH > sv ) {
+    //console.log('wH ' + wH);
+    //console.log('sv ' + sv);
+    //console.log('nH ' + nH);
+    if( wH > sv + nH ) {
       $('.notice').css({'margin-top': wH - sv - nH - 115 +'px'})
     } else {
       $('.notice').css({'margin-top': '40px'})

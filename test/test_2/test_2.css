@@ -308,6 +308,8 @@ section {position:relative;}
 }
 .section2 .title-wrap .descrtion {
 	margin:52px 0 64px;
+	padding: 0 19px;
+	padding: 0 1.1875rem;
 	text-align: center;
 	line-height:1.47; 
 	font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
@@ -502,6 +504,7 @@ section {position:relative;}
 .section3 .title-wrap .descrtion {
 	margin: 52px 0 72px;
 	padding:0 19px;
+	padding: 0 1.1875rem;
 	text-align: center;
 	line-height:1.5; 
 	font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;

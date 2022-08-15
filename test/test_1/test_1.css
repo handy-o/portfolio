@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /****************** reset ******************/
-* {box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
+* {box-sizing: border-box;font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {
   margin: 0;
   padding: 0
@@ -51,9 +51,9 @@ input:focus, select:focus, textarea:focus {
 /****************** common ******************/
 html {font-size:16px;}
 .title-wrap {word-break: keep-all;}
-.tit-l {font-size:34px;font-size:2.125rem;color:#000000;}
-.tit-m {font-size:26px;font-size:1.625rem;color:#000000;}
-.tit-s {font-size:18px;font-size:1.125rem;color:#797979;}
+.tit-l {font-size:34px;font-size:2.125rem;color:#000000;line-height:1.48; font-weight:600;}
+.tit-m {font-size:26px;font-size:1.625rem;color:#000000;line-height:1.48; font-weight:600;}
+.tit-s {font-size:18px;font-size:1.125rem;color:#797979;line-height:1.5; font-weight:300;}
 .bdr {border-top: 2px solid #f0f0f0;}
 .sv {display: none;}
 .survey1.sv {display: block;}
@@ -95,12 +95,12 @@ html {font-size:16px;}
 .btn-wrap {
   position:absolute;
   bottom:0; left:0;
-  width:100%; height: 100px;
-  line-height: 100px;
+  width:100%; height: 100px; height:6.25rem;
+  line-height: 100px; line-height:6.25rem;
   text-align: center;
   background: #e6e6e6;
   color:#888888;
-  font-size:28px;
+  font-size:28px; font-size:1.75rem;
   pointer-events: none;
 }
 .btn-wrap.on {
@@ -126,7 +126,8 @@ html {font-size:16px;}
 }
 .question {
   width:124px; height:44px;
-  line-height:40px;
+  width:7.75rem; height:2.75rem;
+  line-height:44px; line-height: 2.75rem;
   background:#333b58;
   border:1px solid #1e2747;
   border-radius: 24px;
@@ -150,6 +151,8 @@ textarea {
   border:none;
   font-size:22px;
   font-size:1.375rem;
+  font-size:20px;
+  line-height:1.48;
   color:#0d0d0d;
   resize: none;
 }
@@ -168,14 +171,14 @@ textarea::placeholder {
   margin-top:54px;
   width:210px;
   height:44px;
-  line-height: 40px;
+  line-height: 44px;
   text-align: center;
   background:#333b58;
   border:1px solid #1e2747;
   border-radius: 24px;
   color: #fff;
   font-size: 19px;
-  font-size:1.1875rem;
+  font-size: 1.1875rem;
   font-weight: 400;
   text-indent: 30px;
 }
@@ -360,6 +363,8 @@ select {
   float:right;
   margin-left: 30px;
   width: calc(100% - 7.375rem);
+  margin-left:20px;
+  width:calc(100% -110px);
   
 }
 .checkbox-wrap ul li input[type='checkbox']:checked + .accordion-content {
