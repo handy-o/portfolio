@@ -56,6 +56,7 @@ html {font-size:16px;}
 	/* max-width: 750px; */
 	margin: 0 auto;
 	text-align: center;
+	overflow: hidden;
 }
 .btn {
 	height:200px;
@@ -76,7 +77,7 @@ html {font-size:16px;}
 }
 
 #header span {
-	font-family: 'AppleSDGothicNeo', sans-serif;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
 	font-size: 34px;
 	font-size: 2.125rem;
 	font-weight: bold;
@@ -107,7 +108,11 @@ section {position:relative;}
 
 /* section1 */
 .section1 .section-row {
-	background:#1ac46e;
+	background-image: url(./images/section1/img-top-l.svg), url(./images/section1/img-top-r.svg);
+	background-repeat: no-repeat;
+	background-position: top -2.6% left -4%, top -3.5% right -5.2%;
+	background-size: 28.125% auto , 24.0625% auto;
+	background-color:#1ac46e;
 }
 /* 로고 */
 .section1 .logo-wrap {
@@ -212,19 +217,18 @@ section {position:relative;}
 	text-align: center;
 }
 .section1 .img-wrap .briquette-wrap .briquette {
+	position: relative;
 	width:53.75%;
 }
 .section1 .img-wrap .briquette-wrap .hand-g-b { /*green back hand*/
 	left:-58%;
 	bottom: 24%;
 	width:110.625%;
-	z-index: -1;
 }
 .section1 .img-wrap .briquette-wrap .hand-r-b { /*red back hand*/
 	right: -56%;
 	bottom: 35%;
 	width:113.4375%;
-	z-index: -1;
 }
 .section1 .img-wrap .briquette-wrap .hand-g-f { /*green front hand*/   
 	bottom: -2%;
@@ -306,7 +310,7 @@ section {position:relative;}
 	margin:52px 0 64px;
 	text-align: center;
 	line-height:1.47; 
-	font-family: 'AppleSDGothicNeo', sans-serif;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
 	font-size:34px;
 	font-size:2.125rem;
 	font-weight:normal;
@@ -314,6 +318,7 @@ section {position:relative;}
 }
 
 .section2 .cheer-wrap {
+	position:relative;
 	text-align: center;
 	background: url(./images/section2/briquette-03.svg)no-repeat top center / auto 100%;
 	padding-top: 240px;
@@ -325,8 +330,34 @@ section {position:relative;}
 	padding-left: 7.8125%;
 	padding-right: 7.8125%;
 }
+
+.section2 .motion-imgs {
+	position: absolute;
+	top: 1%;
+	left: 50%;
+	height: 30.1%;
+}
+.section2 .motion-imgs .briquette{
+	position: relative;
+	height: 100%;
+}
+.section2 .motion-imgs .hand{
+	position:absolute;
+	width: 110.625%;
+	width: 232.8%;
+	left: 28%;
+	bottom: 6%;
+}
+.section2 .motion-imgs .hand.back {
+	width: 224.3%;
+	bottom: 27%;
+	left: 18%;
+}
+.section2 .cheer-count {
+	position:relative;
+}
 .section2 .cheer-wrap h4 {
-	width:53.75%;
+	width: 63.7037%;
 	margin: 0 auto;
 	min-width: 200px;
 }
@@ -334,6 +365,7 @@ section {position:relative;}
 	width:100%;
 }
 .section2 .cheer-wrap .current-count, .section2 .cheer-wrap .goal-wrap {
+	position: relative;
 	display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,6 +380,7 @@ section {position:relative;}
 	margin: 40px 0 28px;
 }
 .section2 .cheer-wrap .current-count img {
+	position:relative;
 	max-width:20%;
 }
 .section2 .cheer-wrap .goal-wrap {
@@ -355,13 +388,23 @@ section {position:relative;}
 	margin-bottom:46px
 }
 .section2 .cheer-wrap .goal-wrap img:nth-child(1) {
-	width:28.125%;
+	width:33.333%;
 	min-width: 110px;
 }
 .section2 .cheer-wrap .goal-wrap img:nth-child(2) {
-	width:14.6875%;
+	width:17.407%;
 	min-width: 60px;
 }
+.section2 .cheer-wrap .current-count:before {
+	content:'';
+	position:absolute;
+	top: -12.9%;
+	right: -3%;
+	display: inline-block;
+	width:54px; height:51px;
+	background:url("./images/section2/pinmoney-01.png")no-repeat center / cover;
+ }
+
 
 /* 연탄기부 수 게이지바 */
 .section2 .gage-wrap {position:relative}
@@ -387,6 +430,8 @@ section {position:relative;}
 	display: inline-block;
 	position: absolute;
 	bottom: -8px;
+	width: 14.074%;
+	min-width: 50px;
 	z-index:1;
 	transform: translateX(-20%);
 }
@@ -394,8 +439,13 @@ section {position:relative;}
 	position: absolute;
 	top: -40%;
 	left: -40%;
+	width: 105.26%;
+}
+.section2 .current-count-mark-wrap .tube-body {
+	width:100%;
 }
 .section2 .btn-wrap {
+	position: relative;
 	margin:0 auto;
 	max-width:620px;
 }
@@ -425,9 +475,10 @@ section {position:relative;}
 }
 
 .section2 .notice {
+	position:relative;
 	margin-top:31px;
 	max-width:545px;
-	font-family: 'AppleSDGothicNeo', sans-serif;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
   font-size: 26px;
 	font-size:1.625rem;
 	line-height: 1.46;
@@ -450,11 +501,12 @@ section {position:relative;}
 }
 .section3 .title-wrap .descrtion {
 	margin: 52px 0 72px;
+	padding:0 19px;
 	text-align: center;
 	line-height:1.5; 
-	font-family: 'AppleSDGothicNeo', sans-serif;
-	font-size:34px;
-	font-size:2.125rem;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+	font-size:32px;
+	font-size:2rem;
 	font-weight:normal;
 	color:#444;
 }
@@ -484,11 +536,11 @@ section {position:relative;}
 
 .section3 .notice {
 	margin-top:72px;
-	font-family: 'AppleSDGothicNeo', sans-serif;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
   font-size: 26px;
 	font-size:1.625rem;
 	line-height: 1.54;
-	text-align: center;
+	text-align: left;
   color: #666666;
 }
 /* 동의내용 아코디언 */
@@ -511,7 +563,7 @@ section {position:relative;}
 	border-bottom: 2px solid #d6d6d6;
 }
 .section3 .accordion-wrap .tit {
-	font-family: 'AppleSDGothicNeo', sans-serif;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
   font-size: 32px;
 	font-size:2rem;
   font-weight: bold;
@@ -534,6 +586,8 @@ section {position:relative;}
 	overflow: hidden;
 	box-sizing: content-box;
 	transition: 0.4s;
+	text-align: left;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
 }
 .section3 .accordion-wrap .accordion-content.on {
 	padding: 52px 0;
@@ -571,7 +625,9 @@ section {position:relative;}
 .section3 .share-wrap ul li {
 	float:left;
 	width: calc( (100% - 64px) / 3);
+	width: calc( (100% - 12.598428%) / 3);
 	margin-right:32px;
+	margin-right:6.299214%;
 	position:relative;
 	border-radius: 50%;
 }
@@ -584,18 +640,19 @@ section {position:relative;}
 	margin-right:0;
 }
 .section3 .share-wrap ul li.kakao {
-	background:url("./images/section3/ico-148-kakaotalk.png") no-repeat center / auto;
+	background:url("./images/section3/ico-148-kakaotalk.png") no-repeat center / 45.945%;
 	background-color:#ffde00;
 }
 .section3 .share-wrap ul li.facebook {
-	background:url("./images/section3/ico-148-facebook.png") no-repeat center / auto;
+	background:url("./images/section3/ico-148-facebook.png") no-repeat center / 45.945%;
 	background-color:#395498;
 }
 .section3 .share-wrap ul li.link {
-	background:url("./images/section3/ico-148-url.png") no-repeat center / auto;
+	background:url("./images/section3/ico-148-url.png") no-repeat center / 45.945%;
 	background-color:#005123;
 }
 
+svg .wing {transform: scale(2);}
 
 /****************** footer ******************/
 #footer .section-row {
@@ -603,6 +660,50 @@ section {position:relative;}
 	padding: 29px 36px 29px 0;
 	text-align: right;
 }
+
+
+
+/****************** animation ******************/
+ @keyframes hangingHead {
+	from {transform: translateY(0);}
+	to { transform: translateY(-4%); }
+}
+.section2 .current-count-mark-wrap .tube-head {
+	animation: hangingHead 0.8s 0s infinite alternate ease-in;
+}
+
+
+.effect-heart {
+  position: absolute;
+  top: 72%;
+  left: 0;
+	width:100%;
+}
+
+.tiny-heart {
+  position: absolute;
+  opacity: 0;
+	background:url("./images/section2/pinmoney-01.png") no-repeat center / cover;
+  animation: animated-heart infinite ease-in;
+}
+
+@keyframes animated-heart {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, -40%) rotate(-10deg);
+  }
+  80% { opacity: 1;}
+  100% {
+    opacity: 0;
+    transform: translate(0, -800%) rotate(0);
+  }
+}
+
+/*section {display: none;} */
 
 
 @media screen and (max-width:480px) {

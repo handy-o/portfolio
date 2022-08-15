@@ -5,8 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="16x16" href="https://m.kakaobank.com/static/images/favicon/B16.gif">
+  <link rel="icon" sizes="96x96" href="https://m.kakaobank.com/static/images/favicon/B96.gif">
+  <link rel="icon" sizes="120x120" href="https://m.kakaobank.com/static/images/favicon/B120.gif">
+  <link rel="icon" sizes="256x256" href="https://m.kakaobank.com/static/images/favicon/B256.gif">
   <title>카카오뱅크 x 같이가치</title>
   <meta name="description" content="[12.10~12.20] 따뜻한 연탄 배달 프로젝트">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./test_2.css">
   <script src="./jquery-3.6.0.min.js"></script>
   <script src="./test_2.js"></script>
@@ -15,14 +22,14 @@
 <body>
   <a href="#content" class="skip-navi">본문 바로가기</a>
   <div id="wrap">
-    <div id="header">
+    <!-- <div id="header">
       <div class="section-row">
         <div class="header-wrap">
           <span>카카오뱅크 X 같이가치</span>
           <img src="./images/ico-84-close.png" alt="닫기 버튼" class="btn-x">
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div id="content">
       <section class="section1">
@@ -38,7 +45,7 @@
             <div class="briquette-wrap">
               <div class="kon-wrap">
                 <img src="./images/section1/kon-l.png" alt="" class="kon-l">
-                <img src="./images/section1/kon-r.png" alt="" class="kon-r">
+                <img src="./images/section1/kon-r.svg" alt="" class="kon-r">
                 <span class="oval o1"></span>
                 <span class="oval o2"></span>
                 <span class="oval o3"></span>
@@ -75,12 +82,18 @@
             <p class="descrtion">
               여러분의 응원 하나가 연탄 1장이 됩니다.
               <br><strong>60,000개</strong>가 모이면, 카카오뱅크가
-              <br>우리 이웃들에게 연탄을 배달해 드립니다.
+              <br class="hidden480">우리 이웃들에게 연탄을 배달해 드립니다.
             </p>
           </div>
 
           <div class="cheer-wrap">
+            <div class="motion-imgs">
+              <img src="./images/section2/hand-bottom-r.svg" alt="연탄잡은 손" class="hand back">
+              <img src="./images/section2/briqutte-02.png" alt="연탄" class="briquette">
+              <img src="./images/section2/hand-bottom-l.svg" alt="연탄잡은 손" class="hand">
+            </div>
             <div class="cheer-count">
+              <div class="effect-heart"></div>
               <h4><img src="./images/section2/txt-count-01.png" alt="연탄기부 응원개수"></h4>
               <div class="current-count">
                 <img src="./images/section2/num-4-g.png" alt="4" class="count">
@@ -121,7 +134,6 @@
           </div>
         </div>
       </section>
-
       <section class="section3">
         <div class="section-row">
           <div class="title-wrap">

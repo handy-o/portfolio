@@ -73,9 +73,12 @@ html {font-size:16px;}
   /* height: calc(100vh - 226px); */
   padding: 15.625% 6.25% 0; 
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
 }
 
 #survey-wrap  ::-webkit-scrollbar {
+  display: none;
   width: 4px;
   background:transparent; 
 }
@@ -267,6 +270,8 @@ select {
   overflow: auto;
   list-style: none;
   background-color: #fff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .select-wrap .select-options::-webkit-scrollbar {
   display: none;
@@ -354,6 +359,7 @@ select {
 .checkbox-wrap ul li .text-area textarea {
   float:right;
   margin-left: 30px;
+  width: calc(100% - 7.375rem);
   
 }
 .checkbox-wrap ul li input[type='checkbox']:checked + .accordion-content {
@@ -461,6 +467,10 @@ select {
     height: 70px;
     font-size: 20px;
     line-height: 70px;
+  }
+  .checkbox-wrap ul li .text-area textarea {
+    width:100%; 
+    margin-left:0;
   }
 }
 

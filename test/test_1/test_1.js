@@ -1,8 +1,9 @@
 $(document).ready(function() {
+
   // 단계진행
   var nowStep = 0;
   window.goNextStep = function() {
-    $('html, body').animate({scrollTo: 0});
+    $('html, body').animate({scrollTop:0}, 400);
     $('.sv').css({display:'none'});
     $('.btn-wrap.btn-next').removeClass('on');
     nowStep += 1;
@@ -168,7 +169,6 @@ $(document).ready(function() {
   }
 
 
-
   // .notice 위치 선정
   function setNoticePos() {
     var wH = $(window).height();
@@ -177,7 +177,12 @@ $(document).ready(function() {
     console.log('wH ' + wH);
     console.log('sv ' + sv);
     console.log('nH ' + nH);
-    $('.notice').css({'margin-top': wH - sv - nH - 115 +'px'})
+    if( wH > sv ) {
+      $('.notice').css({'margin-top': wH - sv - nH - 115 +'px'})
+    } else {
+      $('.notice').css({'margin-top': '40px'})
+    }
+   
   }
   setNoticePos();
    
