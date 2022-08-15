@@ -743,11 +743,11 @@ svg .wing {transform: scale(2);}
 }
 .section1 .img-wrap .kon-l {
 	transform: translate(-30%, 30%);
-	animation: aniKonL 0.6s 0s 1 linear forwards;
+	animation: aniKonL 0.4s 0s 1 linear forwards;
 }
 .section1 .img-wrap .kon-r {
 	transform: translate(30%, 30%);
-	animation: aniKonR 0.6s 0s 1 linear forwards;
+	animation: aniKonR 0.4s 0s 1 linear forwards;
 }
 
 @keyframes hangingHead {

@@ -102,7 +102,7 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
   
     var motionImgTop = document.querySelector('.section2 .section-row').getBoundingClientRect().top;
-    console.log(motionImgTop)
+    //console.log(motionImgTop)
   
     if(motionImgTop > 0 ) {
       $('.section2 .motion-imgs .briquette').css({'transform': 'translate('+ motionImgTop +'px,'+ -motionImgTop +'px)'})
