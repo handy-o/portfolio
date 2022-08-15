@@ -139,8 +139,8 @@ $(document).ready(function() {
   
   /* 공유&복사하기 */
   // 카카오톡
+  Kakao.init('e9d4a287cba5e05d44b6d22c73b72a89');  
   window.kakaoShare = function() {
-    Kakao.init('e9d4a287cba5e05d44b6d22c73b72a89');  
     Kakao.Link.createDefaultButton({
       container: '.kakao', 
       objectType: 'feed',
