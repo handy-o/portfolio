@@ -26,7 +26,7 @@ $(document).ready(function() {
       case 1 :
         $('.notice').removeClass('on');
         $('#survey-wrap .sv').css({'height':'calc(100vh - 100px)'});
-        $('#survey-wrap').css({'padding-bottom': '100rem'});
+        $('#survey-wrap').css({'padding-bottom': '6.25rem'});
         $('.survey2.sv').css({display:'block'});
         $('.btn-wrap.btn-next a').text('다음');
         break;
