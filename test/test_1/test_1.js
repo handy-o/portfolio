@@ -174,11 +174,13 @@ $(document).ready(function() {
     var wH = $(window).height();
     var sv = $('#survey-wrap .survey'+n+'').outerHeight(true);
     var nH = $('.notice').outerHeight();
+    var noticeMargintop =  wH - sv - nH - 105;
     // console.log('wH ' + wH);
     // console.log('sv ' + sv);
     // console.log('nH ' + nH);
-    if( wH > sv + nH ) {
-      $('.notice').css({'margin-top': wH - sv - nH - 105 +'px'})
+    // console.log('noticeMargintop '+ noticeMargintop)
+    if( wH > sv + nH || noticeMargintop > 0 ) {
+      $('.notice').css({'margin-top': noticeMargintop +'px'})
     } else {
       $('.notice').css({'margin-top': '40px'})
     }
