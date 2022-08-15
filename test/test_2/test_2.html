@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="./test_2.css">
   <script src="./jquery-3.6.0.min.js"></script>
   <script src="./test_2.js"></script>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <!--카카오톡공유(임시url)-->
 </head>
 
 <body>
@@ -191,9 +193,9 @@
             </div>
             <div class="share-wrap">
               <ul class="clearfix">
-                <li class="kakao"></li>
-                <li class="facebook"></li>
-                <li class="link"></li>
+                <li class="kakao" onClick="kakaoShare();"></li>
+                <li class="facebook" onClick="shareFacebook();"></li>
+                <li class="link" onClick="copyUrl();"></li>
               </ul>
             </div>
           </div>
@@ -207,6 +209,10 @@
       <div class="section-row">
         <img src="./images/section3/copyright-180.png" alt="ⓒ Kakao Friends">
       </div>
+    </div>
+
+    <div class="modal">
+      복사되었습니다.
     </div>
   </div>
 </body>
