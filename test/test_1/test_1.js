@@ -1,11 +1,18 @@
 $(document).ready(function() {
+  $(window).resize(function(){
+    if( $('.notice').hasClass('on')) setNoticePos();ㄴ
+  });
+
+  // 위치
+  function setNoticePos() {
+    var bH = $('.btn-wrap').outerHeight(true);
+    var nH = $('.notice').outerHeight(true);
+    $('#survey-wrap').css({'padding-bottom': nH + bH + 'px'});
+  }
+  setNoticePos();
 
   // 단계진행
   var nowStep = 0;
-  var bH = $('.btn-wrap').outerHeight(true);
-  var nH = $('.notice').outerHeight(true);
-  $('#survey-wrap').css({'padding-bottom': nH + bH + 'px'});
-  console.log('as')
   window.goNextStep = function() {
     $('html, body').animate({scrollTop:0}, 400);
     $('.sv').css({display:'none'});
@@ -19,7 +26,7 @@ $(document).ready(function() {
       case 1 :
         $('.notice').removeClass('on');
         $('#survey-wrap .sv').css({'height':'calc(100vh - 100px)'});
-        $('#survey-wrap').css({'padding-bottom': bH + 'px'});
+        $('#survey-wrap').css({'padding-bottom': '100rem'});
         $('.survey2.sv').css({display:'block'});
         $('.btn-wrap.btn-next a').text('다음');
         break;
@@ -37,7 +44,7 @@ $(document).ready(function() {
         $('.notice').addClass('on');
         $('#survey-wrap .sv').css({'height':'auto'});
         $('.survey5.sv').css({display:'block'}).addClass('on');
-        $('#survey-wrap').css({'padding-bottom': nH + bH + 'px'});
+        setNoticePos();
         $('.btn-wrap.btn-next').addClass('on');
         $('.btn-wrap.btn-next a').text('닫기');
       break;
