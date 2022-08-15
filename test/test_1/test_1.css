@@ -114,12 +114,13 @@ html {font-size:16px;}
 }
 .notice {
   display: none;
-  /* position:absolute;
-  bottom:100px;  */
-  position:relative;
+  position:absolute;
+  bottom:100px; bottom:6.25rem;
+  /* position:relative; */
   left: 6.25%; 
   width: 87.5%;
   padding: 36px 0%;
+  padding: 2.25rem 0;
 }
 .notice.on {
   display: inline-block;
