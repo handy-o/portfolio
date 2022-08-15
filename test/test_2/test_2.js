@@ -137,27 +137,24 @@ $(document).ready(function() {
   /* ./ 하트모션 */
   
   
-  /* 공유하기 */
-  
-   // 카카오톡
-    window.kakaoShare = function() {
-      Kakao.init('e9d4a287cba5e05d44b6d22c73b72a89');  // 사용할 앱의 JavaScript 키
-      Kakao.Link.createDefaultButton({
-        container: '.kakao', // 카카오공유버튼ID
-        objectType: 'feed',
-        content: {
-          title: "개발새발", // 보여질 제목
-          description: "개발새발 블로그입니다", // 보여질 설명
-          imageUrl: "https://recruit.kakaobank.com", // 콘텐츠 URL
-          link: {
-            mobileWebUrl: "https://recruit.kakaobank.com",
-            webUrl: "https://recruit.kakaobank.com"
-          }
-      }
-      });
+  /* 공유&복사하기 */
+  // 카카오톡
+  window.kakaoShare = function() {
+    Kakao.init('e9d4a287cba5e05d44b6d22c73b72a89');  
+    Kakao.Link.createDefaultButton({
+      container: '.kakao', 
+      objectType: 'feed',
+      content: {
+        title: $('meta[property="og:title"]').attr( 'content' ),
+        description: $('meta[property="og:description"]').attr( 'content' ),
+        imageUrl: $( 'meta[property="og:image"]' ).attr( 'content' ), 
+        link: {
+          mobileWebUrl: "https://recruit.kakaobank.com",
+          webUrl: "https://recruit.kakaobank.com"
+        }
     }
-   
-    
+    });
+  }
   
   // facebook
   var link =  document.location.href;
@@ -166,7 +163,7 @@ $(document).ready(function() {
     window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
   }
   
-  // 링크
+  // 링크 복사
   window.copyUrl = function(){
     var dummy   = document.createElement("input");  // 일시적생성
     document.body.appendChild(dummy);
@@ -177,7 +174,8 @@ $(document).ready(function() {
     $('.modal').addClass('on');
     setTimeout(() => {$('.modal').removeClass('on')}, 3000);
   }
-   
+  
+  /* ./ 공유&복사하기 */
   
   });
   

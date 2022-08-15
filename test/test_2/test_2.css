@@ -865,5 +865,7 @@ svg .wing {transform: scale(2);}
 
 
 @media screen and (max-width:375px) {
-	html {font-size:12px;}	
+	html {font-size:12px;}
+
+	
 }
