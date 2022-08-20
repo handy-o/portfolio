@@ -1,0 +1,2003 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="contene-language" content="ko">
+    <meta http-equiv="content-style-type" content="text/css">
+
+    <title>아틀란티카 서비스 이관 - VFUN</title>
+    <link rel="shortcut icon" href="http://file.valofe.com/Valofe_file/web/favicon/at_favicon.ico">
+
+    <meta name="application-name" content="아틀란티카 서비스 이관 - VFUN">
+    <meta name="" robots="" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=no">
+
+    <meta name="title" content="아틀란티카 서비스 이관 - VFUN">
+    <meta name="description" content="아틀란티카 - 인간과 세상을 닮은 게임">
+    <meta name="keywords" content="VFUN, VALOFE, 아틀란티카, 밸로프, MMORPG, 아틀란티카 캐릭터, 플레이동영상, 스크린샷, 주인공, 용병, 전략전투게임, 아카">
+    <meta name="author" content="VFUN">
+
+    <!-- Facebook OpenGraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="아틀란티카 서비스 이관 - VFUN">
+    <meta property="og:description" content="아틀란티카 - 인간과 세상을 닮은 게임">
+    <meta property="og:url" content=""> <!-- 주소 넣어주세요. -->
+
+    <meta property="og:image"
+        content="http://file.valofe.com/Valofe_file/web/transfer/at-ko/meta/facebook(1200x630).jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content=""> <!-- 주소 넣어주세요. -->
+    <meta name="twitter:title" content="아틀란티카 서비스 이관 - VFUN">
+    <meta name="twitter:description" content="아틀란티카 - 인간과 세상을 닮은 게임">
+    <meta name="twitter:image" content="http://file.valofe.com/Valofe_file/web/transfer/at-ko/meta/Twtter(520x254).jpg">
+    <meta itemprop="image" content="http://file.valofe.com/Valofe_file/web/transfer/at-ko/meta/Twtter(520x254).jpg">
+    <meta name="naver-site-verification" content="d4c181b966e8f5960192f1ef1d2936947af0c4b1">
+
+    <!-- combine menu 추가 시작 -->
+    <?php include(PLATFORM_URL . '/combine_menu/head?lang=' . $lang['lang'] . '&ret=' . urlencode($current_full_url)); ?>
+    <!-- combine menu 추가 종료 -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"
+        crossorigin="" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--temp -->
+    <link rel="stylesheet" href="./css/layout.css">
+    <!--temp -->
+    <link rel="stylesheet" href="./css/at_ko.css">
+
+    <!-- js -->
+    <script src="//file.valofe.com/Valofe_file/web/common/js/jquery-1.12.4.min.js"></script>
+    <script src="./js/template.js"></script>
+    <!-- ./ js -->
+
+    <!-- 구글 추적코드 -->
+    <!-- 라이브로 올라갈 실 주소 알려주시면 추적코드 생성해서 전달드리겠습니다. -->
+    <!-- ./ 구글 추적코드 -->
+
+</head>
+
+<body class="th-purple has-gnb" id="theme">
+
+    <div id="wrapper">
+        <canvas id='canvas'
+            style="position: absolute;top: 0;left: 0;z-index: -1;width: 100%;height: 100%; overflow: hidden;"> </canvas>
+
+        <div class="gnb-wrapper">
+            <div class="aside">
+                <label for="dontShow" class="dont-show">
+                    <input type="checkbox" id="dontShow">
+                    1주일 동안 보지않기
+                </label>
+                <a href="javascript:void(0);" class="go-home"><i class="fa fa-home"></i> 홈페이지바로가기</a>
+            </div>
+            <div class="floating">
+                <a href="javascript:void(0);" class="go-top" onclick="fnGoTop();">TOP</a>
+                <a href="javascript:void(0);" class="show-guide" onclick="fnOpenNotice();">이관 절차 안내 보기</a>
+            </div>
+        </div>
+        <div id="content" class="clearfix">
+
+            <!-- ########################################## -->
+            <!-- 타이틀 -->
+            <!-- ########################################## -->
+            <section id="title">
+                <div class="row-w">
+                    <article class="main-content">
+                        <div class="wrap-text">
+                            <h1 class="temp-logo"><img
+                                    src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/logo_at.png"
+                                    alt="atlantica online"></h1> <!-- 변경 -->
+                            <h2 class="temp-mig-title"><img
+                                    src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/title_at_ko.png"
+                                    alt="다음게임 아틀란티카 서비스 이관 안내"></h2> <!-- 변경 -->
+                            <h3 class="temp-schedule aniShowUp1">
+                                <!-- 변경 -->
+                                이관 기간 : 2020년 06월 4일(목)
+                                <br class="only-mb-show"> ~ <br class="only-mb-show">2020년 10월 7일 (수) 11:00
+                            </h3>
+                            <h4 class="temp-opentext aniShowUp2">
+                                <p><span class="temp-game-name">아틀란티카 온라인</span>을 아껴주시고 사랑해 주신 다음게임 회원 여러분들께 진심으로 감사의
+                                    말씀드립니다.</p>
+                                <p>지금까지 플레이하신 다음게임 회원 여러분들의 소중한 게임 정보를
+                                    <br>서비스 이관을 통해 밸로프에서 그대로 변함없이 즐기실 수 있습니다.
+                                    <!-- 변경 -->
+                                    <br><br>사전 이관 기간 내 신청하신 분들께만 드리는 특별한 혜택도 받아보세요!
+                                </p>
+                            </h4>
+                        </div>
+
+
+
+
+                    </article>
+                </div>
+            </section>
+
+            <!-- ########################################## -->
+            <!-- 이관 신청 기간안내 -->
+            <!-- ########################################## -->
+            <section id="duration">
+                <div class="row-w">
+                    <article>
+                        <div class="wrap-tb">
+                            <div class="cont-head"><img
+                                    src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/schedule_ko.png"
+                                    alt="이관 일정 안내"></div>
+                            <div class="cont-body">
+                                <table class="tbl-2col">
+                                    <colgroup>
+                                        <col width="40%">
+                                        <col>
+                                    </colgroup>
+                                    <tbody style="padding:20px;">
+                                        <tr>
+                                            <th>사전 이관 신청 기간</th>
+                                            <td>2020년 6월 4일(목) ~ 2020년 7월 2일(목) 점검 전</td>
+                                        </tr>
+                                        <tr>
+                                            <th>다음 채널링 서비스 종료</th>
+                                            <td>2020년 7월 2일(목) 점검 전</td>
+                                        </tr>
+                                        <tr>
+                                            <th>밸로프 서비스 시작</th>
+                                            <td>2020년 7월 2일(목) 점검 후</td>
+                                        </tr>
+                                        <tr>
+                                            <th>실시간 이관 기간</th>
+                                            <td>2020년 7월 2일(목) 점검 후 ~ 2020년 10월 7일(수) 11:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- ########################################## -->
+            <!-- 이관 스텝 -->
+            <!-- ########################################## -->
+            <section id="howTo">
+                <div class="row-w">
+                    <article>
+
+                        <!-- ########################################## -->
+                        <!-- case 1 - 0 : 로그인 : 밸로프/넥슨 모두 비로그인 -->
+                        <!-- ########################################## -->
+                        <div id="notLogin" class="case step1">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <!-- ########### 인클루드 요소 ########### -->
+                                            <ul class="pc-step">
+                                                <li class="list-step1 on">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1 on">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <p class="mb-now-step">밸로프 로그인</p>
+                                            <!-- ./ ########### 인클루드 요소 ########### -->
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 희망하는 <span
+                                                                class="temp-migration-company">다음게임 아틀란티카 온라인</span> 계정
+                                                            로그인</div> <!-- 변경 -->
+                                                        <div class="cont-body">
+                                                            <p>이관을 희망하는 <span class="temp-emphasis-text">다음게임 아틀란티카 온라인
+                                                                    계정</span>으로 로그인해주세요.</p>
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn ch-login">다음게임
+                                                                    로그인</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 받을 밸로프 계정 로그인</div>
+                                                        <div class="cont-body">
+                                                            <p>이관을 받으실 <span class="temp-emphasis-text">밸로프 계정</span>으로
+                                                                로그인해 주세요.</p>
+                                                            <p class="temp-emphasis-text2">이관되는 게임정보는 각 1개의 계정 밸로프의 1개의
+                                                                계정으로 1:1 이관이 됩니다.
+                                                                <br>
+                                                                이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가 없어야 합니다
+                                                            </p>
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn login">밸로프
+                                                                    로그인</a>
+                                                                <a href="" target="_blank" class="btn signup">밸로프
+                                                                    회원가입</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--  ########### 인클루드 요소 ########### -->
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <!-- ./ ########### 인클루드 요소 ########### -->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ########################################## -->
+                        <!-- case 1 - 1 : 로그인 : 밸로프만 로그인 -->
+                        <!-- ########################################## -->
+                        <div id="valofeLogin" class="case step1">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <!-- ########### 인클루드 요소 ########### -->
+                                            <ul class="pc-step">
+                                                <li class="list-step1 on">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1 on">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                                <!--<li class="list-step5"><dl><dt>05</dt></dl></li>-->
+                                            </ul>
+                                            <p class="mb-now-step">밸로프 로그인</p>
+                                            <!-- ./ ########### 인클루드 요소 ########### -->
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 희망하는 <span
+                                                                class="temp-migration-company">다음게임 아틀란티카 온라인</span> 계정
+                                                            로그인</div> <!-- 변경 -->
+                                                        <div class="cont-body">
+                                                            <p>이관을 희망하는 <span class="temp-emphasis-text">다음게임 아틀란티카 온라인
+                                                                    계정</span>으로 로그인해주세요.</p>
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn ch-login">다음게임
+                                                                    로그인</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 받을 밸로프 계정 로그인</div>
+                                                        <div class="cont-body">
+                                                            <p>이관을 받으실 <span class="temp-emphasis-text">밸로프 계정</span>으로
+                                                                로그인이 <strong>확인</strong> 되었습니다.</p>
+                                                            <p class="temp-emphasis-text2">이관되는 게임정보는 각 1개의 계정 밸로프의 1개의
+                                                                계정으로 1:1 이관이 됩니다.
+                                                                <br>
+                                                                이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가 없어야 합니다
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--  ########### 인클루드 요소 ########### -->
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <!-- ./ ########### 인클루드 요소 ########### -->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ########################################## -->
+                        <!-- case 1 - 2 : 로그인 : 다음만 로그인  -->
+                        <!-- ########################################## -->
+                        <div id="daumLogin" class="case step1">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <!-- ########### 인클루드 요소 ########### -->
+                                            <ul class="pc-step">
+                                                <li class="list-step1 on">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1 on">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                                <!--<li class="list-step5"><dl><dt>05</dt></dl></li>-->
+                                            </ul>
+                                            <p class="mb-now-step">밸로프 로그인</p>
+                                            <!-- ./ ########### 인클루드 요소 ########### -->
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 희망하는 <span
+                                                                class="temp-migration-company">다음게임 아틀란티카 온라인</span> 계정
+                                                            로그인</div>
+                                                        <div class="cont-body">
+                                                            <p>이관을 희망하는 <span class="temp-emphasis-text">다음게임 아틀란티카 온라인
+                                                                    계정</span> 로그인이 <strong>확인</strong> 되었습니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 받을 밸로프 계정 로그인</div>
+                                                        <div class="cont-body">
+                                                            <p>이관을 받으실 <span class="temp-emphasis-text">밸로프 계정</span>으로
+                                                                로그인이 <strong>확인</strong> 되었습니다.</p>
+                                                            <p class="temp-emphasis-text2">이관되는 게임정보는 각 1개의 계정 밸로프의 1개의
+                                                                계정으로 1:1 이관이 됩니다.
+                                                                <br>
+                                                                이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가 없어야 합니다
+                                                            </p>
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn login">밸로프
+                                                                    로그인</a>
+                                                                <a href="" target="_blank" class="btn signup">밸로프
+                                                                    회원가입</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--  ########### 인클루드 요소 ########### -->
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <!-- ./ ########### 인클루드 요소 ########### -->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ########################################## -->
+                        <!-- case 1 - 3 : 로그인 : 모두 로그인  -->
+                        <!-- ########################################## -->
+                        <div id="allLogin" class="case step1">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <!-- ########### 인클루드 요소 ########### -->
+                                            <ul class="pc-step">
+                                                <li class="list-step1 on">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1 on">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                                <!--<li class="list-step5"><dl><dt>05</dt></dl></li>-->
+                                            </ul>
+                                            <p class="mb-now-step">밸로프 로그인</p>
+                                            <!-- ./ ########### 인클루드 요소 ########### -->
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 희망하는 <span
+                                                                class="temp-migration-company">다음게임 아틀란티카 온라인</span> 계정
+                                                            로그인</div>
+                                                        <div class="cont-body">
+                                                            <p>이관을 희망하는 <span class="temp-emphasis-text">다음게임 아틀란티카 온라인
+                                                                    계정</span> 로그인이 <strong>확인</strong> 되었습니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 받을 밸로프 계정 로그인</div>
+                                                        <div class="cont-body">
+                                                            <p>이관을 받으실 <span class="temp-emphasis-text">밸로프 계정</span>으로
+                                                                로그인이 <strong>확인</strong> 되었습니다.</p>
+                                                            <p class="temp-emphasis-text2">이관되는 게임정보는 각 1개의 계정 밸로프의 1개의
+                                                                계정으로 1:1 이관이 됩니다.
+                                                                <br>
+                                                                이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가 없어야 합니다
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrap-tb">
+                                                        <div class="temp-wrap-btn">
+                                                            <a href="javascript:void(0);" class="btn ch-login">이관
+                                                                진행하기</a> <!-- 변경 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--  ########### 인클루드 요소 ########### -->
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <!-- ./ ########### 인클루드 요소 ########### -->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ########################################## -->
+                        <!-- case 2 : 게임정보 제공 동의 -->
+                        <!-- ########################################## -->
+                        <div id="personalAgree" class="case">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <ul class="pc-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2 on">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2 on">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <p class="mb-now-step">게임정보 이관 동의</p>
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">게임정보 이관 동의</div>
+                                                        <div class="cont-body">
+                                                            <!-- 변경 -->
+                                                            <p>다음게임의 채널링 제휴 종료로 인해 아틀란티카 온라인 게임 서비스를 이관 절차에 따라 밸로프 계정으로
+                                                                게임정보를 이관하실 수 있습니다.
+                                                                <br><br>
+                                                                이에 본인은 본인과 다음게임간에 이용동의로 체결된 "아틀란티카 온라인 서비스 이용약관"에 따라 발생한
+                                                                일체의 권리 및 의무를 포함하여
+                                                                다음게임 계정으로 이용하던 아틀란티카 온라인 게임 정보를 밸로프에게 이관하고 처리하는 것에 대해
+                                                                동의합니다.
+                                                                <br><br>
+                                                                <strong>[이관되는 게임정보]</strong>
+                                                                <br>- 캐릭터 정보를 포함한 게임 데이터 일체, 제재 기록
+                                                            </p>
+                                                        </div>
+                                                        <div class="temp-wrap-checkbox">
+                                                            <label for="check_agree" class="label-chk">
+                                                                <input type="checkbox" class="chk"
+                                                                    onclick="transfer.agree1 = true;" value=""
+                                                                    id="check_agree">
+                                                                게임 정보 이관에 동의합니다.
+                                                                <span class="checkbox-custom"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="temp-wrap-btn">
+                                                        <a href="javascript:void(0);" class="btn btn-agree">이관 동의</a>
+                                                    </div>
+                                                </div>
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ########################################## -->
+                        <!-- case 3 - 1 : 이관 정보 확인 : 이관을 진행 중입니다. -->
+                        <!-- ########################################## -->
+                        <div id="migrationCheck-ing" class="case">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <ul class="pc-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3 on">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3 on">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <p class="mb-now-step">이관 정보 확인</p>
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 정보 확인</div>
+                                                        <div class="cont-body">
+                                                            <div class="wrap-txt">
+                                                                <h2>이관될 게임정보가 정확한지 확인해 주세요.</h2>
+                                                                <p>이관을 희망하는 다음게임 계정의 게임정보와 이관을 받으실 밸로프 계정이 정확한지 다시 한번
+                                                                    확인해 주세요.</p>
+                                                                <p>이관 신청 시 취소 및 변경이 불가능합니다. 이관 정보가 정확하다면 [확인] 버튼을 선택해
+                                                                    주세요.</p>
+                                                            </div>
+
+                                                            <!-- 이관 확인 input -->
+                                                            <div class="migration-check-input">
+                                                                <!--<p class="desc">·이관신청은 이관 이력이 없는 [카카오게임즈] 아이디 : [밸로프] 아이디(1:1)로만 이관이 가능합니다. </p>-->
+                                                                <!-- 캐릭터선택 : 인풋형태에서 table로 변경 -->
+                                                                <div
+                                                                    class="input-character-wrap selectBox clearfix mig-input">
+                                                                    <table id="characterInfo" class="">
+                                                                        <!-- 서버구분이 없어 서버명이 없는 경우 class에 'no-server' 추가 -->
+                                                                        <tr>
+                                                                            <td>
+                                                                                서버
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                캐릭터정보
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- 서버 2개 이상 시 for문 -->
+                                                                        <tr style="">
+                                                                            <td
+                                                                                style="margin:0;padding:10px 0; text-align:center;line-height:1.5;font-size:16px;font-size:1rem;font-weight:100;c">
+                                                                                예-레아
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                예-미스터두목곰, 샤링샤링, 홍길동과산적들
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr style="">
+                                                                            <td
+                                                                                style="margin:0;padding:10px 0; text-align:center;line-height:1.5;font-size:16px;font-size:1rem;font-weight:100;c">
+                                                                                예-벨리사
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                예-미스터두목곰, 샤링샤링, 홍길동과산적들
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- ./ 서버 2개 이상 시 for문 -->
+                                                                    </table>
+                                                                </div>
+                                                                <div
+                                                                    class="input-id-wrap inputBox clearfix mig-input off">
+                                                                    <!-- off class명으로 채널사 input은 나타나지 않음 -->
+                                                                    <div class="input-left">
+                                                                        <!-- 변경 -->
+                                                                        <h2>다음게임</h2>
+                                                                        <div class="show-input-info">
+                                                                            <label for="daumGameId-ing"
+                                                                                class="skip">다음게임 ID</label>
+                                                                            <input type="text" id="daumGameId-ing"
+                                                                                name="daumGameId-ing" placeholder=""
+                                                                                readonly="" value="ID">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="input-right">
+                                                                        <h2>이관을 받으실 밸로프 계정</h2>
+                                                                        <div class="show-input-info">
+                                                                            <label for="valofeId-ing" class="skip">VFUN
+                                                                                ID</label>
+                                                                            <input type="text" id="valofeId-ing"
+                                                                                name="valofeId-ing" placeholder=""
+                                                                                readonly="" value="ID">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn login">확인</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ########################################## -->
+                        <!-- case 3 - 2 : 이관 정보 확인 : 정보 확인이 필요합니다. -->
+                        <!-- ########################################## -->
+                        <div id="migrationCheck-need" class="case">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <ul class="pc-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3 on">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3 on">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <p class="mb-now-step">이관 정보 확인</p>
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 정보 확인</div>
+                                                        <div class="cont-body">
+                                                            <div class="wrap-txt">
+                                                                <h2>정보 확인이 필요합니다.</h2>
+                                                                <p>이관 정보를 확인할 수 없습니다.</p>
+                                                                <p>다시 시도해주세요.</p>
+                                                                <br>
+                                                                <p>지속적으로 문제 발생 시 밸로프 고객센터로 문의를 접수해 주시기 바랍니다.</p>
+                                                            </div>
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn login">확인</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ########################################## -->
+                        <!-- case 3 - 2 : 이관 정보 확인 : 이관 실패 -->
+                        <!-- ########################################## -->
+                        <div id="migrationCheck-fail" class="case">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <ul class="pc-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3 on">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3 on">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <p class="mb-now-step">이관 정보 확인</p>
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 정보 확인</div>
+                                                        <div class="cont-body">
+                                                            <div class="wrap-txt">
+                                                                <h2>이관 진행에 일시적인 오류가 발생되었습니다.</h2>
+                                                                <p>죄송합니다. 일시적인 오류로 이관 처리가 중단 되었습니다.</p>
+                                                                <p>안전한 이관을 위해 모든 웹사이트에서 로그아웃 및 브라우저를 종료한 후, 처음부터 다시 시도해
+                                                                    주세요.</p>
+                                                                <br>
+                                                                <p>지속적으로 문제 발생 시 밸로프 고객센터로 문의를 접수해 주시기 바랍니다.</p>
+                                                                <p class="error-code">오류코드 : [
+                                                                    <?=$view_code?> ]
+                                                                </p>
+                                                            </div>
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn login">확인</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div> <!-- ./temp-cont-wrap-->
+                                        </div>
+                                    </div>
+                                </div><!-- cont-body-->
+                            </div>
+                        </div>
+
+
+                        <!-- ########################################## -->
+                        <!-- case 4 : 이관 완료 - 이관신청 이력이 있는 경우 : 이미 이관 신청이 완료된 계정 입니다. -->
+                        <!-- ########################################## -->
+                        <div id="migrationCompletionAlready" class="case">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 진행"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <ul class="pc-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4 on">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4 on">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <p class="mb-now-step">이관 완료</p>
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 완료</div>
+                                                        <div class="cont-body">
+                                                            <div class="wrap-txt">
+                                                                <!-- 변경 -->
+                                                                <h2>이미 이관 신청이 완료된 계정 입니다.</h2>
+                                                                <p>사전 이관 신청을 하신 경우, 7월 2일(목) 점검 시 다음게임 아틀란티카 온라인에서</p>
+                                                                <p>플레이한 게임 정보가 점검일 기준으로 모두 안전하게 일괄 이관될 예정입니다.</p>
+                                                                <br>
+                                                                <p>7월 2일(목) 점검 전까지는 다음게임 계정으로 안심하고 게임을 이용해 주셔도 됩니다.</p>
+                                                                <br>
+                                                                <p>7월 2일(목) 점검 후에는 밸로프 아틀란티카 온라인 공식 홈페이지로 접속하셔서
+                                                                    <br>밸로프 계정으로 로그인하신 후 게임 이용해 주세요.
+                                                                </p>
+                                                            </div>
+
+                                                            <!-- 이관 확인 input -->
+                                                            <div class="migration-check-input">
+                                                                <!-- 캐릭터선택 : 인풋형태에서 table로 변경 -->
+                                                                <div
+                                                                    class="input-character-wrap selectBox clearfix mig-input">
+                                                                    <table id="characterInfo" class="">
+                                                                        <!-- 서버구분이 없어 서버명이 없는 경우 class에 'no-server' 추가 -->
+                                                                        <tr>
+                                                                            <td>
+                                                                                서버
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                캐릭터정보
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- 서버 2개 이상 시 for문 -->
+                                                                        <tr style="">
+                                                                            <td
+                                                                                style="margin:0;padding:10px 0; text-align:center;line-height:1.5;font-size:16px;font-size:1rem;font-weight:100;c">
+                                                                                예-레아
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                예-미스터두목곰, 샤링샤링, 홍길동과산적들
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr style="">
+                                                                            <td
+                                                                                style="margin:0;padding:10px 0; text-align:center;line-height:1.5;font-size:16px;font-size:1rem;font-weight:100;c">
+                                                                                예-벨리사
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                예-미스터두목곰, 샤링샤링, 홍길동과산적들
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- ./ 서버 2개 이상 시 for문 -->
+                                                                    </table>
+                                                                </div>
+                                                                <div
+                                                                    class="input-id-wrap inputBox clearfix mig-input off">
+                                                                    <!-- off class명으로 채널사 input은 나타나지 않음 -->
+                                                                    <div class="input-left">
+                                                                        <!-- 변경 -->
+                                                                        <h2>다음게임</h2>
+                                                                        <div class="show-input-info">
+                                                                            <label for="daumGameId-ing"
+                                                                                class="skip">다음게임 ID</label>
+                                                                            <input type="text" id="daumGameId-ing"
+                                                                                name="daumGameId-ing" placeholder=""
+                                                                                readonly="" value="ID">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="input-right">
+                                                                        <h2>이관을 받으실 밸로프 계정</h2>
+                                                                        <div class="show-input-info">
+                                                                            <label for="valofeId-ing" class="skip">VFUN
+                                                                                ID</label>
+                                                                            <input type="text" id="valofeId-ing"
+                                                                                name="valofeId-ing" placeholder=""
+                                                                                readonly="" value="ID">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn login">확인</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ########################################## -->
+                        <!-- case 4 : 이관 완료(사전이관시) -->
+                        <!-- ########################################## -->
+                        <div id="migrationCompletion" class="case">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 방법"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <ul class="pc-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4 on">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4 on">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <p class="mb-now-step">이관 완료</p>
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 완료</div>
+                                                        <div class="cont-body">
+                                                            <div class="wrap-txt">
+                                                                <!-- 변경 -->
+                                                                <h2>사전 이관 신청이 정상적으로 접수 되었습니다.</h2>
+                                                                <p>다음게임 아틀란티카 온라인에서 플레이하신 게임 정보가</p>
+                                                                <p>7월 2일(목) 점검 시 밸로프 계정으로 일괄 이관될 예정입니다.</p>
+                                                                <br>
+                                                                <p>7월 2일(목) 점검 전까지는 다음게임 계정으로 게임 플레이가 가능합니다.</p>
+                                                                <p>7월 2일(목) 점검 후에는 밸로프 아틀란티카 온라인 홈페이지를 통해 게임 이용하실 수
+                                                                    있습니다.</p>
+                                                            </div>
+
+                                                            <!-- 이관 확인 input -->
+                                                            <div class="migration-check-input">
+                                                                <!-- 캐릭터선택 : 인풋형태에서 table로 변경 -->
+                                                                <div
+                                                                    class="input-character-wrap selectBox clearfix mig-input">
+                                                                    <table id="characterInfo" class="">
+                                                                        <!-- 서버구분이 없어 서버명이 없는 경우 class에 'no-server' 추가 -->
+                                                                        <tr>
+                                                                            <td>
+                                                                                서버
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                캐릭터정보
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- 서버 2개 이상 시 for문 -->
+                                                                        <tr style="">
+                                                                            <td
+                                                                                style="margin:0;padding:10px 0; text-align:center;line-height:1.5;font-size:16px;font-size:1rem;font-weight:100;c">
+                                                                                예-레아
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                예-미스터두목곰, 샤링샤링, 홍길동과산적들
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr style="">
+                                                                            <td
+                                                                                style="margin:0;padding:10px 0; text-align:center;line-height:1.5;font-size:16px;font-size:1rem;font-weight:100;c">
+                                                                                예-벨리사
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                예-미스터두목곰, 샤링샤링, 홍길동과산적들
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- ./ 서버 2개 이상 시 for문 -->
+                                                                    </table>
+                                                                </div>
+                                                                <div
+                                                                    class="input-id-wrap inputBox clearfix mig-input off">
+                                                                    <!-- off class명으로 채널사 input은 나타나지 않음 -->
+                                                                    <div class="input-left">
+                                                                        <!-- 변경 -->
+                                                                        <h2>다음게임</h2>
+                                                                        <div class="show-input-info">
+                                                                            <label for="daumGameId-ing"
+                                                                                class="skip">다음게임 ID</label>
+                                                                            <input type="text" id="daumGameId-ing"
+                                                                                name="daumGameId-ing" placeholder=""
+                                                                                readonly="" value="ID">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="input-right">
+                                                                        <h2>이관을 받으실 밸로프 계정</h2>
+                                                                        <div class="show-input-info">
+                                                                            <label for="valofeId-ing" class="skip">VFUN
+                                                                                ID</label>
+                                                                            <input type="text" id="valofeId-ing"
+                                                                                name="valofeId-ing" placeholder=""
+                                                                                readonly="" value="ID">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);" class="btn login">확인</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ########################################## -->
+                        <!-- case 4 : 이관 완료(사후(실시간)이관시) -->
+                        <!-- ########################################## -->
+                        <div id="migrationCompletionLive" class="case">
+                            <div class="wrap-tb">
+                                <div class="cont-head"><img
+                                        src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/ing_ko.png"
+                                        alt="이관 방법"></div>
+                                <div class="cont-body">
+                                    <div class="step valofeLogin">
+                                        <div class="wrap-step">
+                                            <ul class="pc-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>STEP.01</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 계정 로그인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>STEP.02</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>게임정보 이관 동의</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>STEP.03</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 정보 확인</dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4 on">
+                                                    <dl>
+                                                        <dt>STEP.04</dt>
+                                                        <dd class="img"></dd>
+                                                        <dd>이관 완료</dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="mb-step">
+                                                <li class="list-step1">
+                                                    <dl>
+                                                        <dt>01</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step2">
+                                                    <dl>
+                                                        <dt>02</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step3">
+                                                    <dl>
+                                                        <dt>03</dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="list-step4 on">
+                                                    <dl>
+                                                        <dt>04</dt>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <p class="mb-now-step">이관 완료</p>
+                                            <div class="temp-cont-wrap">
+                                                <div class="temp-content-light-bg cont-step1">
+                                                    <div class="wrap-tb">
+                                                        <div class="cont-head">이관 완료</div>
+                                                        <div class="cont-body">
+                                                            <div class="wrap-txt">
+                                                                <!-- 변경 -->
+                                                                <h2>이관이 정상적으로 완료 되었습니다.</h2>
+                                                                <p>다음게임 아틀란티카 온라인에서 플레이하신 게임 정보가 밸로프 계정으로 이관 처리가 완료
+                                                                    되었습니다.</p>
+                                                                <p>지금 바로 밸로프 젬파이터 홈페이지를 통해 게임을 이용하실 수 있습니다..</p>
+                                                            </div>
+
+                                                            <!-- 이관 확인 input -->
+                                                            <div class="migration-check-input">
+                                                                <!-- 캐릭터선택 : 인풋형태에서 table로 변경 -->
+                                                                <div
+                                                                    class="input-character-wrap selectBox clearfix mig-input">
+                                                                    <table id="characterInfo" class="">
+                                                                        <!-- 서버구분이 없어 서버명이 없는 경우 class에 'no-server' 추가 -->
+                                                                        <tr>
+                                                                            <td>
+                                                                                서버
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                캐릭터정보
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- 서버 2개 이상 시 for문 -->
+                                                                        <tr style="">
+                                                                            <td
+                                                                                style="margin:0;padding:10px 0; text-align:center;line-height:1.5;font-size:16px;font-size:1rem;font-weight:100;c">
+                                                                                예-레아
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                예-미스터두목곰, 샤링샤링, 홍길동과산적들
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr style="">
+                                                                            <td
+                                                                                style="margin:0;padding:10px 0; text-align:center;line-height:1.5;font-size:16px;font-size:1rem;font-weight:100;c">
+                                                                                예-벨리사
+                                                                            </td>
+                                                                            <td style="background:#fff;">
+                                                                            </td>
+                                                                            <td>
+                                                                                예-미스터두목곰, 샤링샤링, 홍길동과산적들
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- ./ 서버 2개 이상 시 for문 -->
+                                                                    </table>
+                                                                </div>
+                                                                <div
+                                                                    class="input-id-wrap inputBox clearfix mig-input off">
+                                                                    <!-- off class명으로 채널사 input은 나타나지 않음 -->
+                                                                    <div class="input-left">
+                                                                        <!-- 변경 -->
+                                                                        <h2>다음게임</h2>
+                                                                        <div class="show-input-info">
+                                                                            <label for="daumGameId-ing"
+                                                                                class="skip">다음게임 ID</label>
+                                                                            <input type="text" id="daumGameId-ing"
+                                                                                name="daumGameId-ing" placeholder=""
+                                                                                readonly="" value="ID">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="input-right">
+                                                                        <h2>이관을 받으실 밸로프 계정</h2>
+                                                                        <div class="show-input-info">
+                                                                            <label for="valofeId-ing" class="skip">VFUN
+                                                                                ID</label>
+                                                                            <input type="text" id="valofeId-ing"
+                                                                                name="valofeId-ing" placeholder=""
+                                                                                readonly="" value="ID">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="temp-wrap-btn">
+                                                                <a href="javascript:void(0);"
+                                                                    class="btn btn-long login">밸로프 젬파이터 홈페이지 바로가기</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="temp-notice">
+                                                    <p>주의사항</p>
+                                                    <ol>
+                                                        <li>다음게임 캐시는 이전 대상에 포함되지 않으며, 다음게임 게임에서만 사용 가능합니다.</li>
+                                                        <li>이관 신청을 위해서는 밸로프 계정이 필요하며, 이관될 밸로프 계정에는 생성된 아틀란티카 온라인의 캐릭터가
+                                                            없어야 합니다.</li>
+                                                        <li>이관 시 제재 정보도 이전되므로 이관하실 계정의 제재 상태를 반드시 확인하시고 이관 신청해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>게임 이용이 제한된 계정의 경우 이관 신청은 가능하나, 제재 기간 종료 후 게임을 이용할 수 있습니다.
+                                                        </li>
+                                                        <li>이관 하시는 다음 아틀란티카 계정의 [아이템 몰] – [아이템 받기]에 보관중인 아이템은 이관이 되지 않을
+                                                            수 있으니 이관 신청 전 반드시 수령하여 주시기 바랍니다.</li>
+                                                        <li>이관 신청을 완료하신 후에는 취소 및 변경이 불가능하므로 이관 정보를 정확히 확인해 주시기 바랍니다.
+                                                        </li>
+                                                        <li>모든 이관 기간 종료 후 다음게임의 게임 정보는 복구가 불가능한 방법으로 삭제되므로 추가 이관이 불가합니다.
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div><!-- ./ #content -->
+
+
+
+        <!-- ########################################## -->
+        <!-- 레이어 팝업 -->
+        <!-- ########################################## -->
+        <div class="bg-black" onclick="fnClosePop();"></div>
+        <div id="modal-wrapper">
+            <!-- 이관 안내 -->
+            <div id="modal-mig-guide" class="mig-guide">
+                <div class="row-w">
+                    <article>
+                        <div class="cont-head"><img
+                                src="https://transfer-ko.valofe.com/static/images/template/purple/at_ko/how_to_ko.png"
+                                alt="이관 방법 안내"></div>
+                        <div class="cont-body">
+                            <div class="wrap-txt overflow-y">
+                                <div class="overflow-txt">
+                                    <p style="font-size:15px;">다음게임 아틀란티카 온라인 채널링 제휴 종료에 따라 아틀란티카 온라인은 2020년 7월 2일부로
+                                        다음게임 채널링 서비스가 종료됩니다.
+                                        이에 아래의 간단한 절차를 통해 기존 게임정보 그대로 밸로프를 통해 게임 이용을 하실 수 있습니다.</p>
+                                    <br>
+                                    <strong>[1] Step 1 계정 로그인</strong><br>
+                                    <br>
+                                    <p>이관을 희망하시는 게임정보를 보유한 다음게임 계정 로그인 및 이관을 받으실 밸로프 계정 로그인을 해 주세요.</p>
+                                    <ul>
+                                        <li>⦁ 밸로프 계정이 없으신 경우, 밸로프 “회원가입”을 통해 계정을 먼저 생성해 주세요.</li>
+                                        <li>⦁ 2020년 5월 28일(목) 이전 다음게임 아틀란티카 온라인 캐릭터를 생성한 고객님만 이관하실 수 있습니다.</li>
+                                        <li>⦁ 이관을 받으실 밸로프 ID에는 생성된 아틀란티카 온라인 캐릭터가 없어야 합니다.</li>
+                                        <li>⦁ 한번의 신청으로 1개의 계정만 이관 가능하므로 다수 계정 이관 희망 시 이관 계정 수만큼 반복 신청해야 합니다.</li>
+                                        <li>⦁ 밸로프는 명의자당 최대 5개의 중복 계정 가입이 가능하므로, 최대 5개의 다음게임 계정을 이관하실 수 있습니다.</li>
+                                    </ul>
+
+                                    <br>
+                                    <strong>[2] Step 2 게임정보 이관 및 개인정보 제공 동의</strong><br>
+                                    <br>
+                                    <p>이관 및 개인정보 제3자 제공 동의해야 이관이 가능합니다.</p>
+                                    ⦁ 다음게임 캐시는 이관 대상이 아니므로, 다음게임 고객센터를 통해 환불 받으셔야 합니다.<br>
+                                    <br>
+                                    <strong>[3] Step 3 이관 정보 확인</strong><br>
+                                    <br>
+                                    <p>이관을 하실 다음게임 게임정보와 이관을 받을 밸로프 계정의 정보를 확인하실 수 있습니다.</p>
+                                    ⦁ 이관을 희망하시는 계정 및 게임 정보와 이관을 받으실 계정 정보를 정확하게 확인해 주세요.<br>
+                                    <br>
+                                    <strong>[4] Step 4 이관 완료</strong><br>
+                                    <br>
+                                    <p>사전 이관이 완료된 계정을 확인할 수 있습니다.</p>
+                                    <ul>
+                                        <li>⦁ 사전 이관 신청하신 정보는 7월 2일 점검 시 밸로프 계정으로 이전될 예정입니다.</li>
+                                        <li>⦁ 사전 이관 신청을 완료해도 7월 2일 점검 전까지 다음게임 계정으로 자유롭게 게임 플레이가 가능합니다.</li>
+                                        <li>⦁ 이관 신청이 완료된 후에는 취소 또는 변경이 불가하며, 환불 대상에서 제외됩니다.</li>
+                                    </ul>
+                                    <br>
+                                    <strong>[5] 사전 이관 신청 기간을 놓친 경우</strong><br>
+                                    <br>
+                                    <p>사전 이관 신청 종료 후에도 2020년 7월 2일 점검 후부터 2020년 10월 7일(수) 11:00 까지 실시간 이관을 진행할 수 있습니다.
+                                    </p>
+                                    <ul>
+                                        <li>⦁ 실시간 이관 기간에는 이관 완료 즉시 밸로프 아틀란티카 온라인 홈페이지를 통해 게임을 이용하실 수 있습니다.</li>
+                                        <li>⦁ 기한 내 신청하지 않은 계정은 이용이 불가능하며, 해당 계정의 게임 정보는 보호되지 않습니다.</li>
+                                    </ul>
+                                    <br>
+                                    <br>
+                                    ※ 사전 이관 신청 기간에 미리 신청하신 분들께만 드리는 특별한 혜택이 준비되어 있으며<br>
+                                    사전 이관 신청 종료 후에 실시간 이관 신청 시에는 받으실 수 없으니 서둘러 신청해 주세요.<br>
+                                </div>
+                            </div>
+                            <div class="temp-wrap-btn">
+                                <a href="javascript:void(0);" class="btn next" onclick="fnClosePop();">확인</a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" id="modal-close" onclick="fnClosePop();">레이어 창 닫기</a>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 계정에 게임 정보가 없습니다. fnOpenNoHistory();  : 채널사 플레이 이력이 없거나 이용동의를 하지 않은 경우 -->
+            <div id="modal-no-history">
+                <div class="no-history">
+                    <div class="modal_title">
+                        <h5>안내
+                            <!--<img src="http://file.valofe.com/Valofe_file/web/icarus/ko/transfer/images/h5_login.gif" alt="로그인">-->
+                        </h5>
+                    </div>
+                    <div class="modal-contents">
+                        <h2>다음게임 계정에 이관할 <br class="br-popup">게임 정보가 없습니다.</h2>
+                        <p>이관 희망 계정에 게임 정보가 없는 경우,</p>
+                        <p>이관 신청할 수 없습니다.</p>
+                        <a href="javascript:void(0);" class="btn_ok" onclick="fnClosePop();">확인</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" id="modal-close" onclick="fnClosePop();">레이어 창 닫기</a>
+            </div>
+
+            <!-- 플레이 이력이 있습니다. fnOpenIsHistory();  : 이관사 플레이 이력이 있는 경우 ***체크확인필요*** -->
+            <div id="modal-is-history">
+                <div class="is-history">
+                    <div class="modal_title">
+                        <h5>안내
+                            <!--<img src="http://file.valofe.com/Valofe_file/web/icarus/ko/transfer/images/h5_login.gif" alt="로그인">-->
+                        </h5>
+                    </div>
+                    <div class="modal-contents">
+                        <h2>밸로프 계정에 <br class="br-popup">아틀란티카 온라인 캐릭터가 있습니다.</h2>
+                        <p>이관 받을 계정에 아틀란티카 캐릭터가 있는 경우,</p>
+                        <p>이관 신청할 수 없습니다.</p>
+                        <a href="javascript:void(0);" class="btn_ok" onclick="fnClosePop();">확인</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" id="modal-close" onclick="fnClosePop();">레이어 창 닫기</a>
+            </div>
+        </div> <!-- ./ #wrapper -->
+
+        <script>
+            $(document).ready(function () {
+                // select option  디자인
+                function optionStyle() {
+                    $('#migrationCheck-ing select, #migrationCompletion select').each(function () {
+                        var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+                        $this.addClass('select-hidden');
+                        $this.wrap('<div class="select"></div>');
+                        $this.after('<div class="select-styled"></div>');
+
+                        var $styledSelect = $this.next('div.select-styled');
+                        $styledSelect.text($this.children('option').eq(0).text());
+
+                        var $list = $('<ul />', {
+                            'class': 'select-options'
+                        }).insertAfter($styledSelect);
+
+                        for (var i = 0; i < numberOfOptions; i++) {
+                            $('<li />', {
+                                text: $this.children('option').eq(i).text(),
+                                rel: $this.children('option').eq(i).val()
+                            }).appendTo($list);
+                        }
+
+                        var $listItems = $list.children('li');
+
+                        $styledSelect.click(function (e) {
+                            e.stopPropagation();
+                            $('div.select-styled.active').not(this).each(function () {
+                                $(this).removeClass('active').next('ul.select-options').hide();
+                            });
+                            $(this).toggleClass('active').next('ul.select-options').toggle();
+                            $('.select-styled').toggleClass('on')
+                        });
+
+                        $listItems.click(function (e) {
+                            e.stopPropagation();
+                            $styledSelect.text($(this).text()).removeClass('active');
+                            $this.val($(this).attr('rel'));
+                            $list.hide();
+                            $('.select-styled').removeClass('on')
+                            ////////////////////////////////////////////////
+                            // 변경된 밸류 값은 여기서 얻을 수 있습니다. //
+                        });
+
+                        $(document).click(function () {
+                            $styledSelect.removeClass('active');
+                            $list.hide();
+                        });
+
+                    });
+                }
+                optionStyle();
+            })
+        </script>
+        <script>
+            // canvas - speed line
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+
+            let cw = canvas.width = $('body').innerWidth();
+            let ch = canvas.height = window.innerHeight;
+
+            const rand = (min, max) => (min + Math.random() * (max - min));
+            class SpeedLine {
+                constructor(x, y) {
+                    this.x = x;
+                    this.y = y;
+
+                    this.speed = rand(2, 1);
+                    this.life = this.curLife = rand(500, 900); //다시 나타나는 속도
+                    this.alpha = rand(0.15, 0.45);
+                    this.angle = Math.PI * rand(0, 2);
+                    this.size = rand(4, 2);
+                    this.inRadius = rand(200, 1000); // (중앙 빈 공간)선 간의 간격
+                    this.outRadius = cw;
+                }
+
+                update() {
+                    this.curLife -= this.speed;
+                    this.inRadius += this.speed * 4;
+
+                    this.alpha *= (this.curLife / this.life);
+                    this.size *= (this.curLife / this.life);
+
+                    this.draw();
+                }
+
+                draw() {
+                    const { x, y, size, angle, alpha } = this,
+                        { inRadius, outRadius } = this;
+                    ctx.save();
+                    ctx.translate(x + 800, y + 100); //위치
+                    ctx.rotate(angle);
+                    ctx.beginPath();
+                    ctx.moveTo(0, inRadius); //회전값
+                    ctx.lineTo(size, outRadius);
+                    ctx.lineTo(-size, outRadius);
+                    ctx.closePath();
+
+                    //var colors = ['rgba(255, 255, 255, '+ ${alpha}+')', 'rgba(208, 253, 254, '+ ${alpha}+')', 'rgba(110, 106, 172, '+ ${alpha}+')'];
+                    //ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+                    ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                    ctx.fill();
+                    ctx.restore();
+                }
+            }
+
+
+            // Animation
+            const lines = [];
+            const MAX_LINES = 200;
+
+            function updateLines() {
+                lines.forEach((line, i) => {
+                    if (!line || line.curLife < 0) lines[i] = new SpeedLine(cw / 2, ch / 2);
+                    lines[i].update();
+                });
+            }
+
+            for (let i = 0; i < MAX_LINES; i++) {
+                lines[i] = new SpeedLine(cw / 2, ch / 2);
+            }
+
+            function animate() {
+                requestAnimationFrame(animate);
+                ctx.clearRect(0, 0, cw, ch);
+                updateLines();
+            }
+
+
+            animate();
+
+            // Resize
+            window.addEventListener('resize', () => {
+                cw = canvas.width = $('body').innerWidth();
+                ch = canvas.height = window.innerHeight;
+                updateLines();
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+@charset "utf-8";
+//$대분류_중분류_소분류_상태
+// 이관 템플릿 White //
+
+// body //
+$bgimg_body_top :  url(/static/images/template/purple/at_ko/bg_main_top.jpg);       // 배경 위 이미지
+$bgimg_body_bottom :  url(/static/images/template/purple/at_ko/bg_main_bottom.jpg); // 배경 아래 이미지
+$cl_bg_body : #fff;                                                                 // 배경 이미지 잇는 가운데 배경 색
+
+$cl_grd_schedule1 : rgba(255,255,255,0);                                          // 메인 스케줄 배경 그라데이션1
+$cl_grd_schedule2 : rgba(255,255,255,0);                                       // 메인 스케줄 배경 그라데이션2
+
+// box //
+$cl_box_head :  #503b69;                                                    // STEP별 타이틀 배경 - 남색
+$bgimg_box_head : url(/static/images/template/purple/at_ko/bg_title_light.png);   // 빛효과 그라데이션 이미지
+$cl_box_body :  rgba(255, 255, 255, 0.9);                                   // 콘텐츠 가장 외곽 배경 검정에 가까운 남색
+$cl_bdr_box : #e5e5e5;
+$cl_schedule_bdr : rgba(99, 117, 141, 0.22);                                // 박스 안 이관스케쥴 테이블 보더
+
+// step //
+$cl_bg_step_on /* $cl_step_body, $cl_step_on */: #eee2ff;                   // step 감싸는 콘텐츠 배경 , step li.on - 남색
+$cl_step : #7964a5;                                                          // step li bg
+$cl_txt_step : #cfb9f1;                                                     // step li text normal color
+$cl_txt_step_on : #361e55;                                                  // step li.on text color 추가
+$bgimg_step_on : url(/static/images/template/purple/at_ko/bg_step_light.png);     // step li.on light
+$cl_sdw_step_on : #7643b3;                                                  // step li.on text-shadow
+
+// content //
+$cl_bg_content /* $cl_cont_wrap , $cl_cont_body */ : #f7f9ff;               // 콘텐츠 감싸는 배경, 콘텐츠 내용 배경 - 연남색
+$cl_cont_head : url(/static/images/template/purple/at_ko/bg_wrap_cont_head.jpg);
+$cl_bdr_cont_body : #cbb3e3;                                                // 콘텐츠 내용 보더
+$cl_txt_cont_body : #4c3b69;                                                 // 콘텐츠 글자 색
+$cl_txt_notice : #535353;                                                   // 유의사항
+$cl_txt_notice_tit : #4c3b69;                                               // 유의사항 타이틀 추가
+$cl_txt_emphasis_2 : #8667b9;                                               //  추가_ 콘텐츠 박스 내 강조 색상
+
+// button //
+$bgimg_btn : url(/static/images/template/purple/at_ko/bg_btn.png);
+$bgimg_btn_hover : url(/static/images/template/purple/at_ko/bg_btn_on.png);
+$bgimg_btn_long : url(/static/images/template/purple/at_ko/bg_btn_long.png);
+$bgimg_btn_long_hover : url(/static/images/template/purple/at_ko/bg_btn_long_on.png);
+
+// checkbox //
+$bgimg_checkbox : url(/static/images/template/purple/at_ko/checkbox-custom.png);
+
+// input transfer user info //
+$cl_input_h2 : #4c3b69;                                                     //input 제목 배경색
+$cl_txt_input_info : #323232;
+$bgimg_input_left_after : url(/static/images/template/purple/at_ko/arrow_bg.png);
+//$cl_txt_select : #311b1b;                                                   select text 색상
+$cl_select_hover : #cec0d5;                                                 // select 호버 시 배경 색
+$cl_bdr_select : rgba(220, 220, 220, 0.8);                                  // select 보더
+$bgimg_select_arrow : url(/static/images/template/purple/at_ko/arrow_down.png);   // selevt arrow img
+
+// text color //
+$cl_white /* $cl_txt_cont_head, $cl_txt_step_on, $cl_txt_btn ,$cl_input_info, $cl_select_option */ : #fff;      // 콘텐츠 제목, 버튼색상, 인풋내용
+$cl_txt_schedule_tit : #522d72;                                                 // 이관 기간 : 2020 ....
+$cl_txt_thanks_to : #4a4a4a;                                                    // 감사의 말씀 드립니다.
+$cl_txt_schedule : #4c3b69;                                                     // 이관 일정 안내 제목
+$cl_txt_schedule_info : #535353;                                                // 이관 일정 안내 내용
+
+// aside & popup modal
+$cl_aside : #513877;                                                             //1주일 인풋배경, 홈바로가기 배경색
+$cl_aside_bdr : #412b61;                                                         //1주일간보지않기 글자 색, 홈바로가기보더
+
+// icon_step
+$bgimg_icon_step1 :  url(/static/images/template/purple/at_ko/icon_step1.png);
+$bgimg_icon_step2 :  url(/static/images/template/purple/at_ko/icon_step2.png);
+$bgimg_icon_step3 :  url(/static/images/template/purple/at_ko/icon_step3.png);
+$bgimg_icon_step4 :  url(/static/images/template/purple/at_ko/icon_step4.png);
+$bgimg_icon_step5 :  url(/static/images/template/purple/at_ko/icon_step5.png);
+
+$bgimg_icon_step1_on :  url(/static/images/template/purple/at_ko/icon_step1_on.png);
+$bgimg_icon_step2_on :  url(/static/images/template/purple/at_ko/icon_step2_on.png);
+$bgimg_icon_step3_on :  url(/static/images/template/purple/at_ko/icon_step3_on.png);
+$bgimg_icon_step4_on :  url(/static/images/template/purple/at_ko/icon_step4_on.png);
+$bgimg_icon_step5_on :  url(/static/images/template/purple/at_ko/icon_step5_on.png);
+
+
+// scrollbar
+$cl_scroll_track : #55497d;
+$cl_scroll_thumb : #8C74B2;
+$cl_scroll_thumb_hover : #BFB5CC;
+

@@ -1,0 +1,78 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://file.valofe.com/Valofe_file/web/fonts/NotoSansCJKkr-Regular.woff);
+}
+@font-face {
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://file.valofe.com/Valofe_file/web/fonts/NotoSansCJKkr-Medium.woff);
+}
+@font-face {
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://file.valofe.com/Valofe_file/web/fonts/NotoSansCJKkr-Bold.woff);
+}
+:lang(ko) {word-break: keep-all;}
+:lang(en) {word-break: keep-all;}
+.br-popup {display:none;}
+
+*{font-family: "Noto Sans CJK KR", sans-serif;}
+
+/* 배경 */
+body {font-family: "Noto Sans CJK KR", sans-serif;}
+#particles-js {position: fixed;top: 0;left: 0;z-index:-1; width:100%; height:100%;}
+
+
+/* 밸로프인풋창 색상 변경 */
+.migration-check-input .input-id-wrap .input-right h2 {background:#e88d23;}
+.migration-check-input .input-id-wrap .input-right input[type=text] {color:#e88d23;}
+
+/* 이관 방법 안내 배경에 묻히는 */
+.mig-guide .cont-body {background-image: linear-gradient(to bottom, transparent, rgba(57, 79, 123,0.04));}
+
+
+@media screen and (max-width:1280px) {
+
+
+}
+@media screen and (max-width:1024px) {
+    body {background-size: 200% auto;}
+}
+@media screen and (max-width:840px) {
+
+}
+@media screen and (max-width:768px) {
+    #modal-wrapper {width:72%;}
+    #modal-wrapper.modal-no-history .modal-contents {padding:30px 0;}
+
+}
+@media screen and (max-width:640px) {
+    /* 팝업 로그인창 */
+    #modal-wrapper {width:91%; min-width:auto; box-sizing:border-box;}
+    #modal-wrapper .login-contents {margin: 20px 0 0 0;}
+    #modal-wrapper .login-contents input {width:67%;}
+    #modal-wrapper .login-contents .btn_login {width:30%; background-position:center;}
+    #modal-wrapper .login-contents .id {margin: 0 0 11px;}
+}
+@media screen and (max-width:600px) {
+
+}
+@media screen and (max-width:500px) {
+    #modal-wrapper.modal-login .modal-contents {padding:10px 30px;}
+    #modal-wrapper.modal-no-history .modal-contents {padding:30px 10px;}
+}
+@media screen and (max-width:480px) {
+
+}
+@media screen and (max-width:414px) {
+    .br-popup {display:block;}
+    #modal-wrapper.modal-no-history .modal-contents p {font-size:15px;}
+}
+@media screen and (max-width:360px) {
+    #modal-wrapper.modal-login .modal-contents {padding:10px 20px;}
+}

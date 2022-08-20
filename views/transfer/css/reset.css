@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/* CSS RESET 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+    /*font-weight:400;*/
+    font-style:normal;
+    box-sizing:border-box;
+}
+
+h1{font-style:normal;font-weight:700;}
+html{font-size: 16px;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+
+nav ul, li{
+    list-style:none;
+}
+
+a{
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    object-fit: cover;
+    vertical-align:top;
+    -ms-interpolation-mode: bicubic;
+}
+
+hr{
+    display:block;
+    height:2px;
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+
+/*레이아웃*/
+/* 로딩 시작 */
+.wrap-loading{ /*화면 전체를 어둡게 합니다.*/
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background: #262626; /*not in ie */
+    opacity:0.9;
+    z-index:9999;
+}
+.wrap-loading .loading-container{
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-left: -75px;
+    margin-top: -75px;
+}
+
+.display-none{ display:none;}
+
+.spinner__container {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    /*    border: 1px solid #fff;*/
+}
+
+.wrap-loading .loading-txt{position:absolute;bottom:-10px; left:0;display:block;width:100%;color:#fff;font-weight:normal;font-size:14px;text-align:center;letter-spacing:0;}
+.loading-container .spinner__dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    border-radius: 100%;
+}
+.loading-container .spinner__square {
+    width: 10px;
+    height: 10px;
+}
+@keyframes spinner__effect--8-child-1 {
+    50% {
+        transform: translate(-325%, -325%);
+        background-color:#9d4bc7;
+    }
+}
+@keyframes spinner__effect--8-child-2 {
+    50% {
+        transform: translate(0, -325%);
+        background-color:#9d4bc7;
+    }
+}
+@keyframes spinner__effect--8-child-3 {
+    50% {
+        transform: translate(325%, -325%);
+        background-color:#ffc61d;
+    }
+}
+@keyframes spinner__effect--8-child-4 {
+    50% {
+        transform: translate(325%, 0);
+        background-color:#ffc61d;
+    }
+}
+@keyframes spinner__effect--8-child-5 {
+    50% {
+        transform: translate(325%, 325%);
+        background-color:#29e2ff;
+    }
+}
+@keyframes spinner__effect--8-child-6 {
+    50% {
+        transform: translate(0, 325%);
+        background-color:#29e2ff;
+    }
+}
+@keyframes spinner__effect--8-child-7 {
+    50% {
+        transform: translate(-325%, 325%);
+        background-color:#ff2c6e;
+    }
+}
+@keyframes spinner__effect--8-child-8 {
+    50% {
+        transform: translate(-325%, 0);
+        background-color:#ff2c6e;
+    }
+}
+@keyframes spinner__effect--8-child-9 {
+    50% {
+        transform: scale(2);
+    }
+}
+.loading-container .spinner__effect--8 .spinner {
+    position: relative;
+    transform: rotate(45deg);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square {
+    position: absolute;
+    background: #fff;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(1) {
+    animation-name: spinner__effect--8-child-1;
+    animation-delay: calc(.1s * 1);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(2) {
+    animation-name: spinner__effect--8-child-2;
+    animation-delay: calc(.1s * 2);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(3) {
+    animation-name: spinner__effect--8-child-3;
+    animation-delay: calc(.1s * 3);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(4) {
+    animation-name: spinner__effect--8-child-4;
+    animation-delay: calc(.1s * 4);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(5) {
+    animation-name: spinner__effect--8-child-5;
+    animation-delay: calc(.1s * 5);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(6) {
+    animation-name: spinner__effect--8-child-6;
+    animation-delay: calc(.1s * 6);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(7) {
+    animation-name: spinner__effect--8-child-7;
+    animation-delay: calc(.1s * 7);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(8) {
+    animation-name: spinner__effect--8-child-8;
+    animation-delay: calc(.1s * 8);
+}
+.loading-container .spinner__effect--8 .spinner .spinner__square:nth-child(9) {
+    animation-name: spinner__effect--8-child-9;
+    animation-delay: 1.25s;
+}
+
+/* 로딩 끝 */
