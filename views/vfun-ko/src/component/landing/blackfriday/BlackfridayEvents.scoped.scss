@@ -1,0 +1,1323 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//file.valofe.com/Valofe_file/web/fonts/NotoSansKr/NotoSansKr-Regular.otf);
+    src: local('Noto Serif KR Black'), local('NotoSerifKR-Black'),
+    url(//file.valofe.com/Valofe_file/web/fonts/NotoSansKr/NotoSansKr-Regular.otf?#iefix)
+    format('embedded-opentype'),
+    url(//file.valofe.com/Valofe_file/web/fonts/NotoSansKr/NotoSansKr-Regular.woff2)
+    format('woff2'),
+    url(//file.valofe.com/Valofe_file/web/fonts/NotoSansKr/NotoSansKr-Regular.woff)
+    format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-500.eot);
+    src: local('M PLUS 1p Light'), local('MPLUS1p-Light'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-500.eot?#iefix)
+    format('embedded-opentype'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-500.woff2)
+    format('woff2'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-500.woff)
+    format('woff'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-500.ttf)
+    format('truetype'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-500.svg#MPLUS1p)
+    format('svg');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-900.eot);
+    src: local('M PLUS 1p Light'), local('MPLUS1p-Light'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-900.eot?#iefix)
+    format('embedded-opentype'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-900.woff2)
+    format('woff2'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-900.woff)
+    format('woff'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-900.ttf)
+    format('truetype'),
+    url(//file.valofe.com/Valofe_file/web/fonts/noto-sans-kr-v12-korean-900.svg#MPLUS1p)
+    format('svg');
+}
+@font-face {
+    font-family: 'M PLUS 1p';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//file.valofe.com/Valofe_file/web/fonts/mplus1p/m-plus-1p-v19-japanese-300.eot);
+    src: local('M PLUS 1p Light'), local('MPLUS1p-Light'),
+    url(//file.valofe.com/Valofe_file/web/fonts/mplus1p/m-plus-1p-v19-japanese-300.eot?#iefix)
+    format('embedded-opentype'),
+    url(//file.valofe.com/Valofe_file/web/fonts/mplus1p/m-plus-1p-v19-japanese-300.woff2)
+    format('woff2'),
+    url(//file.valofe.com/Valofe_file/web/fonts/mplus1p/m-plus-1p-v19-japanese-300.woff)
+    format('woff'),
+    url(//file.valofe.com/Valofe_file/web/fonts/mplus1p/m-plus-1p-v19-japanese-300.ttf)
+    format('truetype'),
+    url(//file.valofe.com/Valofe_file/web/fonts/mplus1p/m-plus-1p-v19-japanese-300.svg#MPLUS1p)
+    format('svg');
+}
+
+/* 섹션 공통사항 */
+#blackFridayEvent2021 {
+    font-size:1rem;
+    color:#e1e1e1;
+    .mb-show640 {display:none;}
+    .mb-show768 {display:none;}
+    .mb-show578 {display:none;}
+    .mb-show480 {display:none;}
+    .mb-hidden640 {display: inline-block;}
+    .mb-hidden480 {display:inline-block;}
+    * {box-sizing: border-box; word-break: keep-all; font-family:FontAwesome, "Noto Sans KR", "Malgun Gothic", Apple SD Gothic Neo, "애플 SD 산돌고딕 Neo", sans-serif }
+    section {
+        min-height: 100vh;
+        margin-top: 0;
+        padding: 4rem 0;
+        background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/bg-sec.jpg) repeat-y center / 100% auto;
+    }
+    .common-tit{
+        position:relative;
+        padding: 3.125rem 1rem;
+        text-align: center;
+        > p {
+            font-size:1.375rem;
+            line-height:1.4;
+            .emphasis{color: #ff34fd;}
+        }
+        .marked {
+            padding: 4px 10px;
+            border: 1px solid #5d3333;
+            border-radius: 21px;
+            text-shadow: 0 0 10px #ff0000;
+            font-size: 1.25rem;
+        }
+        .common-event-tit {
+            max-width:100%;
+        }
+    }
+    .common-neon-wrap {
+        /*min-height:50vh;*/
+        border:2px solid #ada1ff;
+        border-radius:50px;
+        box-shadow: inset 0 0 2px 4px black, inset 0 0 33px 2px rgba(58, 53, 255, 0.75), 0 0 28px 0 #3a35ff;
+        background: rgba(16, 3 ,23 , 0.9);
+        padding-bottom:4rem;
+    }
+    .common-neon-box {
+        position:relative; max-width:840px; /*min-height:500px;*/
+        margin:3rem auto;
+        padding: 0 58px  58px;
+        text-align: center;
+        background-position:left top, top left 58px , top right 58px, right top, right center, right bottom, bottom center, left bottom, left center/*, top -38px center*/;
+        background-size:58px 58px, calc(50% - 168px) 58px, calc(50% - 168px) 58px, 58px 58px, 58px calc(100% - 116px), 58px 58px, calc(100% - 116px) 58px, 58px 58px, 58px calc(100% - 116px)/*, 280px 100px*/;
+        background-image: url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-lt.png),
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-t1.png),
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-t2.png),
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-rt.png),
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-r.png),
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-rb.png),
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-b.png),
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-lb.png),
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-bdr-l.png)/*,
+        url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-text.png)*/;
+        //background-repeat: no-repeat, repeat-x, no-repeat, repeat-y, no-repeat, repeat-x, no-repeat, repeat-y;
+        background-repeat: no-repeat;
+
+        &:before {
+            content:'';
+            position: absolute; top:58px; left:58px;
+            width:calc(100% - 116px); height: calc(100% - 116px);
+            background: rgba(115, 3, 3, 0.14);
+            pointer-events: none;
+        }
+        &:after {
+            content:'';
+            position:absolute;
+            display: inline-block;
+            top:-35px; left:50%; transform: translateX(-50%);
+            width:280px; height:100px; background:  url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/box-text.png) no-repeat center / cover;
+        }
+        // 박스 타이틀
+        h3 {
+            position: relative;
+            z-index: 2;
+            line-height: 1.4;
+            font-size: 22px; font-size:1.375rem;
+            color: #ffa4a4;
+            text-shadow: 0 0 13px #ff0015;
+        }
+    }
+    .common-notice {
+        max-width:666px;
+        margin: 2rem auto 0;
+        font-weight: 500;
+        h4 {
+            color:#56546e;
+            color:#615e81;
+            font-size: 20px; font-size:1.25rem;
+            text-indent: -1rem;
+            margin-bottom:0.625rem;
+        }
+        li {
+            list-style: disc;
+            line-height:1.4;
+            color:#56546e;
+            color:#5a5777;
+        }
+        .emphasis {
+            color: #9E5858;
+            /*font-weight:bold;*/
+        }
+        &.common {
+            margin: 2rem auto 4rem;
+        }
+    }
+    .common-grey {
+        padding: 10px; margin: 0 auto;
+        background: #323232;
+        border: 1px solid #0d0d0d;
+        box-shadow: inset 0 0 1px #595959;
+        max-width: 712px;
+        height: 4.5rem;
+        overflow:hidden;
+    }
+    .common-grey-inner {
+        padding: 1rem;
+        background-color: #181818;
+        background-image: linear-gradient(45deg, #212121 25%, transparent 25%, transparent 75%, #212121 75%, #212121 ),
+        linear-gradient(45deg, #212121 25%, transparent 25%, transparent 75%, #212121 75%, #212121);
+        background-position: 0 0, 25px 25px;
+        background-size: 5px 5px;
+        box-shadow: inset 0 0 6px 2px #050303;
+        color:#7c7c7c;
+        font-size:18px; font-size:1.125rem;
+        font-weight:500;
+    }
+    .common-how-to {
+        display: inline-block;
+        margin-top: 3rem;
+        > li {
+            float: left;
+            position: relative;
+            color:#917d7d;
+            font-weight:500;
+            width:calc( (100% - 60px) / 3); margin-right:30px;
+            &:last-child {margin-right:0;}
+        }
+        li li:nth-child(1) {
+            background:#ccc;
+            /*border: 1px solid #5d3333;
+            border-radius: 35px;*/
+            border: 3px solid #461525;
+            border-radius:35px 35px 4px 4px;
+            &:after {
+                content:'';
+                display: inline-block;
+                padding-bottom: 100%;
+            }
+        }
+        li li:nth-child(2) {
+            position:relative;
+            background:#461525;
+            border-radius: 24px; height:48px;
+            margin-top:-14%;
+            .step {
+                font-size:20px; font-size:1.25rem; line-height:48px;
+            }
+            .step-desc {
+                font-size:15px; font-size:0.9375rem;
+            }
+        }
+        li li:nth-child(3) {
+            margin-top:0.625rem;
+            line-height:1.4;
+            font-size:1rem;
+        }
+    }
+    // 캐릭터 배경
+    .chr-wrap img {
+        position:absolute;
+        pointer-events: none;
+    }
+    // 공통 버튼
+    .common-btn {
+        a {
+            display: inline-block;
+            width:100%; height:100%;
+            color: inherit;
+        }
+        img {
+            vertical-align: baseline;
+        }
+        &#alreadyGot {
+            cursor: default;
+            pointer-events: none;
+            filter: brightness(0.5);
+        }
+    }
+    .btn-ticket {
+        display: inline-block;
+        width:114px; height:42px; line-height:42px;
+        width:7.125rem; height: 2.625rem; line-height: 2.625rem;
+        position:absolute; bottom:1rem; left:50%; transform: translateX(-50%);
+        border:1px solid #5d3333;
+        border-radius: 21px;
+        color:#632d38; font-size:1rem;
+        pointer-events: none;
+        &.active {
+            pointer-events: inherit;
+            box-shadow: inset 0 1px 1px 1px #ff5858, inset 0 0 20px 2px #832929;
+            color:#fff;
+            text-shadow: 0 0 10px #ff0000, 0 0 15px rgba(137,20,20,0.65), 0 0 10px #ff0000, 0 0 15px rgba(137,20,20,0.65);
+        }
+    }
+}
+
+  /* 2021 블랙프라이데이 이벤트 */
+#blackFridayEvent2021 {
+    #contNav {
+        width:100%;
+        //background: #0f0e23;
+        background: #181637;
+        text-align: center;
+
+        .cont-nav {
+            height:145px; height:9.0625rem; /*height:8.0625rem;*/
+            width:100%;
+            li {
+                float:left;
+                display: table;
+                //width: calc(100% / 3);
+                width: 50%;
+                height:100%;
+                line-height: 1.1;
+                color:#665fed;
+                font-size:18px; font-size:1.125rem;
+                a {
+                    display: table-cell;
+                    vertical-align: middle;
+                    color:inherit;
+                }
+                span {
+                    display: inline-block;
+                    margin-top:6px;
+                    color: #9494ff;
+                    font-size:20px; font-size:1.25rem;
+                }
+
+                &.on {
+                    box-shadow: inset 0 -5px 40px 0px #524b99, inset 0 0 10px 0px #312a75;
+                    color: #9494ff;
+                    span {
+                        color:#ccccff;
+                    }
+                }
+            }
+        }
+
+        &.fixed {
+            position:fixed;
+            top:60px;
+            left:0;
+            z-index:11;
+            .cont-nav {
+                height: 5.625rem;
+            }
+        }
+    }
+    #sec1 {
+        background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/bg-main-min.jpg) no-repeat center / cover;
+        .row-w {
+            position:relative;
+        }
+        // 캐릭터
+        .chr-wrap img {
+            &.priest {
+                bottom:0; left:0;
+                width: 66.8vh;
+                filter: grayscale(1);
+                animation: aniGrayScale 0.4s 1.5s 1 forwards;
+            }
+            &.funny {
+                bottom:0; right:0;
+                width: 47.4vh;
+                filter: grayscale(1);
+                animation: aniGrayScale 0.4s 1.5s 1 forwards;
+            }
+            &.balloon {
+                bottom:35vh; right:10vh;
+                width: 30.3vh;
+                animation: aniBounce 2s 0s ease-in-out infinite alternate;
+            }
+        }
+
+        // 타이틀
+        .tit-wrap {
+            text-align: center;
+            > img {
+                margin: -2rem 0 -5rem;
+                width: 69.7vh;
+            }
+            .ani-neon {
+                position: relative;
+                display: inline-block;
+                &:after {
+                    content:'';
+                    display: inline-block;
+                }
+            }
+            // 블랙프라이데이 기념 이벤트 기간
+            .neon-box {
+                display: inline-block;
+                padding: 5.4rem; background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-box-min.png)no-repeat center / cover;
+                .title-main {
+                    width:73vh;
+                    background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-off-min.png) no-repeat center / 100% auto;
+                    animation: aniNeonTitMain 6s 1.2s infinite ;
+                    &:after {
+                        padding-bottom: 52.4%;
+                    }
+                }
+
+            }
+            // 블랙프라이데이
+            .title-sub {
+                width:58.4vh;
+                background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-bf-off.png) no-repeat center / 100% auto;
+                animation: aniNeonTitSub 6s 0s 1 forwards;
+                &:after {
+                    padding-bottom:29%;
+                }
+            }
+        }
+    }
+
+    #sec2 {
+        .chr-wrap img {
+            &.cat {
+                top:0; left:0;
+            }
+            &.losa-w {
+                left:-11%; top:10%;
+                width: 44.36%;
+            }
+            &.losa-m {
+                right: 2%; bottom:5%;
+                width: 27.34%;
+            }
+        }
+
+        .like-reward-wrap {
+            .reward-img {
+                max-width:88%;
+            }
+            .like-reward-table {
+                max-width:666px;
+                margin: 2rem auto;
+                li {
+                    float: left;
+                    width: 20%;
+                    text-align: center;
+                    border: 1px solid transparent;
+                }
+                p {
+                    display: inline-block;
+                    width:100%; height:44px; line-height:44px;
+                    color:#917d7d;
+                    font-weight:bold;
+                }
+                p:nth-child(1) {
+                    background: #461525;
+                }
+                p:nth-child(2) {
+                    background: rgba(70, 21, 37, 0.45);
+                }
+            }
+        }
+    }
+
+    #sec3 {
+        .chr-wrap {
+            .ca_r1 {
+                left: 10%;
+                top: 16%;
+                width: 26.04vw;
+            }
+            .ca_r2 {
+                top: 16%;
+                right: 5%;
+                width: 39.06vw;
+            }
+        }
+        .roulette-wrap {
+            position:relative;
+            z-index: 10;
+        }
+        .winning-live {
+            h4 {
+                text-align: center;
+                font-size: 20px; padding:10px 20px 20px;
+            }
+        }
+        .winning {
+            position:relative;
+            background-color: #181818;
+            background-image: linear-gradient(45deg, #212121 25%, transparent 25%, transparent 75%, #212121 75%, #212121 ),
+            linear-gradient(45deg, #212121 25%, transparent 25%, transparent 75%, #212121 75%, #212121);
+            background-position: 0 0, 25px 25px;
+            background-size: 5px 5px;
+            box-shadow: inset 0 0 6px 2px #050303;
+            &:before {
+                content: '';
+                position: absolute;
+                top:10px; left:1.5rem;
+                display: inline-block;
+                width:45px; width: 2.8125rem; height:45px; height: 2.8125rem;
+                background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/icon-notice-min.png) no-repeat center / contain;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top:10px; right:1.5rem;
+                display: inline-block;
+                width:45px; width: 2.8125rem; height:45px; height: 2.8125rem;
+                background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/icon-smile-min.png) no-repeat center / contain;
+            }
+            li {
+                position: relative;
+                padding: 1rem; padding-left: 4.75rem;
+                margin-bottom:5px;
+                /*background: #181818;*/
+                background:transparent;
+                color:#7c7c7c;
+                font-size:18px; font-size:1.125rem;
+                font-weight:500;
+                overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .time {
+                    margin-right:1rem;
+                    font-size:16px; font-size:1rem;
+                }
+                .reward {
+                    color:#ff34fd;
+                }
+            }
+        }
+        .btn-wrap {
+            max-width: 712px;
+            margin: 10px auto;
+            &.btn-invite-achieve {
+                margin-top:3rem;
+                .common-btn {
+                    width:200px;
+                    &:nth-child(1) {
+                        margin-left:21.2%;
+                    }
+                }
+            }
+            .common-btn {
+                float:left;
+                display: inline-block;
+                width: calc( (100% - 20px) /3);
+                margin-right: 10px;
+                height:60px; line-height: 60px;
+                text-align: center;
+                color:#ffe7e7;
+                font-size:20px; font-size:1.25rem;
+                font-weight: 500;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.own-ticket {
+                    background: #323232;
+                    border: 1px solid #0d0d0d;
+                    /*box-shadow: inset 0 0 1px #595959;*/
+                    box-shadow: inset 0 0 3px 1px #505050;
+
+                    &:hover {
+                        box-shadow: inset 0 0 3px 1px #505050, inset 0 3px 10px 1px #505050;
+                    }
+
+                    .ticket-num {
+                        min-width:88px;
+                        margin:0 0.625rem;
+                        color: #e1e1e1;
+                        font-size:20px; font-size:1.25rem;
+                        &:hover {
+                            background-color:#323232
+                        }
+                    }
+                }
+                &.red {
+                    //background: linear-gradient(to top, #560101, #810404);
+                    background: linear-gradient(to top, #560101, #ac0a0a);
+                    border:1px solid #810404;
+                    box-shadow: inset 0 0 1px 0 #ff0000;
+                    &.btn-attend{filter: hue-rotate(144deg)}
+                    &:hover {
+                        box-shadow:inset 0 3px 10px 0 rgba(255,0,0,0.8);
+                    }
+                }
+                &.btn-attend {
+                        animation: pointNeon 3s 0s infinite ;
+                    a {
+                    }
+                }
+                a {color:inherit;}
+            }
+        }
+
+        // 친구초대, 친구추천
+        .common-tit.friends {padding:3.125rem 1rem 0;}
+        .invite-wrap.common-neon-wrap {
+            position:relative;
+            margin: 0 auto;
+            margin-top: 2rem;
+            width: 92%;
+            border-radius: 35px;
+            overflow: hidden;
+
+            .tab-nav {
+                li {
+                    float:left;
+                    width:50%;
+                    height:120px;/* line-height:120px;*/ height:7.5rem;/* line-height:7.5rem;*/
+                    text-align: center;
+                  /*  font-size:28px; font-size:1.75rem;*/
+                    border-bottom:2px solid #ada1ff;
+                    border-right: 2px solid #ada1ff;
+                    color:#e1e1e1; font-weight:500;
+
+                    font-size:1.5rem; line-height: 1.7; padding-top:1.25rem;
+                    a {font-size:1.5rem;}
+                    a small{font-size:1.35rem;}
+                    &.tab2 {
+                        border-right:0;
+                    }
+                    &.active {
+                        text-shadow: 0 0 21px #006cff, 0 0 21px #006cff, 0 0 21px #006cff, 0 0 21px #006cff;
+                    }
+                }
+            }
+            .common-tit img {
+                max-width:100%;
+            }
+
+            #codeWrap {
+                width:90%;
+                margin:0 auto;
+                text-align: center;
+                .common-grey {
+                    display: inline-block;
+                    width:562px;
+                    max-height: 60px;
+                    vertical-align: top;
+                    border: 1px solid #484848;
+                    input.input-code {
+                        height:38px;
+                        border:none;
+                    }
+                }
+                .btn-wrap {
+                    display: inline-block;
+                    margin-top: 0;
+                    margin-bottom: 0;
+
+                    .common-btn {
+                        width: 150px; width:9.375rem;
+                        margin-bottom:0;
+                    }
+                }
+                .common-notice {
+                    max-width: 818px;
+                    text-align: left;
+                    margin: 1rem auto 5rem;
+                }
+            }
+
+            // 친추 초대 (tab1)
+            .invite-achieve-reward {
+                margin-top:2rem;
+                li {
+                    float:left;
+                    position:relative;
+                    width: calc((100% - 12px) / 4);
+                    margin-right: 4px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    img {
+                        width: 100%;
+                        max-width:172px;
+                    }
+                }
+            }
+            .how-to-invite {
+                > li {
+                    margin:16px;
+                    width: calc(50% - 32px);
+                }
+                li li:nth-child(1):after {
+                    padding-bottom:70%;
+                }
+
+                li li:nth-child(2) {
+                    min-height:58px;
+                    height:auto;
+                    .step {
+                        display: inline-block;
+                        float:left;
+                        width:94px;
+                        line-height:58px;
+                        line-height:3.625rem;
+                    }
+                    .step-desc {
+                        display: inline-block;
+                        float:right;
+                        width: calc(100% - 94px);
+                        margin:10px 0;
+                        padding-right:8px;
+                        line-height:1.3;
+                        text-align: left;
+                    }
+                }
+                // step img
+                li:nth-child(1) li:nth-child(1) {
+                    background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/step1.jpg)no-repeat top center / cover;
+                }
+                li:nth-child(2) li:nth-child(1) {
+                    background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/step2-min.jpg)no-repeat top center / cover;
+                }
+                li:nth-child(3) li:nth-child(1) {
+                    background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/step3.jpg)no-repeat top center / cover;
+                }
+                li:nth-child(4) li:nth-child(1) {
+                    background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/step4-min.jpg)no-repeat top center / cover;
+                }
+            }
+
+            // 친구 추천 (tab2)
+            .recommend-achieve-wrap {
+                img {
+                    max-width:94%;
+                    padding:2rem;
+                }
+                .btn-ticket {
+                    position:relative;
+                    left:auto; bottom:auto; transform: none;
+                    width:160px;
+                }
+            }
+            .how-to-rec.common-how-to {
+                > li {
+                    width:80%; margin-left:10%; margin-bottom:1rem;
+                }
+                li li:nth-child(1):after {
+                    padding-bottom: 50%;
+                }
+                // step img
+                li:nth-child(1) li:nth-child(1) {
+                    background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/howto-rec1-min.jpg)no-repeat top center / cover;
+                }
+                li:nth-child(2) li:nth-child(1) {
+                    background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/howto-rec2-min.jpg)no-repeat top center / cover;
+                }
+                li:nth-child(3) li:nth-child(1) {
+                    background:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/sec3/howto-rec3-min.jpg)no-repeat top center / cover;
+                }
+                li li:nth-child(2) {
+                    margin-top:-3%;
+                    border-radius : 24px 24px 0 0;
+                }
+                li li:nth-child(3) {
+                    margin-top:0;
+                    padding-bottom:1rem;
+                    background :#461525;
+                    border-radius: 0 0 24px 24px;
+                }
+            }
+        } /* .친구초대 */
+    }
+
+    #sec4 {
+        .funny-info-wrap {
+            text-align: center;
+            > div {
+                position:relative;
+                display: inline-block;
+                //width:25.2vw;
+                width:480px;
+            }
+            img {
+                position:absolute;
+                &.funny {
+                    position:relative;
+                    //width: 25.2vw;
+                    width:100%;
+                    z-index:2;
+                    transform: scale(0);
+
+                    &.on {
+                        animation: aniScaleUp 0.5s 0s cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+                    }
+                }
+                &.desc1 {
+                    top: 22%; left: -28%;
+                    width: 56.2%;
+                }
+                &.desc2 {
+                    top: 40%; right: -23%;
+                    width: 60.2%;
+                }
+                &.desc3 {
+                    bottom: 18%; left: -30%;
+                    width:60%;
+                }
+                &.star {
+                    animation : aniRotate 2s 0s linear infinite;
+                }
+                &.star1 {
+                    left: -10%; top: 8%;
+                    width: 25.6%;
+                }
+                &.star2 {
+                    left: -34%; top: 42%;
+                    width:29%;
+                }
+                &.star3 {
+                    left: -4%; bottom: 0;
+                    width: 26.2%;
+                }
+                &.star4 {
+                    right:-12%; top:8%;
+                    width: 30%;
+                }
+                &.star5 {
+                    right: -22%; top: 22%;
+                    width: 26.8%;
+                }
+                &.star6 {
+                    right: -34%; bottom: 12%;
+                    width: 36.2%;
+                }
+            }
+        }
+        .emoticon-wrap.common-neon-wrap {
+            position:relative; z-index: 2;
+            padding:3rem; margin-top:3rem;
+            background:#000f27;
+            border: 4px solid #fff;
+            box-shadow: inset 0 0 20px #007eff, 0 0 10px #00c4ff, 0 0 40px #007eff, 0 2px 10px 2px #000000;
+        }
+        .emoticon-wrap {
+            table {
+                position:relative;
+                color:#8cc2ef;
+                tr {
+                    position: relative;
+                    &:after {
+                        content:'';
+                        position: absolute; left: 0; bottom: 0;
+                        display: inline-block;
+                        width:100%; height:1px;
+                        background:#0a456a;
+                        box-shadow: 0 -1px 4px 1px #000, 0 -1px 1px 1px #000;
+                    }
+                }
+                td:nth-child(1) {
+                    padding-top:0.5rem;
+                    /*width:164px;*/
+                }
+                td:nth-child(2) {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+            .achieve-img {width:80%; min-width:70px; max-width:132px;}
+            .funny-ticon {width:29%; min-width:76px; max-width:119px;}
+            img[alt="퍼니 이모티콘 - 슬픔"].funny-ticon {filter: brightness(1.1) saturate(1.5);}
+        }
+    }
+
+    @keyframes aniNeonTitMain {
+        0% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-off-min.png);}
+        5% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-on-min.png);}    // 깜빡1
+
+        76% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-on-min.png);}
+        77% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-off-min.png);}   // 깜빡 2
+        78% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-on-min.png);}
+
+        82% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-on-min.png);}
+        83% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-off-min.png);}   // 깜빡3
+        84% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-on-min.png);}
+        100% {background-image:url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-main-on-min.png);}
+    }
+    @keyframes aniNeonTitSub {
+        0% {background-image: url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-bf-off.png);}
+        5% {background-image: url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-bf-on-min.png);}
+        100% {background-image: url(//file.valofe.com/Valofe_file/web/vfun-ko/images/landing/2021/blackfriday/main/title-bf-on-min.png);}
+    }
+    @keyframes aniSlideInLeft {
+        0% {opacity: 0; transform: translateX(-20vw)}
+        100% {opacity: 1; transform: translateX(0)}
+    }
+    @keyframes aniSlideInRight {
+        0% {opacity: 0; transform: translateX(20vw)}
+        100% {opacity: 1; transform: translateX(0)}
+    }
+    @keyframes aniGrayScale {
+        0% {filter: grayscale(1)}
+        100% {filter: grayscale(0)}
+    }
+
+    @keyframes aniScaleUp {
+        0% { transform: scale(0);}
+        80% { transform: scale(1.2);}
+        100% { transform: scale(1);}
+    }
+    @keyframes aniRotate {
+        0% { transform : rotate(0)}
+        100% { transform : rotate(360deg)}
+    }
+    @keyframes aniBounce {
+        0% {transform: translateY(0)}
+        100% {transform: translateY(10vh)}
+    }
+    @keyframes pointNeon {
+        0% {
+            box-shadow:  inset 0 0 1px 0 #ff0000;
+        }
+        50% {
+            box-shadow:  inset 0 0 10px 1px #e4c05e;
+        }
+    }
+
+}
+// 팝업
+.layer-wrap.blackfridayPop  { // 공통
+    /* 스크롤 바 */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.5);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius:4px;
+        background: rgba(#7d6cff,0.85);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(#7d6cff,1)
+    }
+
+    .shadow {display:block;}
+    .pop-container {
+        padding-top: 40px;
+    }
+    .pop-layer {
+        border-top: 6px solid #7d6cff;
+        background: #222222;
+        color:#707070;
+    }
+    .btn-wrap {
+        margin-top:20px;
+    }
+    .btn-wrap a.btn-alert {
+        background:none;
+        border:1px solid #7d6cff;
+        color: #7d6cff;
+        &:hover {
+            background: #7d6cff !important;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .btn-wrap a.btn-alert + a {
+        margin-left:20px;
+    }
+    .pop-container .btn-layer-close {
+        opacity: 0.4;
+    }
+    h2 {
+        color: #7d6cff;
+        font-weight:400;
+        font-size:24px; font-size:1.5rem;
+    }
+    .achieve-person {
+        margin-top:6px;
+        color: #7d6cff;
+        font-size:1rem;
+    }
+    h4 {
+        color: #7d6cff;
+        font-weight: 400;
+        font-size: 24px;
+        font-size: 1.5rem;
+        + p {
+            margin:20px 0;
+        }
+    }
+    .table-wrap {
+        height:230px;
+        overflow-y: scroll;
+    }
+    table {
+        th {
+            padding: 4px 0;
+            background: #7d6cff;
+            border-right: 4px solid #222222;
+            color:#fff;
+            font-weight: 400;
+            font-size:1rem;
+        }
+        tr {
+            border-bottom: 1px solid #414141;
+        }
+        td {
+            padding: 8px;
+            color: #707070;
+            font-size:15px;
+            font-size:0.9375rem;
+        }
+    }
+    .pop-container .alert > div {
+        min-height: unset;
+    }
+
+    .result-sum {
+        min-height: unset;
+        margin-top: 10px;
+        color: #7d6cff;
+        font-weight:400;
+        font-size:24px; font-size:1.5rem;
+
+        span.pull-left {
+            margin-left: 18px;
+        }
+        span.pull-right {
+            margin-right: 18px;
+        }
+    }
+}
+// 보유 티켓 사용 현황
+.layer-wrap#ticketOwnPop {
+    td.get {
+        color: #7d6cff;
+    }
+    td.used {
+        color: #ff6c73;
+    }
+}
+// 룰렛 보상 팝업
+.layer-wrap#productDesc {
+    .alert-text p.reward-name {
+        color: #7d6cff;
+    }
+    .pop-container .btn-wrap {
+        margin-top: 30px;
+    }
+    p.reward-name + p {
+        white-space: pre-wrap;
+        &:nth-child(1) {
+            font-size:18px;
+            font-size:1.125rem;
+        }
+        &:nth-child(2) {
+            margin-top:10px;
+            font-size:15px;
+            font-size:0.9375rem;
+        }
+    }
+
+}
+
+// 반응형 시작
+@media screen and (max-width:1660px) {
+    #blackFridayEvent2021 #sec3 .chr-wrap .ca_r1 {left: 3%; top: 18%; width: 23.04vw;}
+    #blackFridayEvent2021 #sec3 .chr-wrap .ca_r2 {top: 19%; right: 2%; width: 35.06vw;}
+}
+@media screen and (max-width:1280px) {
+    /* sec2 */
+    #blackFridayEvent2021 #sec2 .chr-wrap img.losa-w {display: none;}
+    /* sec3 */
+    #blackFridayEvent2021 #sec3 .chr-wrap .ca_r1 {display: none;}
+    #blackFridayEvent2021 #sec3 .chr-wrap .ca_r2 {display: none;}
+}
+@media screen and (max-width:1024px) {
+    html, body {font-size:14px;}
+    /* common */
+    #blackFridayEvent2021 .row-w {position:relative; z-index: 1;}
+    #blackFridayEvent2021 .common-tit {width:70%; margin:0 auto;}
+    #blackFridayEvent2021 .common-tit .common-event-num {width:40%;}
+    #blackFridayEvent2021 section:not(#sec1) .chr-wrap img {display: none;}
+
+    /* sec1 */
+    #blackFridayEvent2021 #sec1 .row-w { position: absolute; top: 38%;left: 50%; width:100%; transform: translate(-50%,-50%); }
+    #blackFridayEvent2021 #sec1 .chr-wrap img.priest {display:none;}
+    #blackFridayEvent2021 #sec1 .tit-wrap > img {width: 44%; margin: 0 auto -6%;}
+    #blackFridayEvent2021 #sec1 .tit-wrap .neon-box {width:70%; padding:10%;}
+    #blackFridayEvent2021 #sec1 .tit-wrap .neon-box .title-main {width:100%;}
+    #blackFridayEvent2021 #sec1 .tit-wrap .title-sub {margin-top: -5%; width: 44%;}
+
+    /* sec2 */
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .reward-img {max-width:100%;}
+
+    /* sec3 */
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li {font-size:1.5rem; line-height: 1.7; padding-top:1.5rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li a {font-size:1.5rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li a small{font-size:1.35rem;}
+    // 코드발급
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .common-grey {width: calc( 100% - 9.375rem);}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .btn-wrap .common-btn {min-width: unset; font-size: 1.175rem;}
+
+    /* sec4 */
+    #blackFridayEvent2021 #sec4 .funny-info-wrap > div {width:360px;}
+
+}
+@media screen and (max-width:1024px) and (orientation: portrait) {
+    #blackFridayEvent2021 {
+        html, body {font-size:13px !important;}
+
+    }
+    /* sec1 */
+    #blackFridayEvent2021 #sec1 .row-w { position: absolute; top: 38%;left: 50%; width:100%; transform: translate(-50%,-50%); }
+    #blackFridayEvent2021 #sec1 .chr-wrap img.priest {display:none;}
+    #blackFridayEvent2021 #sec1 .tit-wrap > img {width:68% ;margin: 0 auto -2rem;}
+    #blackFridayEvent2021 #sec1 .tit-wrap .neon-box {width: 100%; padding:10%;}
+    #blackFridayEvent2021 #sec1 .tit-wrap .neon-box .title-main {width:90%;}
+    #blackFridayEvent2021 #sec1 .tit-wrap .title-sub {width:62%;}
+
+    /* sec3 */
+    // 버튼
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn {width: calc( (100% - 20px) /3);}
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn:nth-child(1) {margin-left: 16.8%;}
+}
+
+@media screen and (max-width:840px) {
+    /* sec3 */
+    // 버튼
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn {width: calc( (100% - 20px) /2);}
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn:nth-child(1) {margin-left: 0;}
+    // 친구 초대 달성 보상
+    #blackFridayEvent2021 .invite-achieve-reward {width:380px; margin:0 auto;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .invite-achieve-reward li {width:45%; margin-right:10%; margin-bottom:5%;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .invite-achieve-reward li:nth-child(2n) {margin-right:0;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .invite-achieve-reward li:nth-child(n+3) {margin-bottom:0;}
+}
+
+@media screen and (max-width:768px) {
+    /* common */
+    #blackFridayEvent2021 {
+        .mb-show768 {display: block;}
+        .common-tit {width:90%;}
+        .common-notice {width:88%;}
+        .common-grey {padding: 5px;}
+        .common-how-to {width:110%; margin-left:-5%;}
+        .common-how-to li li:nth-child(2) .step {font-size:17px;}
+        .common-tit > p {font-size:1.2rem;}
+    }
+    /* nav */
+    #blackFridayEvent2021 #contNav .cont-nav li {font-size:14px;}
+    #blackFridayEvent2021 #contNav .cont-nav li span {font-size:15px;}
+
+    /* sec3 */
+    // 버튼
+    #blackFridayEvent2021 #sec3 .btn-wrap .common-btn {height: auto; line-height: 1.6; padding: 10px;}
+    #blackFridayEvent2021 #sec3 .btn-wrap .common-btn.own-ticket .ticket-num {padding:10px 15px;}
+    // 당첨자 정광판
+    #blackFridayEvent2021 #sec3 .roulette-wrap {width:96%; margin-left:2%;}
+    #blackFridayEvent2021 #sec3 .winning li {padding-left: 8vw; font-size:16px;}
+    #blackFridayEvent2021 #sec3 .winning li:before {left:6px;}
+    #blackFridayEvent2021 #sec3 .winning li:after {right:6px;}
+    #blackFridayEvent2021 #sec3 .winning li .time {font-size:14px;}
+    // 친구초대/추천 탭
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li {/*line-height: 1.6; padding-top: 20px;*/}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li a {font-size: 1.25rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li a small{font-size: 1rem;}
+    // 코드발급
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .common-grey {max-height:50px;}
+    #blackFridayEvent2021 #sec3 .invite-wrap .btn-wrap .common-btn {padding:0 10px; height:50px; line-height:50px;}
+    // 이벤트 참여방법
+    #blackFridayEvent2021 .how-to-invite li li:nth-child(2) {margin-top: -8%;background:none;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .how-to-invite > li {margin: 8px; width: calc(50% - 16px);}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .how-to-invite li li:nth-child(2) .step {width:100%;background: #461525; border-radius:24px;line-height: 2.625rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .how-to-invite li li:nth-child(2) .step-desc {width:100%;margin: 16px 0; padding: 0;}
+}
+
+@media screen and (max-width: 640px) {
+    #blackFridayEvent2021 {
+        .mb-show640 {display:block;}
+        .mb-hidden640 {display: none;}
+    }
+
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li {line-height: 1.7; padding-top:1.75rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li a {font-size:1.125rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li a small{font-size:1.125rem;}
+    /* sec1 */
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .like-reward-table p {font-size:13px;}
+
+    /* sec3 */
+    // 당첨자 전광판
+    #blackFridayEvent2021 #sec3 .winning {height: 52px;}
+    #blackFridayEvent2021 #sec3 .winning li { padding-left: 60px; font-size: 1.125rem;}
+    #blackFridayEvent2021 #sec3 .winning:before {width: 32px; height: 32px;}
+    #blackFridayEvent2021 #sec3 .winning:after {display: none;}
+    #blackFridayEvent2021 #sec3 .winning li .time {margin-right: 6px; font-size: 1.125rem;}
+    // 버튼
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve {width: 120%;margin-left: -10%;text-align: center;}
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn {float:none; width:180px;}
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn:nth-child(1) {width:78px;}
+    // 친구 초대 달성 보상
+    #blackFridayEvent2021 .invite-achieve-reward {width:90%;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .invite-achieve-reward li {width: 48%; margin-right: 4%; margin-bottom: 4%; }
+
+    /* sec4 퍼니이모티콘 */
+    #blackFridayEvent2021 #sec4 .emoticon-wrap.common-neon-wrap {padding:3rem 1rem;}
+    #blackFridayEvent2021 #sec4 .emoticon-wrap .achieve-img {width:70px;}
+
+    #blackFridayEvent2021 #sec4 .funny-info-wrap > div {width: 290px;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc1 {top: 24%; left: -23%;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc2 {top: 40%; right: -20%;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc3 {bottom: 18%;left: -22%;}
+
+}
+
+@media screen and (max-width:578px) {
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li {line-height: 1.6;padding-top: 0.8rem;}
+    #blackFridayEvent2021 .mb-show578 {display:block;}
+
+    /* common */
+    #blackFridayEvent2021 .common-tit {width:96%;}
+    #blackFridayEvent2021 .common-neon-box {padding: 0 48px 58px}
+    #blackFridayEvent2021 .common-how-to > li {margin-right: 15px; width: calc( (100% - 30px) / 3);}
+
+    /* sec1 */
+    #blackFridayEvent2021 #sec1 .row-w {top: 30%;}
+    #blackFridayEvent2021 #sec1 .chr-wrap img.funny {right:-7vh;}
+    #blackFridayEvent2021 #sec1 .tit-wrap .neon-box {width:100%; background-size:110% 110%; padding:6%;}
+    #blackFridayEvent2021 #sec1 .tit-wrap .neon-box .title-main {width:100%;}
+}
+
+@media screen and (max-width:480px) {
+    /* common */
+    #blackFridayEvent2021 {
+        .mb-show480 {display:block;}
+        .mb-hidden480 {display:none;}
+        .common-notice {width: 80%;}
+        .common-grey {padding: 5px;}
+        .common-neon-box h3 {font-size:18px;}
+        .common-tit .common-event-num {width:64%;}
+    }
+
+
+    /* sec2 */
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .like-reward-table {width:110%; margin-left:-5%;}
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .like-reward-table > li:nth-child(3) p:nth-child(1),
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .like-reward-table > li:nth-child(4) p:nth-child(1),
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .like-reward-table > li:nth-child(5) p:nth-child(1) {line-height:1; font-size:12px; padding-top: 3px;}
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .reward-img {max-width:100%;}
+    #blackFridayEvent2021 #sec2 .how-to-like > li {width:100%; max-width:220px; margin-left: 50%;transform: translateX(-50%);margin-bottom: 2rem;}
+
+    /* sec3 */
+    // 당첨 전광판
+    #blackFridayEvent2021 #sec3 .winning li {padding-left:50px;font-size:14px;}
+    #blackFridayEvent2021 #sec3 .winning:before {width: 28px;}
+    #blackFridayEvent2021 #sec3 .winning li .time {display:none;}
+    //버튼
+    #blackFridayEvent2021 #sec3 .btn-wrap .common-btn {padding: 10px 0; margin-right: 5px; width: calc( (100% - 10px) /3); font-size: 15px;}
+    #blackFridayEvent2021 #sec3 .btn-wrap .common-btn.own-ticket .ticket-num {margin:0; padding: 7px 15px;font-size:14px;}
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn {width: 144px;}
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn:nth-child(1) {width: 58px;}
+    // 친구초대/추천 탭
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li {height: 6.5rem;font-size:1.25rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .common-tit img {max-width: 116%;margin-left: -8%;}
+    // 코드발급
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap {width:98%}
+    /*#blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .common-grey {width: calc( 100% - 6.375rem);}*/
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .common-grey {width: calc( 100% - 7.35125rem);}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .common-grey input.input-code {font-size: 1rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .btn-wrap .common-btn {width:auto; font-size:1rem;}
+    // 친구 초대 달성 보상
+    #blackFridayEvent2021 .invite-achieve-reward {width: 110%; margin-left: -5%;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .recommend-achieve-wrap img { padding:2rem 0 0;}
+    // 이벤트 참여방법
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .how-to-invite > li  {width:100%; max-width:220px; margin-left: 50%;transform: translateX(-50%);margin-bottom: 2rem;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .how-to-rec.common-how-to > li  {width:100%; max-width:260px; margin-left: 50%;transform: translateX(-50%);margin-bottom: 2rem;}
+
+    /* sec4 */
+    #blackFridayEvent2021 #sec4 .funny-info-wrap > div {width: 64% }
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.funny {width: 90%}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc1 {width:164px;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc2 {width:174px;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc3 {width:174px;}
+    // 퍼니 이모티콘
+    #blackFridayEvent2021 #sec4 .emoticon-wrap table td:nth-child(1) {padding-top:1rem;}
+    #blackFridayEvent2021 #sec4 .emoticon-wrap table td:nth-child(2) {padding:1rem 0;}
+    #blackFridayEvent2021 #sec4 .emoticon-wrap .funny-ticon {display: block;margin: 5px auto;width: 50%;}
+
+
+
+
+}
+@media screen and (max-width:414px) {
+    /* sec1 */
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .reward-img {max-width: 120%;margin-left: -10%;}
+    // 친구 초대 달성 보상
+    #blackFridayEvent2021 .invite-achieve-reward {width: 110%; margin-left: -5%;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .invite-achieve-reward li {width:100%;}
+
+
+    /* sec4 */
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.funny {width: 80%}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc1 {top:25%; left:-23%; width:148px;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc2 {right:-25%; top:40%; width:174px;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.desc3 {left:-26%; bottom:9%; width:174px;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.star3 {display: none;}
+    #blackFridayEvent2021 #sec4 .funny-info-wrap img.star6 {right: -16%; bottom: 4%;}
+}
+@media screen and (max-width:360px) {
+    /* nav */
+    #blackFridayEvent2021 #contNav .cont-nav li span {font-size:13px;}
+
+    /* sec1 */
+    #blackFridayEvent2021 #sec2 .like-reward-wrap .like-reward-table {width:120%; margin-left:-10%;}
+
+    /* sec3 */
+    //버튼
+
+
+
+    #blackFridayEvent2021 #sec3 .btn-wrap .common-btn {font-size: 13px;}
+    #blackFridayEvent2021 #sec3 .btn-wrap.btn-invite-achieve .common-btn {width: 130px;}
+    // 친구초대/추천 탭
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li {height: 6.05rem;}
+
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li a { font-size: 1rem; }
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap .tab-nav li a small { font-size: 0.95rem; }
+
+    // 코드발급
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .common-grey input.input-code {padding: 1rem 0.5rem; font-size: 13px;}
+    #blackFridayEvent2021 #sec3 .invite-wrap.common-neon-wrap #codeWrap .btn-wrap .common-btn {padding:0 10px; font-size:13px;}
+
+    /* sec4 */
+    #blackFridayEvent2021 #sec4 .emoticon-wrap table td:nth-child(1) p {white-space: pre;}
+}
+

@@ -1,0 +1,64 @@
+{
+  "awards": [
+    {
+      "rewardNames": "CombatCombatCombatCombat",
+      "rewardUrl": "../images/itemTest2.png",
+      "prizeId": "1",
+      "messages": "ops! next time.."
+    },
+    {
+      "rewardNames": "ICARUS",
+      "rewardUrl": "../images/item01.png",
+      "prizeId": "2",
+      "messages": "Congratulations to you!"
+    },
+    {
+      "rewardNames": "Atlantica",
+      "rewardUrl": "../images/item01.png",
+      "prizeId": "3",
+      "messages": "Congratulations to you!"
+    },
+    {
+      "rewardNames": "Combat",
+      "rewardUrl": "../images/item01.png",
+      "prizeId": "4",
+      "messages": "Congratulations to you!"
+    },
+    {
+      "rewardNames": "Femiliar",
+      "rewardUrl": "../images/item01.png",
+      "prizeId": "5",
+      "messages": "Congratulations to you!"
+    },
+    {
+      "rewardNames": "Legend",
+      "rewardUrl": "../images/item01.png",
+      "prizeId": "6",
+      "messages": "Congratulations to you!"
+    },
+    {
+      "rewardNames": "Teleport",
+      "rewardUrl": "../images/item01.png",
+      "prizeId": "7",
+      "messages": "Congratulations to you!"
+    },
+    {
+      "rewardNames": "Super",
+      "rewardUrl": "../images/item01.png",
+      "prizeId": "8",
+      "messages": "Congratulations to you!"
+    }
+  ],
+  "txtcolors": [
+    "blue",
+    "#FDFDFD",
+    "#DB1F33",
+    "#FDFDFD",
+    "#DB1F33",
+    "#FDFDFD",
+    "#DB1F33",
+    "#FDFDFD"
+  ],
+  "itembg": 8,
+  "domid": "wheelCanvas"
+}

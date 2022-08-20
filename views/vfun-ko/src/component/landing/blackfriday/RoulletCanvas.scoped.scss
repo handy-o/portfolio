@@ -1,0 +1,156 @@
+@charset "utf-8";
+/*抽奖大转盘开始*/
+* {
+  padding: 0;
+  margin: 0;
+}
+.controller {
+  position: relative;
+  margin: 10px;
+}
+.controller button {
+  line-height: 30px;
+  cursor: pointer;
+}
+.controller .num {
+  width: 30px;
+}
+.wheel {
+  position: relative;
+  display: block;
+  width: 830px;
+  max-width: 100%;
+  /*height: 834px;*/
+  background-size: 100% 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.wheel:before {
+  content: '';
+  display: block;
+  padding-bottom: calc(100% + 4px);
+}
+
+.wheel-circle {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition-delay: .1s;
+  -moz-transition-delay: .1s; /* Firefox 4 */
+  -webkit-transition-delay: .1s; /* Safari 和 Chrome */
+  -o-transition-delay: .1s; /* Opera */
+  -webkit-tap-highlight-color:transparent;
+}
+.wheel:after {
+  content:'';
+  display: block;
+  position:absolute;
+  left:0;top:0;
+  width:100%; height: 100%;
+  background-image: url(images/yuanhuan.png);
+  background-size: 100%;
+  animation:rulletBurlb 1s ease-in-out infinite;
+  -webkit-animation:rulletBurlb 1s ease-in-out infinite;
+  -o-animation:rulletBurlb 1s ease-in-out infinite;
+  -moz-animation:rulletBurlb 1s ease-in-out infinite;
+}
+@keyframes rulletBurlb{
+  0%{background-image:url(images/yuanhuan01.png);}
+  50%{background-image:url(images/yuanhuan.png);}
+  100%{background-image:url(images/yuanhuan01.png);}
+}
+@-webkit-keyframes rulletBurlb{
+  0%{background-image:url(images/yuanhuan01.png);}
+  50%{background-image:url(images/yuanhuan.png);}
+  100%{background-image:url(images/yuanhuan01.png);}
+}
+@-moz-keyframes rulletBurlb{
+  0%{background-image:url(images/yuanhuan01.png);}
+  50%{background-image:url(images/yuanhuan.png);}
+  100%{background-image:url(images/yuanhuan01.png);}
+}
+
+#pointer {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 99;
+  position: absolute;
+  width: 25%;
+  height: 32%;
+  left: 38.2%;
+  /*top: 31.3%;*/
+  top: 50%; transform: translateY(-50%);
+  cursor: pointer;
+  transition-delay: .1s;
+  -moz-transition-delay: .1s; /* Firefox 4 */
+  -webkit-transition-delay: .1s; /* Safari 和 Chrome */
+  -o-transition-delay: .1s; /* Opera */
+  -webkit-tap-highlight-color:transparent;
+}
+#pointer.start {
+  background-image: url("images/Start_up.png");
+}
+#pointer.start:active {
+  background-image: url("images/Start_down.png");
+}
+#pointer.replay {
+  background-image: url("images/Replay_up.png");
+}
+#pointer.replay:active {
+  background-image: url("images/Replay_down.png");
+}
+#pointer.not {
+  background-image: url("images/not_up.png");
+}
+#pointer.not:active {
+  background-image: url('images/not_down.png');
+}
+#wheelCanvas {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  right: 0;
+}
+.flex-1 {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*抽奖大转盘结束*/
+
+/*@media screen and (max-width: 1200px) {
+    .wheel {
+        width: calc(830px - 200px);
+        height: calc(834px - 200px);
+    }
+}
+@media screen and (max-width: 1024px) {
+    .wheel {
+        width: calc(830px - 300px);
+        height: calc(834px - 300px);
+    }
+}
+@media screen and (max-width: 640px) {
+    .wheel {
+        width: calc(830px / 2);
+        height: calc(834px / 2);
+    }
+}
+@media screen and (max-width: 480px) {
+    .wheel {
+        width: calc(830px - 550px);
+        height: calc(834px - 550px);
+    }
+}*/
+
+/* 당첨팝업 */
+.pop-container .alert img {display: none;}
+.pop-container .alert .alert-text.text1 {padding-left:0;}
+.alert-text p {text-align: center; text-indent: 0;}
+.alert-text p.reward-name {color:#238ba3;}

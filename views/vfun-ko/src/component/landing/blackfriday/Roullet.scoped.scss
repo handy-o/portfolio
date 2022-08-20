@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wheel-container {
+  width: 100%;
+}
+.wheel-main {
+  text-align: center;
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.wheel {
+  margin: 0 auto;
+  width: 830px;
+  position: relative;
+}
+.wheel-circle {
+  z-index: 2;
+  position: relative;
+}
+.item {
+  z-index: 1;
+  position: absolute;
+  top: 11.2%;
+  width: 78.5%;
+  right: 10.4%;
+}
+.pointer {
+  z-index: 3;
+  position: absolute;
+  width: 25%;
+  height: 32%;
+  left: 38.2%;
+  top: 31.3%;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .wheel-container .wheel-main {
+    .wheel {
+      width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .wheel-container .wheel-main {
+    .wheel {
+      width: 280px;
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .wheel-container .wheel-main {
+    .wheel {
+      width: 300px;
+    }
+  }
+}
