@@ -1498,7 +1498,7 @@ class EventContents extends React.Component {
                                                                     </span>
                                                                 </li>
                                                                 <li>
-                                                                    회원가입 >
+                                                                    회원가입 &gt;
                                                                     로그인을
                                                                     한다.
                                                                 </li>
