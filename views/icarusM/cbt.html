@@ -47,8 +47,9 @@
     <link rel="stylesheet" type="text/css" href="https://file.valofe.com/Valofe_file/web/vfun/css/common/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet"
-        href="https://file.valofe.com/Valofe_file/web/vfun/css/event/icarusm_gl/pre-register/style_cbt_10.css?200902">
+    <!-- <link rel="stylesheet"
+        href="https://file.valofe.com/Valofe_file/web/vfun/css/event/icarusm_gl/pre-register/style_cbt_10.css?200902"> -->
+    <link rel="stylesheet" href="css/style_cbt_10.css">
     <link rel="stylesheet" href="css/animsition__.css">
 
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
@@ -57,8 +58,9 @@
     <script type="text/javascript" src="js/easing-1.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
-    <script type="text/javascript"
-        src="https://file.valofe.com/Valofe_file/web/vfun/js/event/icarusm_gl/pre-register/custom2_cbt_10.js?200902"></script>
+    <!-- <script type="text/javascript"
+        src="https://file.valofe.com/Valofe_file/web/vfun/js/event/icarusm_gl/pre-register/custom2_cbt_10.js?200902"></script> -->
+    <script type="text/javascript" src="js/custom2_cbt_10.js"></script>
 
 
     <!--[if lt IE 9]>
@@ -67,6 +69,121 @@
     <script src="https://file.valofe.com/Valofe_file/web/vfun/js/respond-1.4.2.min.js"></script>
     <script src="https://file.valofe.com/Valofe_file/web/vfun/js/remPolyfill.js"></script>
     <![endif]-->
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        // function gtag() { dataLayer.push(arguments); }
+        // gtag('js', new Date());
+        // gtag('config', 'UA-45196362-54');
+
+        function facebookLogin() {
+            location.replace('<?=$facebookLoginUrl?>');
+        }
+
+        function facebookLogout() {
+            location.replace('/event/icarusmFacbookLogout');
+        }
+
+        function googleLogin() {
+            location.replace('<?=$googleLoginUrl?>');
+        }
+
+        function googleLogout() {
+            location.replace('/event/icarusmGoogleLogout');
+        }
+
+        function vfunLogin() {
+            //location.replace('<?=PLATFORM_URL?>/membership/signin?service_code=<?=$service_code?>&ret=<?=$ret?>');
+            window.location.href = '<?=PLATFORM_URL?>/membership/signin?service_code=<?=$service_code?>&ret=<?=$ret?>';
+        }
+
+        function vfunLogout() {
+            location.replace('<?=PLATFORM_URL?>/membership/signout?service_code=<?=$service_code?>&ret=<?=$ret?>');
+        }
+
+        window.formSubmit = function () {
+            if ($("input:radio[name=radio-os]").is(":checked") != true) {
+                $("#radio-os").focus();
+                alert('Please select IOS or AOS');
+                return false;
+            }
+
+            if ($("input:checkbox[name=check_agree1]").is(":checked") != true) {
+                $("#check_agree1").focus();
+                alert('Please accept the required terms.');
+                return false;
+            }
+
+            if ($("input:checkbox[name=check_agree2]").is(":checked") != true) {
+                $("#check_agree2").focus();
+                alert('Please accept the required terms.');
+                return false;
+            }
+            $('#targetForm').submit();
+
+        }
+
+        $(document).ready(function () {
+            var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+            if (varUA.indexOf('android') > -1) {
+                $('#check_Android').prop('checked', true);
+            } else if (varUA.indexOf("iphone") > -1 || varUA.indexOf("ipad") > -1 || varUA.indexOf("ipod") > -1) {
+                $('#check_IOS').prop('checked', true);
+            }
+
+            // <? php if ($alreadyRegisterInfo) { ?>
+            /* 예약버튼 클릭 성공 후 페이지 로드 시 sec2 위치로 보여지기 */
+            //var headerH = $('#desktopHeader').height();
+            //if ( $(window).outerWidth() > 1024 ) {
+            //    $("html,body").stop().animate({"scrollTop": $('#sec2').offset().top - headerH - 60}, 450);
+            //} else {
+            //    $("html,body").stop().animate({"scrollTop": $('#sec2').offset().top - 60 }, 450);
+            //}
+            /* 예약버튼 클릭 성공 후 페이지 로드 시 sec2 위치로 보여지기 */
+            // <? php }?>
+        });
+
+        //------------------------------------------------------------------------------------------------------------
+        // 날짜 & 시간
+        //------------------------------------------------------------------------------------------------------------
+        // 시간 추가 함수
+        function dateAdd(date, interval, units) {
+            var ret = new Date(date); //don't change original date
+            switch (interval.toLowerCase()) {
+                case 'year': ret.setFullYear(ret.getFullYear() + units); break;
+                case 'month': ret.setMonth(ret.getMonth() + units); break;
+                case 'week': ret.setDate(ret.getDate() + 7 * units); break;
+                case 'day': ret.setDate(ret.getDate() + units); break;
+                case 'hour': ret.setTime(ret.getTime() + units * 3600000); break;
+                case 'minute': ret.setTime(ret.getTime() + units * 60000); break;
+                case 'second': ret.setTime(ret.getTime() + units * 1000); break;
+                default: ret = undefined; break;
+            }
+            return ret;
+        }
+
+        //인트로 페이지 쿠키 생성 함수
+        function setIcarusMPreResitClose() {
+            // dontShow
+            if ($("input:checkbox[id=dontShow]").is(":checked") == true) {
+                setCookie("IcarusMPreRegistPage", "IcarusMPreRegistPageDone", dateAdd(new Date(), "day", 1))
+                window.location.href = "/game/icarusm_global?idx=19";
+                return false;
+            }
+            window.location.href = "/";
+        }
+
+        function setCookie(cookie_name, value, days) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + days);
+            // 설정 일수만큼 현재시간에 만료값으로 지정
+
+            var cookie_value = escape(value) + ((days == null) ? '' : ';    expires=' + exdate.toUTCString());
+            document.cookie = cookie_name + '=' + cookie_value + '; path=/;';
+        }
+    </script>
+
+
 </head>
 
 <body id="influencer">
@@ -90,15 +207,6 @@
         </div>
     </div>
     <div id="wrapper">
-        <?php
-    $game_title = $detail_info['game_title_'.$lang['lang']];
-    if (is_null($game_title)) {
-        $game_title = $detail_info['game_title_'.$detail_info['default_language']];
-    }
-    $web_url = $detail_info['web_url'];
-    ?>
-
-        <? include(PLATFORM_URL.'/combine_menu/header?lang='.$lang['lang'].'&ret='.urlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']).'&sso_info='.urlencode($sso_info).'&user_id='.$user_id.'&user_birth='.$user_birth.'&service_code='.$service_code.'&service_type=landing'); ?>
         <!--<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas></div>-->
         <header id="desktopHeader" style="top:0px;">
             <h1 class="logo">
@@ -181,8 +289,9 @@
             <div id="dont_show">
                 <label class="label-dont-show" for="dontShow">
                     <input type="checkbox" id="dontShow">
+                    <span onclick="/* setIcarusMPreResitClose() */">Don't See Today</span>
                 </label>
-                <span onclick="setIcarusMPreResitClose()">Don't See Today</span>
+
             </div>
 
             <!-- section1 -->

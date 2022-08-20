@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <? include(PLATFORM_URL.'/combine_menu/head?lang='.$lang['lang'].'&ret='.urlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']).'&service_code='.$service_code.'&service_type=landing'); ?>
     <title>Icarus M: Riders of Icarus Pre-Registration</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +49,6 @@
     <link rel="stylesheet"
         href="https://file.valofe.com/Valofe_file/web/vfun/css/event/icarusm_gl/pre-register/style_grandOpen.css">
     <link rel="stylesheet" href="css/animsition__.css">
-    <link rel="stylesheet" href="css/main_color_theme.css">
 
 
 
@@ -60,8 +58,7 @@
     <script type="text/javascript" src="js/easing-1.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
-    <script type="text/javascript"
-        src="https://file.valofe.com/Valofe_file/web/vfun/js/event/icarusm_gl/pre-register/custom2_grandOpen.js"></script>
+    <script type="text/javascript" src="js/custom2_grandOpen.js"></script>
 
 
     <!--[if lt IE 9]>
@@ -74,13 +71,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45196362-54"></script>
     <script>
-        <? php if (ENVIRONMENT == 'production') { ?>
-            if (document.location.protocol == 'http:') {
-                document.location.href = document.location.href.replace('http:', 'https:');
-            }
-        <? php } ?>
+        // <? php if (ENVIRONMENT == 'production') { ?>
+        // if (document.location.protocol == 'http:') {
+        document.location.href = document.location.href.replace('http:', 'https:');
+        //     }
+        // <? php } ?>
 
-            window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
@@ -110,7 +107,7 @@
             location.replace('<?=PLATFORM_URL?>/membership/signout?service_code=<?=$service_code?>&ret=<?=$ret?>');
         }
 
-        function formSubmit() {
+        window.formSubmit = function () {
             if ($("input:radio[name=radio-os]").is(":checked") != true) {
                 $("#radio-os").focus();
                 alert('Please select IOS or AOS');
