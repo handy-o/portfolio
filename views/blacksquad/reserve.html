@@ -289,7 +289,8 @@
                 <p>친구초대 달성 보상</p>
               </div>
               <div class="invite-achieve-gage">
-                <input type="text" value="<?=number_format($pre_invited_cnt)?>" id="numSuccess" readonly="">
+                <!-- <input type="text" value="<?=number_format($pre_invited_cnt)?>" id="numSuccess" readonly=""> -->
+                <input type="text" value="8" id="numSuccess" readonly="">
                 <!-- value 값 -->
                 <div class="bar">
                   <div class="accum_percent clearfix">
@@ -313,7 +314,7 @@
                       <!-- title = #numSuccess 값 -->
                       <p class="invite-count-text">
                         <!-- #numSuccess 값 -->
-                        <!-- <?=number_format($pre_invited_cnt)?>  -->명 달성!
+                        <!-- <?=number_format($pre_invited_cnt)?>  --> <span></span> 명 달성!
                       </p>
                     </div>
                   </div>

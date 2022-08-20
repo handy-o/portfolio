@@ -1406,6 +1406,7 @@ section#sec5 {
 	position: relative;
 	background: url(https://file.valofe.com/Valofe_file/web/blacksquad/images/landing/reserve/rewards/bg-rewards-min.jpg)
 		no-repeat center / cover;
+	background-color:#000;
 	text-align: center;
 	z-index: 2;
 }

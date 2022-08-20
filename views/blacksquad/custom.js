@@ -382,6 +382,7 @@ $(document).ready(function() {
     // 누적 예약자수에 따른 bar 이동
     function gage() {
         var gageNum = $('#numSuccess').val();
+        $('.invite-count-text span').text(gageNum);
         if (0 <= gageNum && gageNum < 1 ) { // 0명일 때
 
         } else if(1 <= gageNum && gageNum < 5  ) {// 1명 달성 + 4명까지
