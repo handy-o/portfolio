@@ -203,7 +203,7 @@ $(document).ready(function() {
         var headerH = $('#desktopHeader').height();
         // 이동
         if ( $(window).outerWidth() > 1024 ) {
-            $("html,body").stop().animate({"scrollTop": $('#sec'+ index).offset().top - headerH - 60}, 450);
+            $("html,body").stop().animate({"scrollTop": $('#sec'+ index).offset().top - headerH }, 450);
         } else {
             fnCloseMobileSlide();
             $("html,body").stop().animate({"scrollTop": $('#sec'+ index).offset().top - 60 }, 450);
