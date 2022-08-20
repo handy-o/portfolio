@@ -1,0 +1,97 @@
+{
+    "game" : [
+        {
+            "officialName": "Bless Unleashed",
+            "officialURL": "https://www.blessunleashedpc.com/index"
+        }
+    ],
+
+    "themeStyle" : [
+        {
+            "backgroundColor": "#101924",
+            "borderColor": "#32424b",
+            "fontFamily": "Raleway, \"ヒラギノ角ゴ ProN\", \"Hiragino Kaku Gothic ProN\", 游ゴシック, 游ゴシック体, YuGothic, \"Yu Gothic\", メイリオ, Meiryo, \"ＭＳ ゴシック\", \"MS Gothic\", HiraKakuProN-W3, TakaoExゴシック, TakaoExGothic, MotoyaLCedar, \"Droid Sans Japanese\", sans-serif"
+        }
+    ],
+
+    "pharag1" : [
+        {
+            "exist": "true",
+            "id": "01",
+            "imgURL": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/main-banner-en-min.jpg",
+            "link": "https://www.blessunleashedpc.com/news/view/notice/719?page=0&all=Y&sideArticleSrl=719,717,716,715,714",
+            "title": "５月のメインアップデート",
+            "titleColor": "rgb(28, 184, 197)",
+
+            "desc": "新しいチャレンジがあなたを待っています。<br><br>パーティーメンバーと共に、<br>新規次元ダンジョンの協力なボスを討伐！<br><br>剣と剣が響かせる新しいシーズンを迎えましょう！",
+
+            "descColor": "#c4cdd3",
+
+            "btnText": "Detail",
+            "btnBgColor": "rgb(10, 125, 137)",
+            "btnBgColorGrd": "linear-gradient(45deg,  rgb(40, 83, 100), rgb(27, 179, 151))"
+
+        }
+    ],
+
+    "pharag2" : [
+        {
+         "exist": "true",
+          "id": "01",
+          "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/sub-banner1-en-min.jpg",
+          "alt": "戦場",
+          "link": "https://www.blessunleashedpc.com/news/view/notice/718?page=0&all=Y&sideArticleSrl=718,717,716,715,714",
+
+          "title": "戦場",
+          "title_color": "#dc8567",
+          "desc": "新しいチャンピオンを待つ新規シーズン！<br><br>「頂き」を目指して、あなたの実力をたくさんの冒険家たちと競い合おう！<br><br>覇気と武器に挑戦する新規シーズンに、<br>あなたをご招待！",
+          "descColor": "#adadad",
+          "btnColor": "#c17960"
+        },
+        {
+          "id": "02",
+          "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/sub-banner2-en-min.jpg",
+          "alt": "Wester Priaries Havoc Monster Invasion",
+          "link": "https://www.blessunleashedpc.com/news/view/event/725?page=0&all=Y&sideArticleSrl=719,725,724,723,722",
+
+          "title": "Wester Priaries Havoc Monster Invasion",
+          "title_color": "#dc8567",
+          "desc": "空が黒く曇ったら、大混乱を招くハーピークイーンの下手人たちの侵攻にお気をつけて！<br><br>皆様の熱いご要請をもって、今月のモンスター侵攻をご案内します！<br>パーティーを組んでハーピーたちを討伐して、装備のアップグレードに役立つ報酬を手に入れてみましょう。<br><br>より強力な敵、新しい報酬と共に迎える新規シーズン！",
+          "descColor": "#adadad",
+
+          "btnColor": "#c17960"
+        }
+    ],
+
+    "connected" : [
+        {
+            "id": "steam",
+            "category": "steam",
+            "url": "https://store.steampowered.com/app/1254120/Bless_Unleashed/"
+        },
+        {
+            "id": "facebook",
+            "category": "facebook",
+            "url": "https://www.facebook.com/BlessUnleashedPC"
+        },
+        {
+            "id": "twitter",
+            "category": "twitter",
+            "url": "https://twitter.com/blessunleashedp"
+        },
+        {
+            "id": "youtube",
+            "category": "youtube",
+            "url": "https://www.youtube.com/c/BlessUnleashedPC/featured"
+        },
+        {
+            "id": "discord",
+            "category": "discord",
+            "url": "https://discord.gg/TAVukZMA8w"
+        }
+    ],
+
+    "footerLang": {
+        "lang": "jp"
+    }
+}

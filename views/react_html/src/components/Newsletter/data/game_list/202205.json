@@ -1,0 +1,112 @@
+{
+    "vfunGames": [
+        {
+            "id": "12",
+            "gameName1": "Icarus M Vietnam",
+            "link1": "https://vfun.valofe.com/game/icarusm_vi?idx=44",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20220314/622f50b098070.png",
+            "gameName2": "N-Age Online",
+            "link2": "https://nage-gl.valofe.com",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20220331/6245808a911fc.png"
+        },
+        {
+            "id": "11",
+            "gameName1": "R2Beat: 音速觉醒",
+            "link1": "https://r2beat-cn.valofe.com/",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20220210/620482784b203.png",
+            "gameName2": "O2JAM",
+            "link2": "https://vfun.valofe.com/game/detail/o2jam",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20220203/61fb73a08fefa.png"
+        },
+        {
+            "id": "10",
+            "gameName1": "Raid the Dungeon",
+            "link1": "https://vfun.valofe.com/game/raid_dungeon_gl",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20220221/621377e660921.png",
+            "gameName2": "ちびっこヒーローズ",
+            "link2": "https://vfun.valofe.com/game/raid_dungeon_jp",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20220302/621f45e9be76d.png"
+        },
+        {
+            "id": "01",
+            "gameName1": "C9 Global",
+            "link1": "https://c9-gl.valofe.com",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210712/60ebc29f05b44.png",
+            "gameName2": "王牌對決",
+            "link2": "https://lostsaga-tw.valofe.com",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210715/60eff99d99ea2.png"
+        },
+        {
+            "id": "02",
+            "gameName1": "Bless Unleashed Global",
+            "link1": "https://www.blessunleashedpc.com/",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20220125/61ef68482ab3b.png",
+            "gameName2": "Dekaron",
+            "link2": "http://dekaron.valofe.com",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon-pc-dekaron-min.png"
+        },
+        {
+            "id": "04",
+            "gameName1": "BLACK SQUAD Global",
+            "link1": "https://blacksquad-tw.valofe.com/",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon-pc-blacksquad-tw-min.png",
+            "gameName2": "Riders of Icarus: SEA",
+            "link2": "https://icarus-sea.valofe.com",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210622/60d14c776236d.png"
+        },
+        {
+            "id": "03",
+            "gameName1": "Icarus M: Riders of Icarus",
+            "link1": "https://vfun.valofe.com/icarusm",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon-mb-icam-gl-new-min.png",
+            "gameName2": "Riders of Icarus",
+            "link2": "https://icarus.valofe.com/",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210628/60d95ad50406d.png"
+        },
+        {
+            "id": "09",
+            "gameName1": "Real Casino - Free slots",
+            "link1": "http://vfun.valofe.com/realcasino",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon-web-realcasino.png",
+            "gameName2": "Mu Legend",
+            "link2": "https://mulegend-gl.valofe.com/",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20200911/5f5b55b4b52e8.png"
+        },
+        {
+            "id": "05",
+            "gameName1": "Combat Arms: the Classic",
+            "link1": "https://combatarms-c.valofe.com/",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_ca_c.png?2",
+            "gameName2": "Combat Arms: Reloaded",
+            "link2": "https://combatarms-r.valofe.com/",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210906/6135ac0399577.png"
+        },
+        {
+            "id": "06",
+            "gameName1": "ATLANTICA Global",
+            "link1": "http://at.valofe.com/main",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210628/60d96aa0b6ada.png",
+            "gameName2": "ATLANTICA Europe",
+            "link2": "https://at-eu.valofe.com",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210628/60d969fd28b6f.png"
+        },
+        {
+            "id": "07",
+            "gameName1": "アトランティカオンライン",
+            "link1": "https://at.valofe.jp",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210628/60d96b4ce2f79.png",
+            "gameName2": "Luminary : Rise of the GoonZu",
+            "link2": "http://luminary.valofe.com/center/default.asp",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/cbm/icon_pc_lu.png"
+        },
+        {
+            "id": "08",
+            "gameName1": "Fantasy War Tactics R",
+            "link1": "http://fwtr.valofe.com/?lang=en",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_mobile_fwtr.png",
+            "gameName2": "ファンタジーウォータクティクスR",
+            "link2": "https://fwtr.valofe.com/?lang=ja",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_mobile_fwtr.png"
+        }
+    ]
+}

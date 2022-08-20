@@ -1,0 +1,97 @@
+{
+    "game" : [
+        {
+            "officialName": "Bless Unleashed",
+            "officialURL": "https://www.blessunleashedpc.com/index"
+        }
+    ],
+
+    "themeStyle" : [
+        {
+            "backgroundColor": "#101924",
+            "borderColor": "#32424b",
+            "fontFamily": "'Raleway', '微软雅黑', sans-serif"
+        }
+    ],
+
+    "pharag1" : [
+        {
+            "exist": "true",
+            "id": "01",
+            "imgURL": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/main-banner-cn-min.jpg",
+            "link": "https://www.blessunleashedpc.com/news/view/notice/719?page=0&all=Y&sideArticleSrl=719,717,716,715,714",
+            "title": "五月主要更新内容！",
+            "titleColor": "rgb(28, 184, 197)",
+
+            "desc": "全新挑战正在竞技场等待着。<br><br>潜入新的次元地下城！ 召集您的伙伴与您一同参加骑士团，击败栖息其中的强大Boss。<br><br>钢铁的碰撞声由此响起，迎来全新的赛季！",
+
+            "descColor": "#c4cdd3",
+
+            "btnText": "详情",
+            "btnBgColor": "rgb(10, 125, 137)",
+            "btnBgColorGrd": "linear-gradient(45deg,  rgb(40, 83, 100), rgb(27, 179, 151))"
+
+        }
+    ],
+
+    "pharag2" : [
+        {
+         "exist": "true",
+          "id": "01",
+          "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/sub-banner1-cn-min.jpg",
+          "alt": "战场",
+          "link": "https://www.blessunleashedpc.com/news/view/notice/718?page=0&all=Y&sideArticleSrl=718,717,716,715,714",
+
+          "title": "战场",
+          "title_color": "#dc8567",
+          "desc": "新赛季，竞技场将呼唤新的冠军！<br><br>展示您的战斗能力，并与许多其他战士一决高下<br>战斗到顶峰吧！<br><br>挑战勇气和武器的新赛季！",
+          "descColor": "#adadad",
+          "btnColor": "#c17960"
+        },
+        {
+          "id": "02",
+          "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/sub-banner2-en-min.jpg",
+          "alt": "Wester Priaries Havoc Monster Invasion",
+          "link": "https://www.blessunleashedpc.com/news/view/event/725?page=0&all=Y&sideArticleSrl=719,725,724,723,722",
+
+          "title": "Wester Priaries Havoc Monster Invasion",
+          "title_color": "#dc8567",
+          "desc": "勇士们，请注意！天色变暗，鹰身女妖女王的仆人俯冲袭击，造成了严重破坏。<br><br>应大家的需求，我们为您展示本月的怪物入侵！<br>组队并清理成群的鹰身人，获取奖励，将帮助您升级装备。<br><br>新赛季，新奖励，还有更强大的对手！",
+          "descColor": "#adadad",
+
+          "btnColor": "#c17960"
+        }
+    ],
+
+    "connected" : [
+        {
+            "id": "steam",
+            "category": "steam",
+            "url": "https://store.steampowered.com/app/1254120/Bless_Unleashed/"
+        },
+        {
+            "id": "facebook",
+            "category": "facebook",
+            "url": "https://www.facebook.com/BlessUnleashedPC"
+        },
+        {
+            "id": "twitter",
+            "category": "twitter",
+            "url": "https://twitter.com/blessunleashedp"
+        },
+        {
+            "id": "youtube",
+            "category": "youtube",
+            "url": "https://www.youtube.com/c/BlessUnleashedPC/featured"
+        },
+        {
+            "id": "discord",
+            "category": "discord",
+            "url": "https://discord.gg/TAVukZMA8w"
+        }
+    ],
+
+    "footerLang": {
+        "lang": "en"
+    }
+}

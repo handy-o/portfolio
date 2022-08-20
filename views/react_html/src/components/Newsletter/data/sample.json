@@ -1,0 +1,109 @@
+{
+    "game": [
+        {
+            "officialName": "LOA",
+            "officialURL": "https://"
+        }
+    ],
+    "themeStyle": [
+        {
+            "backgroundColor": "#fff",
+            "borderColor": "#f0f0f0",
+            "fontFamily": "'Noto Sans CJK KR', sans-serif"
+        }
+    ],
+    "pharag1": [
+        {
+            "exist": "true",
+            "id": "01",
+            "imgURL": "http://localhost:63342/valofe_html/mail/vfun/images/template/main-banner.jpeg",
+            "link": "https://",
+            "title": "메인 타이틀",
+            "titleColor": "#0d557b",
+            "desc": "글쓰다가 <span style='font-weight:bold; font-size:inherit; vertical-align: initial; color:red'>다른색으로 강조</span> 해야할 떄 <br/> 그리고 줄바꿈을 해야할 때",
+            "descColor": "#4f4f4f",
+            "btnText": "Free Coupon",
+            "btnBgColor": "rgb(103, 86, 201)",
+            "btnBgColorGrd": "linear-gradient(45deg, rgb(103, 86, 201), rgb(82 162 201)"
+        },
+        {
+            "id": "02",
+            "imgURL": "http://localhost:63342/valofe_html/mail/vfun/images/template/main-banner.jpeg",
+            "link": "https://",
+            "title": "메인 타이틀222222",
+            "titleColor": "#0d557b",
+            "desc": "글쓰다가2222222 <span style='font-weight:bold; font-size:inherit; vertical-align: initial; color:red'>다른색으로 강조</span> 해야할 떄 <br/> 그리고 줄바꿈을 해야할 때",
+            "descColor": "#4f4f4f",
+            "btnText": "Free Coupon ",
+            "btnBgColor": "rgb(103, 86, 201)",
+            "btnBgColorGrd": "linear-gradient(45deg, rgb(103, 86, 201), rgb(82 162 201)"
+        }
+    ],
+    "pharag2": [
+        {
+            "exist": "true",
+            "id": "01",
+            "url": "http://localhost:63342/valofe_html/mail/vfun/images/template/sub-banner.jpeg",
+            "alt": "2단 배너1",
+            "link": "게시글링크1",
+            "title": "2단 타이틀1",
+            "title_color": "#455f92",
+            "desc": "2단 설명1 텍스트 텍스트 <br/> 줄바꾸고 <span>스팬태그</span> 텍스트텍스트",
+            "descColor": "#186995",
+            "btnText": "더보기",
+            "btnColor": "#54545c"
+        },
+        {
+            "id": "02",
+            "url": "http://localhost:63342/valofe_html/mail/vfun/images/template/sub-banner.jpeg",
+            "alt": "2단 배너2",
+            "link": "게시글링크2",
+            "title": "2단 타이틀2",
+            "title_color": "#186995",
+            "desc": "2단 설명2 텍스트 \n 텍스트",
+            "descColor": "#186995",
+            "btnText": "더보기",
+            "btnColor": "#54545c"
+        }
+    ],
+    "connected": [
+        {
+            "id": "instagram",
+            "category": "instagram",
+            "url": ""
+        },
+        {
+            "id": "discord",
+            "category": "discord",
+            "url": ""
+        },
+        {
+            "id": "twitter",
+            "category": "twitter",
+            "url": ""
+        },
+        {
+            "id": "steam",
+            "category": "steam",
+            "url": ""
+        },
+        {
+            "id": "facebook",
+            "category": "facebook",
+            "url": ""
+        },
+        {
+            "id": "forum",
+            "category": "forum",
+            "url": ""
+        },
+        {
+            "id": "moot",
+            "category": "moot",
+            "url": ""
+        }
+    ],
+    "footerLang": {
+        "lang": "en"
+    }
+}

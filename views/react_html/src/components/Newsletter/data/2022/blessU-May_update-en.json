@@ -1,0 +1,102 @@
+{
+  "meta_info": {
+    "title": "title-bless",
+    "url": "url-bless",
+    "description": "description-bless",
+    "image": "https://file.valofe.com/Valofe_file/web/vfun/images/banner/20220603/62998fe81b8bb.jpg?v=20220603091408"
+  },
+  "game": [
+    {
+      "officialName": "Bless Unleashed",
+      "officialURL": "https://www.blessunleashedpc.com/index"
+    }
+  ],
+
+  "themeStyle": [
+    {
+      "backgroundColor": "#101924",
+      "borderColor": "#32424b",
+      "fontFamily": "'Raleway', sans-serif"
+    }
+  ],
+
+  "pharag1": [
+    {
+      "exist": "true",
+      "id": "01",
+      "imgURL": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/main-banner-en-min.jpg",
+      "link": "https://www.blessunleashedpc.com/news/view/notice/719?page=0&all=Y&sideArticleSrl=719,717,716,715,714",
+      "title": "May Major Content Update!",
+      "titleColor": "rgb(28, 184, 197)",
+
+      "desc": "A new challenge awaits you in the arena.\n\nDive in to the new Dimensional Dungeon!<br>Gather your companions and party up to defeat a powerful boss that dwells within.<br>The clashing of steel thus resounds, welcoming a new season!",
+
+      "descColor": "#c4cdd3",
+
+      "btnText": "Detail",
+      "btnBgColor": "rgb(10, 125, 137)",
+      "btnBgColorGrd": "linear-gradient(45deg,  rgb(40, 83, 100), rgb(27, 179, 151))"
+    }
+  ],
+
+  "pharag2": [
+    {
+      "exist": "true",
+      "id": "01",
+      "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/sub-banner1-en-min.jpg",
+      "alt": "Battlefield",
+      "link": "https://www.blessunleashedpc.com/news/view/notice/718?page=0&all=Y&sideArticleSrl=718,717,716,715,714",
+
+      "title": "Battlefield",
+      "title_color": "#dc8567",
+      "desc": "This new season, the arena calls for new champions!<br><br>Demonstrate your combat prowess and duke it out amongst many other warriors as you fight your way to the top!<br><br>A New Season to Challenge both Mettle and Metal!",
+      "descColor": "#adadad",
+      "btnColor": "#c17960"
+    },
+    {
+      "id": "02",
+      "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/sub-banner2-en-min.jpg",
+      "alt": "Wester Priaries Havoc Monster Invasion",
+      "link": "https://www.blessunleashedpc.com/news/view/event/725?page=0&all=Y&sideArticleSrl=719,725,724,723,722",
+
+      "title": "Wester Priaries Havoc Monster Invasion",
+      "title_color": "#dc8567",
+      "desc": "Watch out as the sky darkens with the Harpy Queen's servants swooping down to wreak havoc.<br><br>Due to popular demand, we present to you this month's monster invasion!<br>Team up and clear hordes of harpies to obtain rewards that will help you in upgrading your equipment.<br><br>New Season, New Rewards, Mightier Adversaries!",
+      "descColor": "#adadad",
+
+      "btnColor": "#c17960"
+    }
+  ],
+
+  "connected": [
+    {
+      "id": "steam",
+      "category": "steam",
+      "url": "https://store.steampowered.com/app/1254120/Bless_Unleashed/"
+    },
+    {
+      "id": "facebook",
+      "category": "facebook",
+      "url": "https://www.facebook.com/BlessUnleashedPC"
+    },
+    {
+      "id": "twitter",
+      "category": "twitter",
+      "url": "https://twitter.com/blessunleashedp"
+    },
+    {
+      "id": "youtube",
+      "category": "youtube",
+      "url": "https://www.youtube.com/c/BlessUnleashedPC/featured"
+    },
+    {
+      "id": "discord",
+      "category": "discord",
+      "url": "https://discord.gg/TAVukZMA8w"
+    }
+  ],
+
+  "footerLang": {
+    "lang": "en"
+  }
+}

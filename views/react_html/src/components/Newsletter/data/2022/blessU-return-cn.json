@@ -1,0 +1,79 @@
+{
+    "game" : [
+        {
+            "officialName": "Bless Unleashed",
+            "officialURL": "https://www.blessunleashedpc.com/index"
+        }
+    ],
+
+    "themeStyle" : [
+        {
+            "backgroundColor": "#1f0d1b",
+            "borderColor": "#4b3235",
+            "fontFamily": "'Raleway', '微软雅黑', sans-serif"
+        }
+    ],
+
+    "pharag1" : [
+        {
+            "exist": "true",
+            "id": "01",
+            "imgURL": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/08_return/main-banner-cn-min.jpg",
+            "link": "https://store.steampowered.com/news/app/1254120/view/3365896057875944052",
+            "title": "《神佑释放》新篇章开启！新老勇士们的狂欢！",
+            "titleColor": "rgb(248, 210, 171)",
+
+            "desc": "全新版本、多重内容、断剑重铸、勇士归来！<br>装备洗炼、职业平衡、等级提升、周年庆典！<br><br>全新游戏内容，全新游戏体验！<br>和兄弟们一起享受卢密欧斯大陆的风吧！",
+
+            "descColor": "rgb(211, 201, 196)",
+
+            "btnText": "详情",
+            "btnBgColor": "rgb(240, 177, 139)",
+            "btnBgColorGrd": "linear-gradient(45deg, rgb(255 201 120), rgb(255, 157, 141))"
+
+        }
+    ],
+
+    "pharag2" : [
+        {
+         "exist": "true",
+          "id": "01",
+          "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/08_return/sub-banner2-cn-min.jpg",
+          "alt": "战场",
+          "link": "https://store.steampowered.com/news/app/1254120/view/3365896057875944052",
+
+          "title": "1周年感恩献礼",
+          "title_color": "#ff8552",
+          "desc": "消灭怪物、通关副本、更有超多道具放送！<br>周年庆典，给您不一样全新体验！",
+          "descColor": "#adadad",
+            "btnText": "详情",
+          "btnColor": "#f55f4a"
+        },
+        {
+          "id": "02",
+          "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/08_return/sub-banner1-cn-min.jpg",
+          "alt": "Wester Priaries Havoc Monster Invasion",
+          "link": "https://store.steampowered.com/news/app/1254120/view/3365896057875839984",
+
+          "title": "老玩家回归献礼",
+          "title_color": "#ff8552",
+          "desc": "您已经离开太久，<br>是时候重新回到卢密欧斯大陆的怀抱了！<br>在这周年庆祝的日子里，<br>我们邀请您重新体验、再次激情！",
+          "descColor": "#adadad",
+
+          "btnText": "详情",
+          "btnColor": "#f55f4a"
+        }
+    ],
+
+    "connected" : [
+        {
+            "id": "steam",
+            "category": "steam",
+            "url": "https://store.steampowered.com/app/1254120/Bless_Unleashed/"
+        }
+    ],
+
+    "footerLang": {
+        "lang": "en"
+    }
+}

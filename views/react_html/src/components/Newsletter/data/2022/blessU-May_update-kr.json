@@ -1,0 +1,97 @@
+{
+    "game" : [
+        {
+            "officialName": "Bless Unleashed",
+            "officialURL": "https://www.blessunleashedpc.com/index"
+        }
+    ],
+
+    "themeStyle" : [
+        {
+            "backgroundColor": "#101924",
+            "borderColor": "#32424b",
+            "fontFamily": "'Raleway', 'Noto Sans KR', 'Malgun Gothic', sans-serif"
+        }
+    ],
+
+    "pharag1" : [
+        {
+            "exist": "true",
+            "id": "01",
+            "imgURL": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/main-banner-kr-min.png",
+            "link": "https://www.blessunleashedpc.com/news/view/notice/719?page=0&all=Y&sideArticleSrl=719,717,716,715,714",
+            "title": "5월 주요 업데이트!",
+            "titleColor": "rgb(28, 184, 197)",
+
+            "desc": "새로운 도전이 당신을 기다리고 있습니다.<br><br>신규 차원 던전에 도전해 보세요!<br>파티원과 힘을 모아 강력한 보스를 물리치세요!<br><br>검이 맞닿는 울림과 함께 새 시즌을 맞이하세요!",
+
+            "descColor": "#c4cdd3",
+
+            "btnText": "Detail",
+            "btnBgColor": "rgb(10, 125, 137)",
+            "btnBgColorGrd": "linear-gradient(45deg,  rgb(40, 83, 100), rgb(27, 179, 151))"
+
+        }
+    ],
+
+    "pharag2" : [
+        {
+         "exist": "true",
+          "id": "01",
+          "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/sub-banner1-kr-min.jpg?2",
+          "alt": "전장",
+          "link": "https://www.blessunleashedpc.com/news/view/notice/718?page=0&all=Y&sideArticleSrl=718,717,716,715,714",
+
+          "title": "전장",
+          "title_color": "#dc8567",
+          "desc": "새로운 시즌, 전장은 새로운 챔피언을 부른다!<br>정상을 목표로 전투력을 발휘해 다른 많은 블레서들과 겨루어 보세요!<br>패기와 무기에 도전하는 신규 시즌 !",
+          "descColor": "#adadad",
+          "btnColor": "#c17960"
+        },
+        {
+          "id": "02",
+          "url": "https://file.valofe.com/Valofe_file/web/email/images/bless_unleashed/2022/05_may_update/sub-banner2-en-min.jpg",
+          "alt": "Wester Priaries Havoc Monster Invasion",
+          "link": "https://www.blessunleashedpc.com/news/view/event/725?page=0&all=Y&sideArticleSrl=719,725,724,723,722",
+
+          "title": "Wester Priaries Havoc Monster Invasion",
+          "title_color": "#dc8567",
+          "desc": "하늘이 어두워지면, 대혼란을 일으키는 하피 여왕의 하수인들의 침공을 조심하세요!<br><br>열렬한 요청에 의해 이달의 몬스터 침공을 안내합니다!<br>파티를 이루어 하피 무리를 퇴치하고, 장비 업그레이드에 도움을 주는 보상을 획득하세요!<br><br>더욱 강력한 적, 새로운 보상과 함께 맞는 새로운 시즌!",
+          "descColor": "#adadad",
+
+          "btnColor": "#c17960"
+        }
+    ],
+
+    "connected" : [
+        {
+            "id": "steam",
+            "category": "steam",
+            "url": "https://store.steampowered.com/app/1254120/Bless_Unleashed/"
+        },
+        {
+            "id": "facebook",
+            "category": "facebook",
+            "url": "https://www.facebook.com/BlessUnleashedPC"
+        },
+        {
+            "id": "twitter",
+            "category": "twitter",
+            "url": "https://twitter.com/blessunleashedp"
+        },
+        {
+            "id": "youtube",
+            "category": "youtube",
+            "url": "https://www.youtube.com/c/BlessUnleashedPC/featured"
+        },
+        {
+            "id": "discord",
+            "category": "discord",
+            "url": "https://discord.gg/TAVukZMA8w"
+        }
+    ],
+
+    "footerLang": {
+        "lang": "ko"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "vfunGames": [
+        {
+            "id": "01",
+            "gameName1": "R2Beat",
+            "link1": "https://r2beat-ko.valofe.com",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/r2beatko-icon-min.png",
+            "gameName2": "크로노스",
+            "link2": "https://www.cronous.co.kr/",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/cronousko-icon-min.png"
+        },
+        {
+            "id": "02",
+            "gameName1": "『Bless Unleashed』",
+            "link1": "https://www.blessunleashedpc.com/?lang=ko",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/blessko-icon-min.png",
+            "gameName2": "로스트사가",
+            "link2": "http://lostsaga-ko.valofe.com",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/lostsaga-icon-min.png"
+        },
+        {
+            "id": "03",
+            "gameName1": "아틀란티카",
+            "link1": "http://at-ko.valofe.com/",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/atko-icon-min.png",
+            "gameName2": "군주",
+            "link2": "https://goonzu.valofe.com/",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/goonzu-icon-min.png"
+        },
+        {
+            "id": "04",
+            "gameName1": "뮤 레전드",
+            "link1": "https://mulegend-ko.valofe.com/",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/mulegendko-icon-min.png",
+            "gameName2": "엔에이지 온라인",
+            "link2": "https://nage-ko.valofe.com/",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/nageko-icon-min.png"
+        },
+        {
+            "id": "05",
+            "gameName1": "이카루스 온라인",
+            "link1": "https://icarusonline.co.kr/main",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/ica-icon-min.png",
+            "gameName2": "젬파이터",
+            "link2": "https://gf.valofe.com/",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/gf-icon-min.png"
+        },
+        {
+            "id": "06",
+            "gameName1": "블랙스쿼드",
+            "link1": "https://blacksquad.valofe.com/",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/blacksquadko-icon-min.png",
+            "gameName2": "풍림화산",
+            "link2": "https://wffm.valofe.com/",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/wffmko-icon-min.png"
+        },
+        {
+            "id": "07",
+            "gameName1": "이카루스M",
+            "link1": "https://vfun-kr.valofe.com/game/detail/icarusmko",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/icarusmko-icon-min.png",
+            "gameName2": "피쉬아일랜드: 정령의 항로",
+            "link2": "https://vfun-kr.valofe.com/game/detail/fishislandko",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/fishislandko-icon-min.png"
+        },
+        {
+            "id": "08",
+            "gameName1": "O2JAM",
+            "link1": "https://vfun-kr.valofe.com/game/detail/o2jam",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/o2jam-icon-min.png",
+            "gameName2": "드루와 던전 - 방치형 RPG",
+            "link2": "https://vfun-kr.valofe.com/game/detail/raiddungeon",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/raiddungeon-icon-min.png"
+        },
+        {
+            "id": "09",
+            "gameName1": "영웅 for Kakao",
+            "link1": "https://vfun-kr.valofe.com/game/detail/hero",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/hero-icon-min.png",
+            "gameName2": "판타지워 택틱스R",
+            "link2": "https://fwtr.valofe.com/?language=kr",
+            "imgURL2": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/fwtr-icon-min.png"
+        },
+        {
+            "id": "10",
+            "gameName1": "용비불패M",
+            "link1": "https://vfun-kr.valofe.com/game/detail/yongbi",
+            "imgURL1": "https://file.valofe.com/Valofe_file/web/vfun-ko/images/game/enroll/yongbi-icon-min.png",
+            "gameName2": "",
+            "link2": "",
+            "imgURL2": ""
+        }
+    ]
+}
