@@ -408,3 +408,16 @@ header #gnbPc nav .menu li.out.g a {
 #carousel > div article .card-bottom .course-lang a.has-url {
   text-decoration: underline;
 }
+
+@media screen and (max-width:1024px) {
+  #skills .box {
+    width:calc( (100% - 10rem) / 3);
+    max-width:unset;
+  } 
+}
+
+@media screen and (max-width:640px) {
+  #skills .box {
+    width:calc( (100% - 5.5rem) / 2);
+  } 
+}
